@@ -1,0 +1,24 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after{
+    box-sizing: border-box;
+  }
+  
+  body{
+    font-family: 'Quicksand';
+  }
+
+.header__menu-list {
+  padding: 0;
+  margin: 0;
+}
+
+.button-style{
+  padding: 5px 18px;
+  border-radius: 50px;
+  text-decoration: none;
+}
