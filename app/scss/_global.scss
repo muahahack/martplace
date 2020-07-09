@@ -17,8 +17,20 @@ html {
   margin: 0;
 }
 
-.button-style{
+.button-style {
   padding: 5px 18px;
   border-radius: 50px;
+  border: none;
+  text-decoration: none;
+}
+
+.box-styles {  
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1); 
+}
+
+.item-author,
+.item-cat,
+.author-ava {
   text-decoration: none;
 }
