@@ -1,6 +1,43 @@
 $white: #FFFFFF;
 $dark: #333333;
+$dark5: #555555;
 $blue-li: #0674ec;
 $vio: #7347C1;
 $violet: #6600AA;
 $red: #ff0000;
+$orange: #FFA600;
+
+@mixin focus-vio {
+  box-shadow: 0 0 0 3px $vio;
+  border-radius: 4px;
+  outline: transparent;
+}
+
+@mixin focus-orange {
+  box-shadow: 0 0 0 3px $orange;
+  border-radius: 4px;
+  outline: transparent;
+}
+
+@mixin focus-arrow {
+  background-color: $orange;
+  outline: transparent;
+}
+
+@mixin active-black {
+  box-shadow: 1px 0px 25px -15px #000000 inset;
+}
+
+@mixin prod-text {
+  margin-bottom: 28px;
+  max-height: 90px;
+  overflow: hidden;
+}
+
+@mixin prod-specs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 30px 14px 30px;
+  border-top: 1px solid #ECECEC;
+}

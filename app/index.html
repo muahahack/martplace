@@ -5,52 +5,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MartPlace</title>
-  
+
   <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
 
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-
-<!-- -----ЗАМЕТКИ-----
-favicon -->
 
 <body>
   <header class="header">
     <div class="header__top">
       <div class="container">
         <div class="header__top-inner">
-          <div class="header__logo">
-            <a class="header__logo-link" href="#">
-              <img class="header__logo-img" src="images/logo.png" alt="logo">
-            </a>
-          </div>
+          <a class="header__logo-link" href="#">logo
+            <img class="header__logo-img" src="images/logo.png" alt="logo">
+          </a>
 
           <div class="header__info">
             <a class="header__seller-link button-style" href="#">Become a Seller</a>
-            <a class="header__status" href="#">
+            <a class="header__status" href="#">notify
               <span class="lnr lnr-alarm"></span>
-              <div class="header__number header__number--notify">25</div>
+              <span class="header__number header__number--notify">25</span>
             </a>
-            <a class="header__status header__status--message" href="#">
+            <a class="header__status header__status--message" href="#">message
               <span class="lnr lnr-envelope"></span>
-              <div class="header__number header__number--message">6</div>
+              <span class="header__number header__number--message">6</span>
             </a>
-            <a class="header__status" href="#">
+            <a class="header__status" href="#">cart
               <span class="lnr lnr-cart"></span>
-              <div class="header__number header__number--cart">2</div>
+              <span class="header__number header__number--cart">2</span>
             </a>
 
-            <div class="header__profile">
-              <a class="header__profile-link" href="">
-                <img class="header__profile-avatar" src="images/avatar.jpg" alt="avatar">
-                <div class="header__profile-info">
-                  <div class="header__profile-name">Taofiq Hakim</div>
-                  <div class="header__profile-funds">$20.45</div>
-                </div>
-              </a>
-            </div>
+            <a class="header__profile-link profile-link" href="">
+              <div class="header__profile-avatar profile-avatar" style="background-image: url(images/avatar.jpg);">
+              </div>
+              <div class="header__profile-info profile-info">
+                <div class="header__profile-name profile-name">Taofiq Hakim</div>
+                <div class="header__profile-funds profile-specs">$20.45</div>
+              </div>
+            </a>
 
           </div>
         </div>
@@ -70,9 +63,9 @@ favicon -->
             </ul>
           </nav>
 
-          <form class="header__search" action="">
-            <input class="header__search-form" type="text" placeholder="Search product here..." required>
-            <button class="header__search-btn" type="submit">
+          <form class="header__search input-form" action="">
+            <input class="header__search-form input-style" type="search" placeholder="Search product here..." required>
+            <button class="header__search-btn input-btn" type="submit">
               <span class="header__search-img lnr lnr-magnifier"></span>
               search
             </button>
@@ -88,29 +81,27 @@ favicon -->
     <section class="info">
       <div class="container">
 
-        <div class="info__title">
-          Create Your Own
-        </div>
-        <div class="info__title--name">
-          Digital Product Marketplace
+        <div class="info__title-box">
+          <div class="info__title">Create Your Own</div>
+          <div class="info__title--name">Digital Product Marketplace</div>
         </div>
         <div class="info__text">
           MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products
         </div>
         <div class="info__links">
-          <a class="info__all-link button-style" href="#">View All Products</a>
-          <a class="info__popular-link button-style" href="#">Popular Products</a>
+          <a class="info__link info__link--all button-style" href="#">View All Products</a>
+          <a class="info__link info__link--popular button-style" href="#">Popular Products</a>
         </div>
 
         <div class="info__search-wrap">
           <form class="info__search" action="">
             <div class="info__form-wrap">
-              <input class="info__search-form" type="text" placeholder="Search your products..." required>
-              <div class="info__search-filter" type="">
+              <input class="info__search-form" type="search" placeholder="Search your products..." required>
+              <div class="info__search-filter">
                 <select class="info__filter-list" size="1">
-                  <option class="info-products__choice-name" hidden disabled selected>All Categories:</option>
-                  <option class="info-products__choice-1" value="week">Plugins</option>
-                  <option class="info-products__choice-2" value="month">PSD</option>
+                  <option hidden disabled selected>All Categories:</option>
+                  <option value="plugins">Plugins</option>
+                  <option value="psd">PSD</option>
                 </select>
                 <span class="info__search-icon lnr lnr-chevron-down"></span>
               </div>
@@ -124,12 +115,12 @@ favicon -->
       </div>
     </section>
 
-    <article class="advantages">
+    <section class="advantages">
       <div class="container">
         <div class="advantages__inner">
 
           <div class="advantages__item">
-            <img class="advantages__img" src="images/research.png" alt="research">
+            <div class="advantages__img" style="background-image: url(images/research.png);"></div>
             <div class="advantages__title">
               Best UX Research
             </div>
@@ -140,8 +131,9 @@ favicon -->
             </div>
           </div>
 
-          <div class="advantages__item advantages__item--center">
-            <img class="advantages__img advantages__img--center" src="images/responsive.png" alt="responsive">
+          <div class="advantages__item">
+            <div class="advantages__img advantages__img--responsive"
+              style="background-image: url(images/responsive.png);"></div>
             <div class="advantages__title">
               Fully Responsive
             </div>
@@ -153,7 +145,7 @@ favicon -->
           </div>
 
           <div class="advantages__item">
-            <img class="advantages__img" src="images/buysell.png" alt="buysell">
+            <div class="advantages__img" style="background-image: url(images/buysell.png);"></div>
             <div class="advantages__title">
               Buy & Sell Easily
             </div>
@@ -166,19 +158,19 @@ favicon -->
 
         </div>
       </div>
-    </article>
+    </section>
 
     <section class="weekly-products">
       <div class="container">
 
-        <div class="weekly-products__title-box">
-          <div class="weekly-products__title">
+        <div class="weekly-products__title-box title-box">
+          <div class="weekly-products__title title">
             Weekly Featured Products
           </div>
 
-          <div class="weekly-products__arrows">
-            <span class="weekly-products__arrow-prev lnr lnr-chevron-left  swiper-button-prev"></span>
-            <span class="weekly-products__arrow-next lnr lnr-chevron-right  swiper-button-next"></span>
+          <div class="weekly-products__arrows arrows">
+            <span class="weekly-products__arrow-prev arrow-slider-prev lnr lnr-chevron-left swiper-button-prev"></span>
+            <span class="weekly-products__arrow-next arrow-slider-next lnr lnr-chevron-right swiper-button-next"></span>
           </div>
 
         </div>
@@ -186,26 +178,26 @@ favicon -->
         <div class="weekly-products__slider swiper-container">
           <div class="weekly-products__slider-wrapper swiper-wrapper">
 
-            <div class="weekly-products__item swiper-slide">
-              <img class="weekly-products__item-img" src="images/w-products/weekly-product-1.jpg"
+            <article class="weekly-products__item swiper-slide">
+              <img class="weekly-products__item-img" src="images/w-products/weekly-product-2.jpg"
                 alt="weekly-product-1">
               <div class="weekly-products__item-info">
                 <div class="weekly-products__item-title">
                   One Page Resume Template
                 </div>
                 <div class="weekly-products__item-details">
-                  <a class="weekly-products__item-author item-author" href="#">
-                    <span class="weekly-products__author-ava"
+                  <a class="weekly-products__item-author product-author" href="#">
+                    <span class="weekly-products__author-ava product-author-ava"
                       style="background-image: url(images/wp-ava-1.jpg);"></span>
-                    <span class="weekly-products__author-name">AazzTech</span>
+                    <span class="weekly-products__author-name product-author-name">AazzTech</span>
                   </a>
-                  <a class="weekly-products__item-cat item-cat" href="#">
-                    <span class="weekly-products__cat-icon "
+                  <a class="weekly-products__item-cat product-cat" href="#">
+                    <span class="weekly-products__cat-icon cat-icon"
                       style="background-image: url(images/icons/wordpress.svg);"></span>
-                    <span class="weekly-products__cat-name ">WordPress</span>
+                    <span class="weekly-products__cat-name cat-name">WordPress</span>
                   </a>
                 </div>
-                <div class="weekly-products__item-text">
+                <div class="weekly-products__item-text product-text">
                   Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
                   aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
                   mattis, leo quam aliquet congue justo ut scelerisque.
@@ -226,21 +218,21 @@ favicon -->
                     <div class="weekly-products__specs-price button-style">
                       $10 - $50
                     </div>
-                    <div class="weekly-products__specs-likes">
+                    <button class="weekly-products__specs-likes specs-likes">
                       <span class="lnr lnr-heart"></span>
                       <span class="weekly-products__number-likes">46</span>
-                    </div>
-                    <div class="weekly-products__specs-sales">
+                    </button>
+                    <button class="weekly-products__specs-sales specs-sales">
                       <span class="lnr lnr-cart"></span>
                       <span class="weekly-products__number-sales">634</span>
-                    </div>
+                    </button>
                   </div>
                   <div class="weekly-products__specs-rating"></div>
                 </div>
               </div>
-            </div>
+            </article>
 
-            <div class="weekly-products__item swiper-slide">
+            <article class="weekly-products__item swiper-slide">
               <img class="weekly-products__item-img" src="images/w-products/weekly-product-1.jpg"
                 alt="weekly-product-1">
               <div class="weekly-products__item-info">
@@ -248,18 +240,18 @@ favicon -->
                   One Page Resume Template
                 </div>
                 <div class="weekly-products__item-details">
-                  <a class="weekly-products__item-author" href="#">
-                    <span class="weekly-products__author-ava"
+                  <a class="weekly-products__item-author product-author" href="#">
+                    <span class="weekly-products__author-ava product-author-ava"
                       style="background-image: url(images/wp-ava-1.jpg);"></span>
-                    <span class="weekly-products__author-name">AazzTech</span>
+                    <span class="weekly-products__author-name product-author-name">AazzTech</span>
                   </a>
-                  <a class="weekly-products__item-cat item-cat" href="#">
-                    <span class="weekly-products__cat-icon"
+                  <a class="weekly-products__item-cat product-cat" href="#">
+                    <span class="weekly-products__cat-icon cat-icon"
                       style="background-image: url(images/icons/wordpress.svg);"></span>
-                    <span class="weekly-products__cat-name">WordPress</span>
+                    <span class="weekly-products__cat-name cat-name">WordPress</span>
                   </a>
                 </div>
-                <div class="weekly-products__item-text">
+                <div class="weekly-products__item-text product-text">
                   Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
                   aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
                   mattis, leo quam aliquet congue justo ut scelerisque.
@@ -275,25 +267,51 @@ favicon -->
                   <a class="weekly-products__category-link button-style" href="#">
                     landing page
                   </a>
+                  <a class="weekly-products__category-link button-style" href="#">
+                    website
+                  </a>
+                  <a class="weekly-products__category-link button-style" href="#">
+                    plugin
+                  </a>
+                  <a class="weekly-products__category-link button-style" href="#">
+                    landing page
+                  </a>
+                  <a class="weekly-products__category-link button-style" href="#">
+                    website
+                  </a>
+                  <a class="weekly-products__category-link button-style" href="#">
+                    plugin
+                  </a>
+                  <a class="weekly-products__category-link button-style" href="#">
+                    landing page
+                  </a> <a class="weekly-products__category-link button-style" href="#">
+                    website
+                  </a>
+                  <a class="weekly-products__category-link button-style" href="#">
+                    plugin
+                  </a>
+                  <a class="weekly-products__category-link button-style" href="#">
+                    landing page
+                  </a>
                 </div>
                 <div class="weekly-products__item-specs">
                   <div class="weekly-products__specs-info">
                     <div class="weekly-products__specs-price button-style">
                       $10 - $50
                     </div>
-                    <div class="weekly-products__specs-likes">
+                    <button class="weekly-products__specs-likes specs-likes">
                       <span class="lnr lnr-heart"></span>
                       <span class="weekly-products__number-likes">46</span>
-                    </div>
-                    <div class="weekly-products__specs-sales">
+                    </button>
+                    <button class="weekly-products__specs-sales specs-sales">
                       <span class="lnr lnr-cart"></span>
                       <span class="weekly-products__number-sales">634</span>
-                    </div>
+                    </button>
                   </div>
                   <div class="weekly-products__specs-rating">fff</div>
                 </div>
               </div>
-            </div>
+            </article>
 
           </div>
         </div>
@@ -304,17 +322,21 @@ favicon -->
     <section class="newest-products">
       <div class="container">
 
-        <div class="newest-products__title-box">
-          <div class="newest-products__title">
+        <div class="newest-products__title-box title-box">
+          <div class="newest-products__title title">
             Newest Release Products
           </div>
-          <div class="newest-products__filter-wrapper">
-            <select class="newest-products__filter" size="1">
-              <option class="newest-products__choice-name" hidden disabled selected>Filter by:</option>
-              <option class="newest-products__choice-1" value="week">Week</option>
-              <option class="newest-products__choice-2" value="month">Month</option>
-            </select>
-            <div class="newest-products__more-icon"></div>
+          <div class="newest-products__filter">
+            Filter by:<span class="newest-products__more-icon"></span>
+            <ul class="newest-products__filter-list">
+              <li class="newest-products__filter-item">
+                <a class="newest-products__filter-link" href="#">Week</a>
+              </li>
+              <li class="newest-products__filter-item">
+                <a class="newest-products__filter-link" href="#">Month</a>
+              </li>
+            </ul>
+
           </div>
         </div>
 
@@ -352,38 +374,43 @@ favicon -->
 
         <div class="newest-products__items-wrapper">
 
-          <div class="newest-products__item box-styles mix category-plugins category-wordpress" data-order="1">
-            <div class="newest-products__img-wrapper">
-              <img class="newest-products__item-img" src="images/n-products/newest-product-1.jpg"
+          <article class="newest-products__item product-card box-styles mix category-plugins category-wordpress"
+            data-order="1">
+            <div class="newest-products__img-wrapper info-mask">
+              <img class="product-img newest-products__item-img" src="images/n-products/newest-product-1.jpg"
                 alt="newest-product-1">
-              <a class="newest-products__info-link button-style" href="#">
+              <a class="newest-products__link newest-products__link--info link-info button-style" href="#">
                 More Info
               </a>
-              <a class="newest-products__demo-link button-style" href="#">
+              <a class="newest-products__link newest-products__link--demo link-demo button-style" href="#">
                 Live Demo
               </a>
             </div>
-            <div class="newest-products__item-wrapper">
+            <div class="newest-products__item-wrapper product-info-wrap">
 
-              <div class="newest-products__item-title">
+              <div class="newest-products__item-title product-title">
                 E-commerce Shopping Cart
               </div>
               <div class="newest-products__item-details">
 
-                <a class="newest-products__item-author item-author" href="#">
-                  <span class="newest-products__author-ava author-ava"
+                <a class="newest-products__item-author product-author" href="#">
+                  <span class="newest-products__author-ava product-author-ava"
                     style="background-image: url(images/wp-ava-1.jpg);"></span>
-                  <span class="newest-products__author-name author-name">Theme-Valley</span>
+                  <span class="newest-products__author-name product-author-name">Theme-Valley</span>
                 </a>
 
-                <a class="newest-products__item-cat item-cat" href="#">
+                <a class="newest-products__item-cat product-cat" href="#">
                   <span class="newest-products__cat-icon"
                     style="background-image: url(images/icons/wordpress.svg);"></span>
-                  <span class="newest-products__cat-name">Plugin</span>
+                  <span class="newest-products__cat-name cat-name">Plugin</span>
                 </a>
               </div>
 
-              <div class="newest-products__item-text">
+              <div class="newest-products__item-text product-text">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
+                aliquet congue. Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
+                mattis, leo quam
+                aliquet congue.
                 Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
                 aliquet congue.
               </div>
@@ -391,52 +418,54 @@ favicon -->
 
             <div class="newest-products__item-specs">
               <div class="newest-products__specs-info">
-                <div class="newest-products__specs-price button-style">
+                <div class="newest-products__specs-price price-product button-style">
                   $20
                 </div>
-                <div class="newest-products__specs-likes">
+                <button class="newest-products__specs-likes specs-likes">
                   <span class="lnr lnr-heart"></span>
                   <span class="newest-products__number-likes">90</span>
-                </div>
+                </button>
               </div>
-              <div class="newest-products__specs-sales">
+              <button class="newest-products__specs-sales specs-sales">
                 <span class="newest-products__basket-icon lnr lnr-cart"></span>
                 <span class="newest-products__number-sales">246</span>
-              </div>
+              </button>
             </div>
-          </div>
+          </article>
 
-          <div class="newest-products__item box-styles box-styles mix category-psd-template" data-order="2">
-            <div class="newest-products__img-wrapper">
-              <img class="newest-products__item-img" src="images/n-products/newest-product-2.jpg" alt="newest-product-2">
-              <a class="newest-products__info-link button-style" href="#">
+          <article class="newest-products__item box-styles product-card box-styles mix category-psd-template"
+            data-order="2">
+            <div class="newest-products__img-wrapper info-mask">
+              <img class="product-img newest-products__item-img" src="images/n-products/newest-product-2.jpg"
+                alt="newest-product-2">
+              <a class="newest-products__link newest-products__link--info link-info button-style" href="#">
                 More Info
               </a>
-              <a class="newest-products__demo-link button-style" href="#">
+              <a class="newest-products__link newest-products__link--demo link-demo button-style" href="#">
                 Live Demo
               </a>
             </div>
-            <div class="newest-products__item-wrapper">
+            <div class="newest-products__item-wrapper product-info-wrap">
 
-              <div class="newest-products__item-title">
+              <div class="newest-products__item-title product-title">
                 Marketify Coffee Shop
               </div>
               <div class="newest-products__item-details">
 
-                <a class="newest-products__item-author item-author" href="#">
-                  <span class="newest-products__author-ava author-ava"
+                <a class="newest-products__item-author product-author" href="#">
+                  <span class="newest-products__author-ava product-author-ava"
                     style="background-image: url(images/wp-ava-1.jpg);"></span>
-                  <span class="newest-products__author-name author-name">EchoTheme</span>
+                  <span class="newest-products__author-name product-author-name">EchoTheme</span>
                 </a>
 
-                <a class="newest-products__item-cat item-cat" href="#">
+                <a class="newest-products__item-cat product-cat" href="#">
                   <span class="newest-products__cat-icon newest-products__cat-icon--psd"
                     style="background-image: url(images/icons/psd.svg);"></span>
-                  <span class="newest-products__cat-name">PSD</span>
+                  <span class="newest-products__cat-name cat-name">PSD</span>
                 </a>
               </div>
 
-              <div class="newest-products__item-text">
+              <div class="newest-products__item-text product-text">
                 Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
                 aliquet congue.
               </div>
@@ -444,52 +473,54 @@ favicon -->
 
             <div class="newest-products__item-specs">
               <div class="newest-products__specs-info">
-                <div class="newest-products__specs-price button-style">
+                <div class="newest-products__specs-price price-product button-style">
                   $18
                 </div>
-                <div class="newest-products__specs-likes">
+                <button class="newest-products__specs-likes specs-likes">
                   <span class="lnr lnr-heart"></span>
                   <span class="newest-products__number-likes">48</span>
-                </div>
+                </button>
               </div>
-              <div class="newest-products__specs-sales">
+              <button class="newest-products__specs-sales specs-sales">
                 <span class="newest-products__basket-icon lnr lnr-cart"></span>
                 <span class="newest-products__number-sales">50</span>
-              </div>
+              </button>
             </div>
-          </div>
+          </article>
 
-          <div class="newest-products__item box-styles box-styles mix category-html category-site-template"
+          <article
+            class="newest-products__item box-styles product-card box-styles mix category-html category-site-template"
             data-order="3">
-            <div class="newest-products__img-wrapper">
-              <img class="newest-products__item-img" src="images/n-products/newest-product-1.jpg" alt="newest-product-1">
-              <a class="newest-products__info-link button-style" href="#">
+            <div class="newest-products__img-wrapper info-mask">
+              <img class="product-img newest-products__item-img" src="images/n-products/newest-product-1.jpg"
+                alt="newest-product-1">
+              <a class="newest-products__link newest-products__link--info link-info button-style" href="#">
                 More Info
               </a>
-              <a class="newest-products__demo-link button-style" href="#">
+              <a class="newest-products__link newest-products__link--demo link-demo button-style" href="#">
                 Live Demo
               </a>
             </div>
-            <div class="newest-products__item-wrapper">
+            <div class="newest-products__item-wrapper product-info-wrap">
 
-              <div class="newest-products__item-title">
+              <div class="newest-products__item-title product-title">
                 Bryson - Portfolio Template
               </div>
               <div class="newest-products__item-details">
 
-                <a class="newest-products__item-author item-author" href="#">
-                  <span class="newest-products__author-ava author-ava"
+                <a class="newest-products__item-author product-author" href="#">
+                  <span class="newest-products__author-ava product-author-ava"
                     style="background-image: url(images/wp-ava-1.jpg);"></span>
-                  <span class="newest-products__author-name author-name">Artcorner</span>
+                  <span class="newest-products__author-name product-author-name">Artcorner</span>
                 </a>
 
-                <a class="newest-products__item-cat item-cat" href="#">
+                <a class="newest-products__item-cat product-cat" href="#">
                   <span class="newest-products__cat-icon" style="background-image: url(images/icons/html.png);"></span>
-                  <span class="newest-products__cat-name">HTML</span>
+                  <span class="newest-products__cat-name cat-name">HTML</span>
                 </a>
               </div>
 
-              <div class="newest-products__item-text">
+              <div class="newest-products__item-text product-text">
                 Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
                 aliquet congue.
               </div>
@@ -497,54 +528,56 @@ favicon -->
 
             <div class="newest-products__item-specs">
               <div class="newest-products__specs-info">
-                <div class="newest-products__specs-price button-style">
+                <div class="newest-products__specs-price price-product button-style">
                   $10
                 </div>
-                <div class="newest-products__specs-likes">
+                <button class="newest-products__specs-likes specs-likes">
                   <span class="lnr lnr-heart"></span>
                   <span class="newest-products__number-likes">56</span>
-                </div>
+                </button>
                 <div class="newest-products__specs-rating"></div>
               </div>
-              <div class="newest-products__specs-sales">
+              <button class="newest-products__specs-sales specs-sales">
                 <span class="newest-products__basket-icon lnr lnr-cart"></span>
                 <span class="newest-products__number-sales">68</span>
-              </div>
+              </button>
             </div>
-          </div>
+          </article>
 
-          <div class="newest-products__item box-styles box-styles mix category-plugins category-wordpress"
+          <article
+            class="newest-products__item box-styles product-card box-styles mix category-plugins category-wordpress"
             data-order="4">
-            <div class="newest-products__img-wrapper">
-              <img class="newest-products__item-img" src="images/n-products/newest-product-1.jpg" alt="newest-product-1">
-              <a class="newest-products__info-link button-style" href="#">
+            <div class="newest-products__img-wrapper info-mask">
+              <img class="product-img newest-products__item-img" src="images/n-products/newest-product-1.jpg"
+                alt="newest-product-1">
+              <a class="newest-products__link newest-products__link--info link-info button-style" href="#">
                 More Info
               </a>
-              <a class="newest-products__demo-link button-style" href="#">
+              <a class="newest-products__link newest-products__link--demo link-demo button-style" href="#">
                 Live Demo
               </a>
             </div>
-            <div class="newest-products__item-wrapper">
+            <div class="newest-products__item-wrapper product-info-wrap">
 
-              <div class="newest-products__item-title">
+              <div class="newest-products__item-title product-title">
                 E-commerce Shopping Cart
               </div>
               <div class="newest-products__item-details">
 
-                <a class="newest-products__item-author item-author" href="#">
-                  <span class="newest-products__author-ava author-ava"
+                <a class="newest-products__item-author product-author" href="#">
+                  <span class="newest-products__author-ava product-author-ava"
                     style="background-image: url(images/wp-ava-1.jpg);"></span>
-                  <span class="newest-products__author-name author-name">Design-Hub</span>
+                  <span class="newest-products__author-name product-author-name">Design-Hub</span>
                 </a>
 
-                <a class="newest-products__item-cat item-cat" href="#">
+                <a class="newest-products__item-cat product-cat" href="#">
                   <span class="newest-products__cat-icon"
                     style="background-image: url(images/icons/wordpress.svg);"></span>
-                  <span class="newest-products__cat-name">Plugin</span>
+                  <span class="newest-products__cat-name cat-name">Plugin</span>
                 </a>
               </div>
 
-              <div class="newest-products__item-text">
+              <div class="newest-products__item-text product-text">
                 Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
                 aliquet congue.
               </div>
@@ -552,53 +585,54 @@ favicon -->
 
             <div class="newest-products__item-specs">
               <div class="newest-products__specs-info">
-                <div class="newest-products__specs-price button-style">
+                <div class="newest-products__specs-price price-product button-style">
                   $10 - 50
                 </div>
-                <div class="newest-products__specs-likes">
+                <button class="newest-products__specs-likes specs-likes">
                   <span class="lnr lnr-heart"></span>
                   <span class="newest-products__number-likes">90</span>
-                </div>
+                </button>
                 <div class="newest-products__specs-rating"></div>
               </div>
-              <div class="newest-products__specs-sales">
+              <button class="newest-products__specs-sales specs-sales">
                 <span class="newest-products__basket-icon lnr lnr-cart"></span>
                 <span class="newest-products__number-sales">45</span>
-              </div>
+              </button>
             </div>
-          </div>
+          </article>
 
-          <div class="newest-products__item box-styles box-styles mix category-psd-template" data-order="5">
-            <div class="newest-products__img-wrapper">
-              <img class="newest-products__item-img" src="images/n-products/newest-product-2.jpg" alt="2">
-              <a class="newest-products__info-link button-style" href="#">
+          <article class="newest-products__item box-styles product-card box-styles mix category-psd-template"
+            data-order="5">
+            <div class="newest-products__img-wrapper info-mask">
+              <img class="product-img newest-products__item-img" src="images/n-products/newest-product-2.jpg" alt="2">
+              <a class="newest-products__link newest-products__link--info link-info button-style" href="#">
                 More Info
               </a>
-              <a class="newest-products__demo-link button-style" href="#">
+              <a class="newest-products__link newest-products__link--demo link-demo button-style" href="#">
                 Live Demo
               </a>
             </div>
-            <div class="newest-products__item-wrapper">
+            <div class="newest-products__item-wrapper product-info-wrap">
 
-              <div class="newest-products__item-title">
+              <div class="newest-products__item-title product-title">
                 Marketify Coffee Shop
               </div>
               <div class="newest-products__item-details">
 
-                <a class="newest-products__item-author item-author" href="#">
-                  <span class="newest-products__author-ava author-ava"
+                <a class="newest-products__item-author product-author" href="#">
+                  <span class="newest-products__author-ava product-author-ava"
                     style="background-image: url(images/wp-ava-1.jpg);"></span>
-                  <span class="newest-products__author-name author-name">AazzTech</span>
+                  <span class="newest-products__author-name product-author-name">AazzTech</span>
                 </a>
 
-                <a class="newest-products__item-cat item-cat" href="#">
+                <a class="newest-products__item-cat product-cat" href="#">
                   <span class="newest-products__cat-icon newest-products__cat-icon--psd"
                     style="background-image: url(images/icons/psd.svg);"></span>
-                  <span class="newest-products__cat-name">PSD</span>
+                  <span class="newest-products__cat-name cat-name">PSD</span>
                 </a>
               </div>
 
-              <div class="newest-products__item-text">
+              <div class="newest-products__item-text product-text">
                 Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
                 aliquet congue.
               </div>
@@ -606,52 +640,53 @@ favicon -->
 
             <div class="newest-products__item-specs">
               <div class="newest-products__specs-info">
-                <div class="newest-products__specs-price button-style">
+                <div class="newest-products__specs-price price-product button-style">
                   $10 - 50
                 </div>
-                <div class="newest-products__specs-likes">
+                <button class="newest-products__specs-likes specs-likes">
                   <span class="lnr lnr-heart"></span>
                   <span class="newest-products__number-likes">48</span>
-                </div>
+                </button>
               </div>
-              <div class="newest-products__specs-sales">
+              <button class="newest-products__specs-sales specs-sales">
                 <span class="newest-products__basket-icon lnr lnr-cart"></span>
                 <span class="newest-products__number-sales">50</span>
-              </div>
+              </button>
             </div>
-          </div>
+          </article>
 
-          <div class="newest-products__item box-styles box-styles mix category-html category-site-template"
+          <article
+            class="newest-products__item box-styles product-card box-styles mix category-html category-site-template"
             data-order="6">
-            <div class="newest-products__img-wrapper">
-              <img class="newest-products__item-img" src="images/n-products/newest-product-1.jpg" alt="1">
-              <a class="newest-products__info-link button-style" href="#">
+            <div class="newest-products__img-wrapper info-mask">
+              <img class="product-img newest-products__item-img" src="images/n-products/newest-product-1.jpg" alt="1">
+              <a class="newest-products__link newest-products__link--info link-info button-style" href="#">
                 More Info
               </a>
-              <a class="newest-products__demo-link button-style" href="#">
+              <a class="newest-products__link newest-products__link--demo link-demo button-style" href="#">
                 Live Demo
               </a>
             </div>
-            <div class="newest-products__item-wrapper">
+            <div class="newest-products__item-wrapper product-info-wrap">
 
-              <div class="newest-products__item-title">
+              <div class="newest-products__item-title product-title">
                 Bryson - Portfolio Template
               </div>
               <div class="newest-products__item-details">
 
-                <a class="newest-products__item-author item-author" href="#">
-                  <span class="newest-products__author-ava author-ava"
+                <a class="newest-products__item-author product-author" href="#">
+                  <span class="newest-products__author-ava product-author-ava"
                     style="background-image: url(images/wp-ava-1.jpg);"></span>
-                  <span class="newest-products__author-name author-name">Coder-Lab</span>
+                  <span class="newest-products__author-name product-author-name">Coder-Lab</span>
                 </a>
 
-                <a class="newest-products__item-cat item-cat" href="#">
+                <a class="newest-products__item-cat product-cat" href="#">
                   <span class="newest-products__cat-icon" style="background-image: url(images/icons/html.png);"></span>
-                  <span class="newest-products__cat-name">HTML</span>
+                  <span class="newest-products__cat-name cat-name">HTML</span>
                 </a>
               </div>
 
-              <div class="newest-products__item-text">
+              <div class="newest-products__item-text product-text">
                 Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
                 aliquet congue.
               </div>
@@ -659,21 +694,21 @@ favicon -->
 
             <div class="newest-products__item-specs">
               <div class="newest-products__specs-info">
-                <div class="newest-products__specs-price button-style">
+                <div class="newest-products__specs-price price-product button-style">
                   $10
                 </div>
-                <div class="newest-products__specs-likes">
+                <button class="newest-products__specs-likes specs-likes">
                   <span class="lnr lnr-heart"></span>
                   <span class="newest-products__number-likes">56</span>
-                </div>
+                </button>
                 <div class="newest-products__specs-rating"></div>
               </div>
-              <div class="newest-products__specs-sales">
+              <button class="newest-products__specs-sales specs-sales">
                 <span class="newest-products__basket-icon lnr lnr-cart"></span>
                 <span class="newest-products__number-sales">68</span>
-              </div>
+              </button>
             </div>
-          </div>
+          </article>
 
         </div>
 
@@ -684,18 +719,894 @@ favicon -->
       </div>
     </section>
 
+    <section class="feed-products">
+      <div class="container">
+        <div class="feed-products__title-box title-box">
+          <div class="feed-products__title title">
+            Your Followers Feed
+          </div>
 
+          <div class="feed-products__arrows arrows">
+            <span class="feed-products__arrow-prev arrow-slider-prev lnr lnr-chevron-left feed-button-prev"></span>
+            <span class="feed-products__arrow-next arrow-slider-next lnr lnr-chevron-right feed-button-next"></span>
+          </div>
+
+        </div>
+
+        <div class="feed-products__slider feed-container">
+          <div class="feed-products__items-wrapper feed-wrapper">
+
+            <article class="feed-products__item box-styles product-card feed-slide">
+              <div class="feed-products__img-wrapper info-mask">
+                <img class="feed-products__item-img product-img" src="images/n-products/feed-product-1.jpg"
+                  alt="feed-product-1">
+                <a class=" feed-products__link feed-products__link--info link-info button-style" href="#">
+                  More Info
+                </a>
+                <a class=" feed-products__link feed-products__link--demo link-demo button-style" href="#">
+                  Live Demo
+                </a>
+              </div>
+              <div class="feed-products__item-wrapper product-info-wrap product-info-wrap">
+
+                <div class="feed-products__item-title product-title">
+                  E-commerce Shopping Cart
+                </div>
+                <div class="feed-products__item-details">
+
+                  <a class="feed-products__item-author product-author" href="#">
+                    <span class="feed-products__author-ava product-author-ava"
+                      style="background-image: url(images/wp-ava-1.jpg);"></span>
+                    <span class="feed-products__author-name product-author-name">Theme-Valley</span>
+                  </a>
+
+                  <a class="feed-products__item-cat product-cat" href="#">
+                    <span class="feed-products__cat-icon cat-icon"
+                      style="background-image: url(images/icons/wordpress.svg);"></span>
+                    <span class="feed-products__cat-name cat-name">Plugin</span>
+                  </a>
+                </div>
+
+                <div class="feed-products__item-text product-text">
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
+                  aliquet congue.
+                </div>
+              </div>
+
+              <div class="feed-products__item-specs">
+                <div class="feed-products__specs-info">
+                  <div class="feed-products__specs-price price-product button-style">
+                    $20
+                  </div>
+                  <button class="feed-products__specs-likes specs-likes">
+                    <span class="lnr lnr-heart"></span>
+                    <span class="feed-products__number-likes">90</span>
+                  </button>
+                  <div class="feed-products__specs-rating"></div>
+                </div>
+                <button class="feed-products__specs-sales specs-sales">
+                  <span class="feed-products__basket-icon lnr lnr-cart"></span>
+                  <span class="feed-products__number-sales">246</span>
+                </button>
+              </div>
+            </article>
+
+            <article class="feed-products__item box-styles product-card feed-slide">
+              <div class="feed-products__img-wrapper info-mask">
+                <img class="feed-products__item-img product-img" src="images/n-products/feed-product-2.jpg"
+                  alt="feed-product-2">
+                <a class=" feed-products__link feed-products__link--info link-info feed-products__link--info button-style"
+                  href="#">
+                  More Info
+                </a>
+                <a class=" feed-products__link feed-products__link--demo link-demo button-style" href="#">
+                  Live Demo
+                </a>
+              </div>
+              <div class="feed-products__item-wrapper product-info-wrap">
+
+                <div class="feed-products__item-title product-title">
+                  Marketify Coffee Shop
+                </div>
+                <div class="feed-products__item-details">
+
+                  <a class="feed-products__item-author product-author" href="#">
+                    <span class="feed-products__author-ava product-author-ava"
+                      style="background-image: url(images/wp-ava-1.jpg);"></span>
+                    <span class="feed-products__author-name product-author-name">EchoTheme</span>
+                  </a>
+
+                  <a class="feed-products__item-cat product-cat" href="#">
+                    <span class="feed-products__cat-icon feed-products__cat-icon--psd cat-icon"
+                      style="background-image: url(images/icons/psd.svg);"></span>
+                    <span class="feed-products__cat-name--psd cat-name">PSD</span>
+                  </a>
+                </div>
+
+                <div class="feed-products__item-text product-text">
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
+                  aliquet congue.
+                </div>
+              </div>
+
+              <div class="feed-products__item-specs">
+                <div class="feed-products__specs-info">
+                  <div class="feed-products__specs-price price-product button-style">
+                    $18
+                  </div>
+                  <button class="feed-products__specs-likes specs-likes">
+                    <span class="lnr lnr-heart"></span>
+                    <span class="feed-products__number-likes">48</span>
+                  </button>
+                </div>
+                <button class="feed-products__specs-sales specs-sales">
+                  <span class="feed-products__basket-icon lnr lnr-cart"></span>
+                  <span class="feed-products__number-sales">50</span>
+                </button>
+              </div>
+            </article>
+
+            <article class="feed-products__item box-styles product-card feed-slide">
+              <div class="feed-products__img-wrapper info-mask">
+                <img class="feed-products__item-img product-img" src="images/n-products/feed-product-1.jpg"
+                  alt="feed-product-1">
+                <a class=" feed-products__link feed-products__link--info link-info button-style" href="#">
+                  More Info
+                </a>
+                <a class=" feed-products__link feed-products__link--demo link-demo button-style" href="#">
+                  Live Demo
+                </a>
+              </div>
+              <div class="feed-products__item-wrapper product-info-wrap product-info-wrap">
+
+                <div class="feed-products__item-title product-title">
+                  Bryson - Portfolio Template
+                </div>
+                <div class="feed-products__item-details">
+
+                  <a class="feed-products__item-author product-author" href="#">
+                    <span class="feed-products__author-ava product-author-ava"
+                      style="background-image: url(images/wp-ava-1.jpg);"></span>
+                    <span class="feed-products__author-name product-author-name">Artcorner</span>
+                  </a>
+
+                  <a class="feed-products__item-cat product-cat" href="#">
+                    <span class="feed-products__cat-icon cat-icon"
+                      style="background-image: url(images/icons/html.png);"></span>
+                    <span class="feed-products__cat-name cat-name">HTML</span>
+                  </a>
+                </div>
+
+                <div class="feed-products__item-text product-text">
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
+                  aliquet congue.
+                </div>
+              </div>
+
+              <div class="feed-products__item-specs">
+                <div class="feed-products__specs-info">
+                  <div class="feed-products__specs-price price-product button-style">
+                    $10
+                  </div>
+                  <button class="feed-products__specs-likes specs-likes">
+                    <span class="lnr lnr-heart"></span>
+                    <span class="feed-products__number-likes">56</span>
+                  </button>
+                  <div class="feed-products__specs-rating"></div>
+                </div>
+                <button class="feed-products__specs-sales specs-sales">
+                  <span class="feed-products__basket-icon lnr lnr-cart"></span>
+                  <span class="feed-products__number-sales">68</span>
+                </button>
+              </div>
+            </article>
+
+            <article class="feed-products__item box-styles product-card feed-slide">
+              <div class="feed-products__img-wrapper info-mask">
+                <img class="feed-products__item-img product-img" src="images/n-products/feed-product-2.jpg"
+                  alt="feed-product-2">
+                <a class=" feed-products__link feed-products__link--info link-info feed-products__link--info button-style"
+                  href="#">
+                  More Info
+                </a>
+                <a class=" feed-products__link feed-products__link--demo link-demo button-style" href="#">
+                  Live Demo
+                </a>
+              </div>
+              <div class="feed-products__item-wrapper product-info-wrap">
+
+                <div class="feed-products__item-title product-title">
+                  Marketify Coffee Shop
+                </div>
+                <div class="feed-products__item-details">
+
+                  <a class="feed-products__item-author product-author" href="#">
+                    <span class="feed-products__author-ava product-author-ava"
+                      style="background-image: url(images/wp-ava-1.jpg);"></span>
+                    <span class="feed-products__author-name product-author-name">EchoTheme</span>
+                  </a>
+
+                  <a class="feed-products__item-cat product-cat" href="#">
+                    <span class="feed-products__cat-icon feed-products__cat-icon--psd cat-icon"
+                      style="background-image: url(images/icons/psd.svg);"></span>
+                    <span class="feed-products__cat-name cat-name">PSD</span>
+                  </a>
+                </div>
+
+                <div class="feed-products__item-text product-text">
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
+                  aliquet congue.
+                </div>
+              </div>
+
+              <div class="feed-products__item-specs">
+                <div class="feed-products__specs-info">
+                  <div class="feed-products__specs-price price-product button-style">
+                    $18
+                  </div>
+                  <button class="feed-products__specs-likes specs-likes">
+                    <span class="lnr lnr-heart"></span>
+                    <span class="feed-products__number-likes">48</span>
+                  </button>
+                </div>
+                <button class="feed-products__specs-sales specs-sales">
+                  <span class="feed-products__basket-icon lnr lnr-cart"></span>
+                  <span class="feed-products__number-sales">50</span>
+                </button>
+              </div>
+            </article>
+
+            <article class="feed-products__item box-styles product-card feed-slide">
+              <div class="feed-products__img-wrapper info-mask">
+                <img class="feed-products__item-img product-img" src="images/n-products/feed-product-1.jpg"
+                  alt="feed-product-1">
+                <a class=" feed-products__link feed-products__link--info link-info button-style" href="#">
+                  More Info
+                </a>
+                <a class=" feed-products__link feed-products__link--demo link-demo button-style" href="#">
+                  Live Demo
+                </a>
+              </div>
+              <div class="feed-products__item-wrapper product-info-wrap">
+
+                <div class="feed-products__item-title product-title">
+                  Bryson - Portfolio Template
+                </div>
+                <div class="feed-products__item-details">
+
+                  <a class="feed-products__item-author product-author" href="#">
+                    <span class="feed-products__author-ava product-author-ava"
+                      style="background-image: url(images/wp-ava-1.jpg);"></span>
+                    <span class="feed-products__author-name product-author-name">Artcorner</span>
+                  </a>
+
+                  <a class="feed-products__item-cat product-cat" href="#">
+                    <span class="feed-products__cat-icon cat-icon"
+                      style="background-image: url(images/icons/html.png);"></span>
+                    <span class="feed-products__cat-name cat-name">HTML</span>
+                  </a>
+                </div>
+
+                <div class="feed-products__item-text product-text">
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
+                  aliquet congue.
+                </div>
+              </div>
+
+              <div class="feed-products__item-specs">
+                <div class="feed-products__specs-info">
+                  <div class="feed-products__specs-price price-product button-style">
+                    $10
+                  </div>
+                  <button class="feed-products__specs-likes specs-likes">
+                    <span class="lnr lnr-heart"></span>
+                    <span class="feed-products__number-likes">56</span>
+                  </button>
+                  <div class="feed-products__specs-rating"></div>
+                </div>
+                <button class="feed-products__specs-sales specs-sales">
+                  <span class="feed-products__basket-icon lnr lnr-cart"></span>
+                  <span class="feed-products__number-sales">68</span>
+                </button>
+              </div>
+            </article>
+
+            <article class="feed-products__item box-styles product-card feed-slide">
+              <div class="feed-products__img-wrapper info-mask">
+                <img class="feed-products__item-img product-img" src="images/n-products/feed-product-2.jpg"
+                  alt="feed-product-2">
+                <a class=" feed-products__link feed-products__link--info link-info feed-products__link--info button-style"
+                  href="#">
+                  More Info
+                </a>
+                <a class=" feed-products__link feed-products__link--demo link-demo button-style" href="#">
+                  Live Demo
+                </a>
+              </div>
+              <div class="feed-products__item-wrapper product-info-wrap">
+
+                <div class="feed-products__item-title product-title">
+                  Marketify Coffee Shop
+                </div>
+                <div class="feed-products__item-details">
+
+                  <a class="feed-products__item-author product-author" href="#">
+                    <span class="feed-products__author-ava product-author-ava"
+                      style="background-image: url(images/wp-ava-1.jpg);"></span>
+                    <span class="feed-products__author-name product-author-name">EchoTheme</span>
+                  </a>
+
+                  <a class="feed-products__item-cat product-cat" href="#">
+                    <span class="feed-products__cat-icon feed-products__cat-icon--psd cat-icon"
+                      style="background-image: url(images/icons/psd.svg);"></span>
+                    <span class="feed-products__cat-name cat-name">PSD</span>
+                  </a>
+                </div>
+
+                <div class="feed-products__item-text product-text">
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
+                  aliquet congue.
+                </div>
+              </div>
+
+              <div class="feed-products__item-specs">
+                <div class="feed-products__specs-info">
+                  <div class="feed-products__specs-price price-product button-style">
+                    $18
+                  </div>
+                  <button class="feed-products__specs-likes specs-likes">
+                    <span class="lnr lnr-heart"></span>
+                    <span class="feed-products__number-likes">48</span>
+                  </button>
+                </div>
+                <button class="feed-products__specs-sales specs-sales">
+                  <span class="feed-products__basket-icon lnr lnr-cart"></span>
+                  <span class="feed-products__number-sales">50</span>
+                </button>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="statistic">
+      <div class="container">
+        <div class="statistic__inner">
+
+          <article class="statistic__item">
+            <div class="statistic__img">
+              <span class="lnr lnr-briefcase"></span>
+            </div>
+            <div class="statistic__number statistic__number--items-sale">
+              38,436
+            </div>
+            <div class="statistic__title">
+              items for sale
+            </div>
+          </article>
+
+          <article class="statistic__item statistic__item--total-sales">
+            <div class="statistic__img">
+              <span class="lnr lnr-cloud-download"></span>
+            </div>
+            <div class="statistic__number statistic__number--total-sales">
+              3,736
+            </div>
+            <div class="statistic__title">
+              total sales
+            </div>
+          </article>
+
+          <article class="statistic__item">
+            <div class="statistic__img">
+              <span class="lnr lnr-smile"></span>
+            </div>
+            <div class="statistic__number statistic__number--customers">
+              2,736
+            </div>
+            <div class="statistic__title">
+              happy customers
+            </div>
+          </article>
+
+          <article class="statistic__item">
+            <div class="statistic__img">
+              <span class="lnr lnr-users"></span>
+            </div>
+            <div class="statistic__number statistic__number--members">
+              25,736
+            </div>
+            <div class="statistic__title">
+              members
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="choose">
+      <div class="container">
+        <div class="choose__title">
+          Why Choose <span class="choose__title-name">MartPlace</span>
+        </div>
+        <div class="choose__text">
+          Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats. Lid est
+          laborum dolo rumes fugats untras.
+        </div>
+        <div class="choose__items-box">
+
+          <article class="choose__item">
+            <div class="choose__item-number">
+              01
+            </div>
+            <div class="choose__item-img">
+              <span class="lnr lnr-license"></span>
+            </div>
+            <div class="choose__item-title">
+              One Time Payment
+            </div>
+            <div class="choose__item-text product-text">
+              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+              the mattis, leo quam aliquet diam
+              congue is laoreet elit metus.
+            </div>
+          </article>
+
+          <article class="choose__item">
+            <div class="choose__item-number">
+              02
+            </div>
+            <div class="choose__item-img">
+              <span class="lnr lnr-magic-wand"></span>
+            </div>
+            <div class="choose__item-title">
+              Quality Products
+            </div>
+            <div class="choose__item-text product-text">
+              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+              the mattis, leo quam aliquet diam
+              congue is laoreet elit metus.
+            </div>
+          </article>
+
+          <article class="choose__item">
+            <div class="choose__item-number">
+              03
+            </div>
+            <div class="choose__item-img">
+              <span class="lnr lnr-lock"></span>
+            </div>
+            <div class="choose__item-title">
+              100% Secure Payment
+            </div>
+            <div class="choose__item-text product-text">
+              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+              the mattis, leo quam aliquet diam
+              congue is laoreet elit metus.
+            </div>
+          </article>
+
+          <article class="choose__item">
+            <div class="choose__item-number">
+              04
+            </div>
+            <div class="choose__item-img">
+              <span class="lnr lnr-chart-bars"></span>
+            </div>
+            <div class="choose__item-title">
+              Well Organized Code
+            </div>
+            <div class="choose__item-text product-text">
+              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+              the mattis, leo quam aliquet diam
+              congue is laoreet elit metus.
+            </div>
+          </article>
+
+          <article class="choose__item">
+            <div class="choose__item-number">
+              05
+            </div>
+            <div class="choose__item-img">
+              <span class="lnr lnr-leaf"></span>
+            </div>
+            <div class="choose__item-title">
+              Life Time Free Update
+            </div>
+            <div class="choose__item-text product-text">
+              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+              the mattis, leo quam aliquet diam
+              congue is laoreet elit metus.
+            </div>
+          </article>
+
+          <article class="choose__item">
+            <div class="choose__item-number">
+              06
+            </div>
+            <div class="choose__item-img">
+              <span class="lnr lnr-phone"></span>
+            </div>
+            <div class="choose__item-title">
+              Fast and Friendly Support
+            </div>
+            <div class="choose__item-text product-text">
+              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+              the mattis, leo quam aliquet diam
+              congue is laoreet elit metus.
+            </div>
+          </article>
+
+
+
+        </div>
+      </div>
+    </section>
+
+    <section class="actions">
+
+      <div class="actions__item actions__item--sell" style="background-image: url(images/action-bg-sell.jpg);">
+        <div class="actions__item-img" style="background-image: url(images/icons/act-sell.svg);"></div>
+        <div class="actions__item-title">
+          Sell Your Products
+        </div>
+        <div class="actions__item-text">
+          Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+          the mattis, leo quam aliquet diamcongue is laoreet elit metus.
+        </div>
+        <a class="actions__item-link button-style" href="#">
+          Become an Author
+        </a>
+      </div>
+
+      <div class="actions__item actions__item--start" style="background-image: url(images/action-bg-start.jpg.png);">
+        <div class="actions__item-img actions__item-img--start"
+          style="background-image: url(images/icons/act-start.svg);"></div>
+        <div class="actions__item-title">
+          Start Shopping Today
+        </div>
+        <div class="actions__item-text">
+          Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+          the mattis, leo quam aliquet diamcongue is laoreet elit metus.
+        </div>
+        <a class="actions__item-link actions__item-link--start button-style" href="#">
+          Start Shopping
+        </a>
+      </div>
+
+    </section>
+
+    <section class="feedback">
+      <div class="container">
+        <div class="feedback__title title-center">
+          Our Clients <span class="feedback__title--blue">Feedback</span>
+        </div>
+        <div class="feedback__text text-center">
+          Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats. Lid est
+          laborum dolo rumes fugats untras.
+        </div>
+
+        <div class="feedback__arrows">
+          <span class="feedback__arrow-prev lnr lnr-chevron-left feedback-button-prev"></span>
+          <span class="feedback__arrow-next lnr lnr-chevron-right feedback-button-next"></span>
+        </div>
+
+        <div class="feedback__slider">
+          <div class="feedback__items box-styles">
+            <div class="feedback__item box-styles">
+              <span class="lnr lnr-bubble"></span>
+
+              <a class="feedback__profile-link profile-link" href="#">
+                <div class="feedback__profile-avatar profile-avatar"
+                  style="background-image: url(images/avatar-feedback.jpg);"></div>
+                <div class="feedback__profile-info profile-info">
+                  <div class="feedback__profile-name profile-name">
+                    Taofiqul Hakim
+                  </div>
+                  <div class="feedback__profile-specs profile-specs">
+                    Product Designer
+                  </div>
+                </div>
+              </a>
+
+              <div class="feedback__item-text product-text">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
+                aliquet diam congue is the laoreet elit metus. Nunc placerat mi is id nisi interdum is mollis. Praesent
+                the pharetra, justo ut scelerisque.
+              </div>
+
+            </div>
+
+            <div class="feedback__item box-styles">
+              <span class="lnr lnr-bubble"></span>
+
+              <a class="feedback__profile-link profile-link" href="#">
+                <div class="feedback__profile-avatar profile-avatar"
+                  style="background-image: url(images/avatar-feedback-2.jpg);"></div>
+                <div class="feedback__profile-info profile-info">
+                  <div class="feedback__profile-name profile-name">
+                    Saifullah Al Murtafee
+                  </div>
+                  <div class="feedback__profile-specs profile-specs">
+                    Product Designer
+                  </div>
+                </div>
+              </a>
+
+              <div class="feedback__item-text product-text">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
+                aliquet diam congue is the laoreet elit metus. Nunc placerat is mi id nisi interdum is mollis. Praesent
+                the pharetra, justo ut scelerisque.
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <button class="feedback__link button-style" href="#">
+          View All Reviews
+        </button>
+      </div>
+    </section>
+
+    <section class="latest-news">
+      <div class="container">
+        <div class="latest-news__title title-center">
+          Latest <span class="feedback__title--blue">News</span>
+        </div>
+        <div class="latest-news__text text-center">
+          Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats. Lid est
+          laborum dolo rumes fugats untras.
+        </div>
+        <div class="latest-news__items">
+
+          <article class="latest-news__item product-card box-styles">
+            <div class="latest-news__img-wrapper info-mask">
+              <img class="latest-news__item-img product-img" src="images/latest-news-2.jpg" alt="latest-news">
+              <a class="latest-news__link latest-news__link--info link-info button-style" href="#">
+                More Info
+              </a>
+              <a class="latest-news__link latest-news__link--demo link-demo button-style" href="#">
+                Live Demo
+              </a>
+            </div>
+            <div class="latest-news__item-wrapper product-info-wrap">
+
+              <div class="latest-news__item-title product-title">
+                Web Design Trends in 2017
+              </div>
+              <div class="latest-news__item-text product-text">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                the mattis, leo quam aliquet congue.
+              </div>
+            </div>
+
+            <div class="latest-news__item-specs">
+              <time class="latest-news__date" datetime="2017-02-24">
+                <span class="lnr lnr-clock"></span>24 Feb 2017
+              </time>
+              <div class="latest-news__info">
+                <a class="latest-news__info-comments" href="#">
+                  <span class="lnr lnr-bubble"></span> 45
+                </a>
+                <a class="latest-news__info-visits" href="#">
+                  <span class="lnr lnr-eye"></span> 345
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="latest-news__item product-card box-styles">
+            <div class="latest-news__img-wrapper info-mask">
+              <img class="latest-news__item-img product-img" src="images/latest-news.jpg" alt="latest-news">
+              <a class="latest-news__link latest-news__link--info link-info button-style" href="#">
+                More Info
+              </a>
+              <a class="latest-news__link latest-news__link--demo link-demo button-style" href="#">
+                Live Demo
+              </a>
+            </div>
+            <div class="latest-news__item-wrapper product-info-wrap">
+
+              <div class="latest-news__item-title product-title">
+                The best advices to start your
+                own project
+              </div>
+              <div class="latest-news__item-text product-text">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                the mattis, leo quam aliquet congue.
+              </div>
+            </div>
+
+            <div class="latest-news__item-specs">
+              <time class="latest-news__date" datetime="2017-03-15">
+                <span class="lnr lnr-clock"></span>15 Mar 2017
+              </time>
+              <div class="latest-news__info">
+                <a class="latest-news__info-comments" href="#">
+                  <span class="lnr lnr-bubble"></span> 45
+                </a>
+                <a class="latest-news__info-visits" href="#">
+                  <span class="lnr lnr-eye"></span> 345
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="latest-news__item product-card box-styles">
+            <div class="latest-news__img-wrapper info-mask">
+              <img class="latest-news__item-img product-img" src="images/latest-news-3.jpg" alt="latest-news">
+              <a class="latest-news__link latest-news__link--info link-info button-style" href="#">
+                More Info
+              </a>
+              <a class="latest-news__link latest-news__link--demo link-demo button-style" href="#">
+                Live Demo
+              </a>
+            </div>
+            <div class="latest-news__item-wrapper product-info-wrap">
+
+              <div class="latest-news__item-title product-title">
+                Best Related Post Plugin
+              </div>
+              <div class="latest-news__item-text product-text">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                the mattis, leo quam aliquet congue.
+              </div>
+            </div>
+
+            <div class="latest-news__item-specs">
+              <time class="latest-news__date" datetime="2016-12-20">
+                <span class="lnr lnr-clock"></span>20 Dec 2016
+              </time>
+              <div class="latest-news__info">
+                <a class="latest-news__info-comments" href="#">
+                  <span class="lnr lnr-bubble"></span> 45
+                </a>
+                <a class="latest-news__info-visits" href="#">
+                  <span class="lnr lnr-eye"></span> 345
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="service">
+      <div class="container">
+        <div class="service__inner">
+
+          <article class="service__item service__item--guarantee">
+            <div class="service__item-img" style="background-image: url(images/icons/service-guarantee.png);"></div>
+            <div class="service__item-title">
+              30 Days Money Back <span class="service__item-title--guarantee">Guarantee</span>
+            </div>
+          </article>
+
+          <article class="service__item service__item--support">
+            <div class="service__item-img" style="background-image: url(images/icons/service-support.png);"></div>
+            <div class="service__item-title">
+              Fast and Friendly <span class="service__item-title--support">Support</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="join">
+      <div class="join__inner">
+        <div class="join__title title-center">
+          Ready to Join Our Marketplace!
+        </div>
+        <div class="join__text text-center">
+          Over 25,000 designers and developers trust the MartPlace.
+        </div>
+        <a class="join__link button-style" href="#">
+          Join Us Today
+        </a>
+      </div>
+    </section>
 
   </main>
 
+  <div class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__info">
+          <a class="footer__logo-link" href="#">logo
+            <img class="footer__logo-img" src="images/logo-footer.png" alt="logo">
+          </a>
+          <div class="footer__info-text">
+            Nunc placerat mi id nisi interdum they mollis. Praesent pharetra, justo ut scel erisque the mattis, leo
+            quam.
+          </div>
+          <div class="footer__phone">
+            <span class="lnr lnr-phone-handset"></span><a href="tel:+67898752235" class="footer__info-link">
+              Phone: +6789-875-2235
+            </a>
+          </div>
+          <div class="footer__mail">
+            <span class="lnr lnr-envelope"></span><a href="mailto:support@aazztech.com" class="footer__info-link">
+              support@aazztech.com
+            </a>
+          </div>
+          <div class="footer__adress">
+            <span class="lnr lnr-map-marker"></span><a href="#" class="footer__info-link">
+              202 New Hampshire Avenue
+              Northwest #100, New York-2573
+            </a>
+          </div>
+        </div>
+        <nav class="footer__company">
+          <div class="footer__title">
+            Our Company
+          </div>
+          <ul class="footer__list">
+            <li class="footer__list-item"><a class="footer__link" href="#">About Us</a></li>
+            <li class="footer__list-item"><a class="footer__link" href="#">How It Work</a></li>
+            <li class="footer__list-item"><a class="footer__link" href="#">Affiliates</a></li>
+            <li class="footer__list-item"><a class="footer__link" href="#">Testimonials</a></li>
+            <li class="footer__list-item"><a class="footer__link" href="#">Contact Us</a></li>
+            <li class="footer__list-item"><a class="footer__link" href="#">Copyright Notice</a></li>
+            <li class="footer__list-item"><a class="footer__link" href="#">Blog</a></li>
+          </ul>
+        </nav>
 
+        <nav class="footer__support">
+          <div class="footer__title">Help Support</div>
+          <ul class="footer__list">
+            <li class="footer__list-item"><a class="footer__link" href="#">Support Forum</a></li>
+            <li class="footer__list-item"><a class="footer__link" href="#">Terms & Conditions</a></li>
+            <li class="footer__list-item"><a class="footer__link" href="#">Support Policy</a></li>
+            <li class="footer__list-item"><a class="footer__link" href="#">Refund Policy</a></li>
+            <li class="footer__list-item"><a class="footer__link" href="#">FAQs</a></li>
+            <li class="footer__list-item"><a class="footer__link" href="#">Buyers Faq</a></li>
+            <li class="footer__list-item"><a class="footer__link" href="#">Sellers Faq</a></li>
+          </ul>
+        </nav>
 
+        <div class="footer__newsteller">
+          <div class="footer__title">Newsletter</div>
+          <div class="footer__newsteller-text">Subscribe to get the latest news, update and offer information. Don't
+            worry, we won't send spam!</div>
+
+          <form class="footer__submit input-form" action="">
+            <input class="footer__submit-form input-style" type="search" placeholder="Enter email" required>
+            <button class="footer__submit-btn input-btn" type="submit">
+              Submit
+            </button>
+          </form>
+
+          <div class="footer__socials">
+            <a class="footer__socials-link footer__socials-link--facebook" href="#"><i
+                class="fab fa-facebook-f"></i></a>
+            <a class="footer__socials-link footer__socials-link--twitter" href="#"><i class="fab fa-twitter"></i></a>
+            <a class="footer__socials-link footer__socials-link--google" href="#"><i class="fab fa-google"></i></a>
+            <a class="footer__socials-link footer__socials-link--pinterest" href="#"><i
+                class="fab fa-pinterest"></i></a>
+            <a class="footer__socials-link footer__socials-link--linkedin" href="#"><i
+                class="fab fa-linkedin-in"></i></a>
+            <a class="footer__socials-link footer__socials-link--dribbble" href="#"><i class="fab fa-dribbble"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      ©2017 <a class="footer__bottom-link" href="#">MartPlace</a>. All rights reserved. Created by <a
+        class="footer__bottom-link" href="#">AazzTech</a>
+    </div>
+  </div>
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/slider.js"></script>
 </body>
 
 </html>
