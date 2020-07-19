@@ -1,0 +1,30 @@
+.join {
+  text-align: center;
+  background: -webkit-linear-gradient(180deg, rgb(13, 62, 242) 0%, rgb(64, 48, 201) 46%, rgb(114, 33, 160) 100%);
+
+  &__inner {
+    width: 100%;
+    padding: 101px 0 130px;
+  }
+
+  &__title,
+  &__text {
+    color: $white;
+  }
+
+  &__title {
+    margin-bottom: 18px;
+  }
+
+  &__text {
+    font-size: 18px;
+    margin-bottom: 63px;
+  }
+
+  &__link {
+    padding: 18px 42px;
+    color: $blue-li;
+    background-color: $white;
+  }
+
+}

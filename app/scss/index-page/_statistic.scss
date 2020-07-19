@@ -1,0 +1,66 @@
+.statistic {
+  padding: 93px 0 88px;
+  background-color: #212225;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    text-align: center;
+    transition: all 1s ease;
+
+    &:hover {
+      transform: scale(1.3);
+    }
+
+    &--total-sales {
+      margin-left: 20px;
+      margin-right: 10px;
+    }
+  }
+
+  &__img {
+    margin-bottom: 40px;
+  }
+
+  &__number {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 8px;
+  }
+
+  &__number--items-sale,
+  .lnr-briefcase {
+    color: #FEB71D;
+  }
+
+  &__number--total-sales,
+  .lnr-cloud-download {
+    color: #58C9E9;
+  }
+
+  &__number--customers,
+  .lnr-smile {
+    color: #77DE51;
+  }
+
+  &__number--members,
+  .lnr-users {
+    color: #FF6A6D;
+  }
+
+  &__title {
+    font-size: 18px;
+    line-height: 36px;
+    color: $white;
+  }
+
+  .lnr-briefcase,
+  .lnr-cloud-download,
+  .lnr-smile,
+  .lnr-users {
+    font-size: 48px;
+  }
+}

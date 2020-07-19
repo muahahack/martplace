@@ -1,0 +1,177 @@
+.weekly-products {
+  padding: 120px 0;
+  background-color: #EFF1F5;
+
+  &__slider {
+    background-color: $white;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    min-width: 450px;
+  }
+
+  &__item-img {
+    min-width: 555px;
+    height: 450px;
+    object-fit: contain;
+  }
+
+  &__item-info {
+    height: 450px;
+    padding: 47px 45px 23px 50px;
+  }
+
+  &__item-title {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
+  &__item-details {
+    max-height: 40px;
+    padding-top: 5px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+
+  &__item-author,
+  &__item-cat {
+    margin-bottom: 10px;
+  }
+
+  &__item-author {
+    color: #000000;
+  }
+
+  &__item-cat {
+    color: $vio;
+  }
+
+  &__author-name {
+    margin-left: 40px;
+  }
+
+  &__item-cat {
+    position: relative;
+    transition: color 0.5s ease;
+
+    &:hover {
+      color: $red;
+    }
+  }
+
+  &__cat-icon {
+    top: 7px;
+  }
+
+  &__item-text {
+    height: 115px;
+    margin-bottom: 40px;
+    overflow: hidden;
+  }
+
+  &__item-category {
+    height: 70px;
+    overflow: hidden;
+  }
+
+  &__category-link {
+    display: inline-block;
+    margin-right: 8px;
+    margin-bottom: 10px;
+    padding: 5px 10px 5px 18px;
+    font-size: 15px;
+    color: #868C96;
+    background-color: #F1F3F6;
+    overflow: hidden;
+    transition: all 1s ease;
+
+    &:hover {
+      background-color: $violet;
+      color: $white;
+    }
+  }
+
+  &__item-specs {
+    @include prod-specs;
+    padding: 25px 0px 14px 0px;
+  }
+
+  &__specs-info {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+  }
+
+  &__specs-price {
+    padding: 8px 20px;
+    margin-right: 15px;
+    font-weight: 500;
+    color: $white;
+    background-color: $blue-li;
+  }
+
+  &__number-likes {
+    padding-left: 6px;
+  }
+
+  &__number-sales {
+    padding-left: 3px;
+  }
+
+  &__specs-sales {
+    margin: 0 17px 0 8px;
+    color: $blue-li;
+  }
+
+  .lnr-heart,
+  .weekly-products .lnr-cart {
+    font-size: 15px;
+  }
+
+  .lnr-heart {
+    color: $vio;
+  }
+
+  .lnr-heart,
+  .weekly-products .lnr-cart {
+    font-size: 15px;
+  }
+
+  .lnr-heart,
+  .weekly-products .lnr-cart {
+    font-size: 15px;
+  }
+
+  .lnr-heart {
+    color: $vio;
+  }
+
+  .weekly-products .lnr-cart {
+    color: $blue-li;
+  }
+
+  .lnr-chevron-left,
+  .lnr-chevron-right {
+    font-size: 15px;
+    color: $white;
+  }
+
+  .swiper-button-prev {
+    left: auto;
+    right: 55px;
+  }
+
+  .swiper-button-next {
+    right: 0;
+  }
+
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    display: none;
+  }
+}

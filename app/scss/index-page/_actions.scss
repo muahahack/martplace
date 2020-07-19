@@ -1,0 +1,83 @@
+.actions {
+  display: flex;
+  text-align: center;
+  color: $white;
+  font-size: 16px;
+
+  &__item {
+    min-height: 560px;
+    width: 100%;
+    padding: 100px 0 30px;
+    background-repeat: no-repeat;
+
+    &--sell {
+      background-position: right;
+      margin-right: -3px;
+      padding-right: 110px;
+    }
+
+    &--start {
+      margin-left: -3px;
+      padding-left: 110px;
+    }
+
+    &:hover .actions__item-img {
+      transform: scale(1.2);
+      fill: $orange;
+    }
+  }
+
+  &__item-img {
+    background-image: url(../images/icons/act-start.svg);
+    display: inline-block;
+    width: 120px;
+    height: 100px;
+    margin-bottom: 40px;
+    background-repeat: no-repeat;
+    transition: all 1s ease;
+
+    &--start {
+      margin-left: 40px;
+    }
+
+  }
+
+  &__item-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  &__item-text {
+    max-width: 590px;
+    height: 90px;
+    margin: 0 auto 30px;
+    line-height: 30px;
+    overflow: hidden;
+  }
+
+  &__item-link {
+    padding: 17px 25px;
+    color: $blue-li;
+    background-color: $white;
+    transition: all 1s ease;
+
+    &--start {
+      padding: 17px 40px;
+    }
+
+    &:hover {
+      color: $white;
+      background-color: $violet;
+    }
+
+    &--start:hover {
+      color: $white;
+      background-color: $blue-li;
+    }
+
+    &:focus {
+      @include focus-orange;
+      border-radius: 30px;
+    }
+  }
+}
