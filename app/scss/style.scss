@@ -203,7 +203,6 @@
   }
 }
 
-
 // ---HEADER END
 // ---INFO START
 
@@ -470,34 +469,6 @@
   background-color: $white;
 }
 
-.cat-icon {
-  position: absolute;
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  top: 2px;
-}
-
-.specs-likes,
-.specs-sales {
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  transition: all 1s ease;
-
-  &:hover {
-    border-radius: 4px;
-    background-color: rgba(102, 0, 170, 0.4);
-  }
-
-  &:focus {
-    @include focus-vio;
-  }
-
-  &:active {
-    @include active-black;
-  }
-}
 
 .weekly-products {
   padding: 120px 0;
@@ -676,8 +647,6 @@
     display: none;
   }
 }
-
-
 
 // ---weekly-products end
 // ---newest-products start
@@ -946,12 +915,6 @@
   }
 }
 
-.mixitup-control-active {
-  color: $white;
-  background-color: $blue-li;
-}
-
-
 // ---newest-products end
 // ---feed start
 
@@ -1117,7 +1080,6 @@
   }
 }
 
-
 // ---statistic end
 // ---choose start
 
@@ -1222,7 +1184,6 @@
   }
 }
 
-
 // ---choose end
 // ---action start
 
@@ -1241,12 +1202,12 @@
     &--sell {
       background-position: right;
       margin-right: -3px;
-      padding-right: 100px;
+      padding-right: 110px;
     }
 
     &--start {
       margin-left: -3px;
-      padding-left: 100px;
+      padding-left: 110px;
     }
 
     &:hover .actions__item-img {
