@@ -27,6 +27,21 @@
     padding-right: 23px;
     padding-left: 29px;
     overflow: hidden;
+
+    &:hover {
+      overflow-y: scroll;
+    }
+
+    &::-webkit-scrollbar {
+      width: 5px;
+      right: 0;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 2px;
+      background-color: $blue-li;
+      right: 0;
+    }
   }
 
   &__item-title {
@@ -34,6 +49,10 @@
     font-size: 22px;
     line-height: 27px;
   }
+
+  // &__item-text {
+  //   height: 150px;
+  // }
 
   &__item-specs {
     height: 60px;

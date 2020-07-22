@@ -17,7 +17,7 @@
   &__item-img {
     min-width: 555px;
     height: 450px;
-    object-fit: contain;
+    object-fit: cover;
   }
 
   &__item-info {
@@ -72,11 +72,30 @@
     height: 115px;
     margin-bottom: 40px;
     overflow: hidden;
+
+    &:hover {
+      overflow-y: auto;
+    }
   }
 
   &__item-category {
-    height: 70px;
+    height: 30px;
+    margin-bottom: 40px;
     overflow: hidden;
+    transition: all 1s ease;
+
+    &:hover {
+      overflow-y: scroll;
+    }
+
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 2px;
+      background-color: $blue-li;
+    }
   }
 
   &__category-link {
@@ -133,7 +152,7 @@
     font-size: 15px;
   }
 
-  .lnr-heart {
+  .weekly-products .lnr-heart {
     color: $vio;
   }
 
@@ -145,10 +164,6 @@
   .lnr-heart,
   .weekly-products .lnr-cart {
     font-size: 15px;
-  }
-
-  .lnr-heart {
-    color: $vio;
   }
 
   .weekly-products .lnr-cart {

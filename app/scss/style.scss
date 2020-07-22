@@ -2,6 +2,12 @@
 @import 'vars';
 @import 'global';
 
+@import 'components/header';
+@import 'components/weekly-products';
+@import 'components/newest-products';
+@import 'components/feed-products';
+@import 'components/footer';
+
 // --main page
 
 @import 'index';

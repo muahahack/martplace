@@ -37,11 +37,8 @@
   &__cat-icon {
     width: 15px;
     top: 5px;
-
-    &--psd {
-      width: 13px;
-      height: 17px;
-    }
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
   &__cat-name--psd {

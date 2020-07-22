@@ -25,6 +25,21 @@
     padding: 18px 42px;
     color: $blue-li;
     background-color: $white;
+    transition: all 1s ease;
+
+    &:hover {
+      background-color: $violet;
+      color: $white;
+    }
+
+    &:focus {
+      @include focus-orange;
+      border-radius: 30px;
+    }
+
+    &:active {
+      @include active-black;
+    }
   }
 
 }
