@@ -30,25 +30,37 @@
     line-height: 36px;
     margin-bottom: 8px;
 
-    &--items-sale,
-    .lnr-briefcase {
+    &--items-sale {
       color: #FEB71D;
     }
-
-    &--total-sales,
-    .lnr-cloud-download {
+  
+    &--total-sales {
       color: #58C9E9;
     }
-
-    &--customers,
-    .lnr-smile {
+  
+    &--customers {
       color: #77DE51;
     }
-
-    &--members,
-    .lnr-users {
+  
+    &--members {
       color: #FF6A6D;
     }
+  }
+
+  .lnr-briefcase {
+    color: #FEB71D;
+  }
+
+  .lnr-cloud-download {
+    color: #58C9E9;
+  }
+
+  .lnr-smile {
+    color: #77DE51;
+  }
+
+  .lnr-users {
+    color: #FF6A6D;
   }
 
   &__title {

@@ -1,11 +1,12 @@
 $white: #FFFFFF;
 $dark: #333333;
 $dark5: #555555;
-$blue-li: #0674ec;
+$blue-li: #0674EC;
 $vio: #7347C1;
 $violet: #6600AA;
-$red: #ff0000;
+$red: #FF0000;
 $orange: #FFA600;
+$droplink: #54667A;
 
 @mixin focus-vio {
   box-shadow: 0 0 0 3px $vio;
@@ -40,4 +41,19 @@ $orange: #FFA600;
   align-items: center;
   padding: 14px 30px 14px 30px;
   border-top: 1px solid #ECECEC;
+}
+
+@mixin text-shadow {
+  text-shadow: 0px 0px 2px #000000;
+}
+
+@mixin triangle-drop {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: -10px;
+  border-style: solid;
+  border-width: 0 8px 10px 8px;
+  border-color: transparent transparent #0675EC transparent;
 }
