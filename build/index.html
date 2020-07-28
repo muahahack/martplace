@@ -23,7 +23,7 @@
 
         <div class="header__info">
           <a class="header__seller-link button-style" href="#">Become a Seller</a>
-          <a class="header__status" href="#">notify
+          <a class="header__status header__status--notify" href="#">notify
             <div class="drop-menu drop-menu--status">
               <span class="lnr lnr-alarm"></span>
               <span class="header__number header__number--notify">25</span>
@@ -357,6 +357,7 @@
 
 
         </div>
+        <div class="header__user-btn fas fa-user-tie"></div>
       </div>
     </div>
   </div>
@@ -365,11 +366,16 @@
     <div class="container">
       <div class="header__bottom-inner">
         <nav class="header__menu">
+          <div class="header__menu-btn">
+            <div class="header__btn-line"></div>
+            <div class="header__btn-line"></div>
+            <div class="header__btn-line"></div>
+          </div>
           <ul class="header__menu-list">
             <li class="header__menu-item drop-menu">
               <a class="header__menu-link" href="#">home</a>
 
-              <ul class="drop-menu__list">
+              <ul class="drop-menu__list drop-menu__list--nav">
                 <li class="drop-menu__item">
                   <a href="#" class="drop-menu__link">Home One Multi User</a>
                 </li>
@@ -385,7 +391,7 @@
             <li class="header__menu-item drop-menu">
               <a class="header__menu-link" href="#">all products</a>
 
-              <ul class="drop-menu__list">
+              <ul class="drop-menu__list drop-menu__list--nav">
                 <li class="drop-menu__item">
                   <a href="#" class="drop-menu__link">Recent Items</a>
                 </li>
@@ -410,7 +416,7 @@
             <li class="header__menu-item drop-menu">
               <a class="header__menu-link" href="#">wordpress</a>
 
-              <ul class="drop-menu__list">
+              <ul class="drop-menu__list drop-menu__list--nav">
                 <li class="drop-menu__item">
                   <a href="#" class="drop-menu__link">Popular Items</a>
                 </li>
@@ -448,7 +454,7 @@
               <a class="header__menu-link" href="#">pages</a>
               <div class="sub-wrap">
 
-                <ul class="drop-menu__list drop-menu__list--pages">
+                <ul class="drop-menu__list drop-menu__list--nav drop-menu__list--pages">
                   <li class="drop-menu__submenu-item">
                     <div class="drop-menu__submenu">
                       <div class="drop-menu__submenu-title">MartPlace Pages</div>
@@ -2169,7 +2175,7 @@
         <div class="footer__newsteller-text">Subscribe to get the latest news, update and offer information. Don't
           worry, we won't send spam!</div>
 
-        <form class="footer__submit input-form" action="action.php">
+        <form class="footer__submit input-form input-form--footer" action="action.php">
           <input class="footer__submit-form input-style" type="text" placeholder="Enter email" required>
           <button class="footer__submit-btn input-btn" type="submit">
             Submit

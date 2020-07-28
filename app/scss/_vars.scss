@@ -57,3 +57,17 @@ $droplink: #54667A;
   border-width: 0 8px 10px 8px;
   border-color: transparent transparent #0675EC transparent;
 }
+
+@mixin scroll-style {
+
+  &::-webkit-scrollbar {
+    width: 5px;
+    right: 0;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background-color: $blue-li;
+    right: 0;
+  }
+}

@@ -190,3 +190,61 @@
     color: $white;
   }
 }
+
+@media (max-width: 1366px) {
+  .footer {
+
+    &__inner {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__newsteller {
+      max-width: 362px;
+      margin-left: 15px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+
+    &__logo-link {
+      margin: 0 auto 25px;
+    }
+
+    &__info {
+      max-width: 520px;
+    }
+
+    &__inner {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__newsteller {
+      max-width: 362px;
+      margin-left: 15px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+
+    &__inner {
+      padding-top: 50px;
+      margin-bottom: 0;
+    }
+
+    &__socials {
+      width: 320px;
+      margin: 0 auto;
+    }
+    &__socials-link {
+      margin: 0 20px 30px 30px;
+    }
+
+    &__newsteller {
+      margin-left: 0;
+    }
+  }
+}

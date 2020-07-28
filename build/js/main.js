@@ -38,9 +38,7 @@ $(function(){
     starWidth: "14px",
     rating: 4.5,
     spacing: "4px",
-    ratedFill: "#FFC000",
-    normalFill: "#FFCD37"
-
+    ratedFill: "#FFC000"
   });
 
   $(".newest-products__specs-rating").rateYo({
@@ -59,6 +57,14 @@ $(function(){
     ratedFill: "#FFC000",
     normalFill: "#FFCD37"
 
+  });
+
+  $(".header__menu-btn").on("click", function(){
+$(".header__menu-list").slideToggle();
+  });
+
+  $(".header__user-btn").on("click", function(){
+$(".header__info").toggleClass('active');
   });
 
   var mixer = mixitup('.newest-products__items-wrapper');
