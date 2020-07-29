@@ -33,15 +33,15 @@
     &--items-sale {
       color: #FEB71D;
     }
-  
+
     &--total-sales {
       color: #58C9E9;
     }
-  
+
     &--customers {
       color: #77DE51;
     }
-  
+
     &--members {
       color: #FF6A6D;
     }
@@ -74,5 +74,49 @@
   .lnr-smile,
   .lnr-users {
     font-size: 48px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .statistic {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .statistic {
+    padding: 50px 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .statistic {
+    padding-bottom: 20px;
+
+    &__inner {
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      width: 37%;
+      margin-bottom: 30px;
+    }
+
+  }
+}
+
+@media (max-width: 480px) {
+  .statistic {
+    padding-right: 0;
+    padding-left: 0;
+
+    &__inner {}
+
+    &__item {
+      width: 51%;
+    }
+
   }
 }

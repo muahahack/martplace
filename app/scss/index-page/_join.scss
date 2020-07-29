@@ -43,3 +43,19 @@
   }
 
 }
+
+@media (max-width: 640px) {
+  .join {
+    &__inner {
+      padding: 110px 25px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .join {
+    &__inner {
+      padding: 50px 25px;
+    }
+  }
+}

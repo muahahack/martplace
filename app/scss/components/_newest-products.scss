@@ -264,4 +264,101 @@
       color: $white;
     }
   }
+
+  .mixitup-control-active {
+    color: $white;
+    background-color: $blue-li;
+  }
+}
+
+
+
+@media (max-width: 1200px) {
+  .newest-products {
+    &__item {
+      max-width: calc(100% / 2 - 30px);
+    }
+
+    &__item-text {
+      height: 90px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .newest-products {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    &__item {
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: 840px) {
+  .newest-products {
+    &__item {
+      max-width: calc(100% - 30px);
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .newest-products {
+
+    &__title-box {
+      flex-direction: column;
+      justify-content: center;
+      padding: 15px 0;
+    }
+
+    &__title {
+      margin: 15px;
+      text-align: center;
+    }
+
+    &__category-box {
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .newest-products {
+
+    &__item-specs {
+      flex-direction: column;
+    }
+
+    &__specs-info {
+      margin-bottom: 15px;
+    }
+
+    &__item-text {
+      height: 120px;
+      max-height: none;
+    }
+
+    &__all-products {
+      margin-top: 15px;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .newest-products {
+
+    &__link {
+
+      &--info {
+        left: 20px;
+      }
+
+      &--demo {
+        right: 17px;
+        left: auto;
+      }
+    }
+  }
 }

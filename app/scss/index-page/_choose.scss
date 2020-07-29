@@ -98,3 +98,59 @@
     color: #FF6A6D;
   }
 }
+
+@media (max-width: 1200px) {
+  .choose {
+    &__item {
+      min-height: auto;
+    }
+
+    &__item-text {
+      height: auto;
+      max-height: 180px;
+    }
+  }
+}
+
+@media (max-width: 840px) {
+  .choose {
+    padding: 50px 0;
+
+    &__title {
+      line-height: 50px;
+    }
+
+    &__item {
+      width: calc(100% / 2 - 30px);
+      padding: 35px 15px 25px;
+    }
+
+    &__item-title {
+      line-height: 35px;
+    }
+
+    &__item-text {
+      height: auto;
+      max-height: 180px;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .choose {
+
+    &__items-box {
+      display: block;
+      margin-right: 0;
+    }
+
+    &__item {
+      margin: 0 auto 30px;
+      width: 100%;
+    }
+
+    &__item-img {
+      margin-bottom: 20px;
+    }
+  }
+}

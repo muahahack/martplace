@@ -79,3 +79,45 @@
     }
   }
 }
+
+@media (max-width: 1366px) {
+  .actions {
+    &__item {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  }
+}
+
+@media (max-width: 840px) {
+  .actions {
+    display: block;
+
+    &__item {
+      margin: 0;
+      background-position: center;
+    }
+
+    &__item-img {
+      background-position: center;
+
+      &--start {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 840px) {
+  .actions {
+    &__item {
+      min-height: auto;
+      padding: 50px 0 65px;
+    }
+
+    &__item-text,
+    &__item-title {
+      padding: 0 20px;
+    }
+  }
+}
