@@ -91,17 +91,37 @@
 @media (max-width: 1200px) {
   .feed-products {
     &__item {
+      height: auto;
+      position: relative;
       max-width: calc(100% / 2 - 30px);
     }
 
     &__item-text {
-      height: 90px;
+      height: auto;
+      max-height: 150px;
+    }
+    
+    &__item-specs {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+    }
+    
+    &__item-wrapper {
+      max-height: 300px;
+      overflow: hidden;
+      margin-bottom: 80px;
     }
   }
 }
 
 
-@media (max-width: 840px) {
+@media (max-width: 768px) {
+  .feed-products {
+  }
+}
+
+@media (max-width: 640px) {
   .feed-products {
     min-height: auto;
     padding-top: 60px;
@@ -110,11 +130,6 @@
     &__item {
       max-width: calc(100% - 30px);
     }
-  }
-}
-
-@media (max-width: 640px) {
-  .feed-products {
 
     &__title-box {
       margin-bottom: 30px;

@@ -208,9 +208,12 @@
   &__user-btn {
     display: none;
   }
-}
 
-@media (max-width: 1366px) {}
+  &__middle {
+    height: 0;
+    transition: height 1s;
+  }
+}
 
 @media (max-width: 840px) {
   .header {
@@ -277,9 +280,6 @@
   }
 }
 
-@media (max-width: 768px) {
-}
-
 @media (max-width: 640px) {
   .header {
     &__user-btn {
@@ -320,14 +320,11 @@
 
 @media (max-width: 480px) {
   .header {
-    &__status {
-      display: none;
-    }
 
     &__info {
       transform: translateX(180%);
       &.active {
-        transform: translateX(-20%);
+        transform: translateX(-60%);
       }
     }
 
@@ -339,6 +336,17 @@
       top: 78px;
       right: auto;
       left: -40px;
+    }
+    &__profile-link {
+      min-width: 180px;
+    }
+
+    &__middle {
+      &.active {
+        border: 1px solid $blue-li;
+        border-width: 1px 0 1px 0;
+        height: 63px;
+      }      
     }
   }
 }

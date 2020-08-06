@@ -1,0 +1,74 @@
+.filters {
+  padding: 25px 0;
+  margin-bottom: 81px;
+  background-color: $white;
+  box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__sorts {
+    font-size: 14px;
+    color: #747b86;
+  }
+
+  &__sorts-wrap {
+    display: inline-block;
+    position: relative;
+    margin-right: 26px;  
+    
+    &::before {
+      content: "\e874";
+      font-size: 10px;      
+      font-family: 'Linearicons-Free';
+      color: $dark5;
+      position: absolute; 
+      right: 20px;
+      top: 20px;
+    }
+  }
+  
+  &__sorts-view {
+    display: inline-block;
+  }
+
+  &__btn {
+    padding: 0;
+    margin: 0;
+    margin-right: 33px;
+    border: none;
+    font-size: 16px;
+    color: $dark5;
+    background-color: transparent;
+
+    &--active {
+      color: $blue-li;
+    }
+  }
+
+  &__view-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+
+    & + & {
+      margin-left: 11px;
+    }
+  }
+  &__btn-svg {
+    margin-bottom: -3px;
+    width: 20px;
+    height: 20px;
+  }
+  &__btn-path {
+    fill: #747B86;
+
+    &--active {
+      fill: $blue-li;
+    }
+  }
+}
+

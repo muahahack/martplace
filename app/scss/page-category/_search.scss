@@ -1,0 +1,33 @@
+.search {
+  padding: 80px 0 16px;
+  text-align: center;
+  background-image: -webkit-linear-gradient( 180deg, rgb(13,62,242) 0%, rgb(45,47,199) 46%, rgb(76,31,156) 100%);
+
+  &__title {
+    margin-bottom: 30px;
+    color: #F3F3F8;
+    font-size: 27px;
+    letter-spacing: -0.02em;
+  }
+
+  &__title-number {
+    font-weight: 500;
+  }
+
+  &__form {
+    max-width: 555px;
+    margin-bottom: 35px;
+    margin: 0 auto 34px;
+  }
+
+  &__form-area {
+    padding-right: 115px;
+    padding: 18px 90px 19px 30px;
+  }
+
+  &__form-btn {
+    padding: 20px 31px;
+    font-size: 15px;
+    color: $white;
+  }
+}

@@ -2,6 +2,7 @@
 .AppleDouble
 .LSDverride
 .vs
+.build
 
 node_modules/
 app/css/

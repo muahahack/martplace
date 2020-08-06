@@ -136,19 +136,9 @@
     margin-bottom: 24px;
   }
 
-  &__img-wrapper {
-    position: relative;
-
-    &:hover .newest-products__link {
-      opacity: 1;
-    }
-  }
-
   &__link {
     position: absolute;
     top: 93px;
-    z-index: 2;
-    opacity: 0;
     transition: all 1s ease;
 
     &--info {
@@ -272,15 +262,24 @@
 }
 
 
-
 @media (max-width: 1200px) {
   .newest-products {
+
     &__item {
-      max-width: calc(100% / 2 - 30px);
+      position: relative;
+      height: auto;
     }
 
-    &__item-text {
-      height: 90px;
+    &__item-specs {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+    }
+    
+    &__item-wrapper {
+      max-height: 300px;
+      overflow: hidden;
+      margin-bottom: 75px;
     }
   }
 }
@@ -290,22 +289,44 @@
     padding-top: 50px;
     padding-bottom: 50px;
 
-    &__item {
-      height: auto;
+    &__item-text {
+      margin-bottom: 15px;
+      max-height: 175px;
+    }
+    &__item-details {
+      max-height: 80px;
+      margin-bottom: 10px;
+    }
+    &__item-author,
+    &__item-cat {
+      margin-bottom: 10px;
     }
   }
 }
 
 @media (max-width: 840px) {
-  .newest-products {
+  .newest-products {   
+  
     &__item {
-      max-width: calc(100% - 30px);
+      max-width: calc(100% / 2 - 30px);
+    }
+  
+    &__item-title {
+      height: 50px;
+    }
+    &__item-text {
+      height: 145px;
+      min-height: 145px;
     }
   }
 }
 
 @media (max-width: 640px) {
   .newest-products {
+
+    &__item {
+      max-width: calc(100% - 30px);
+    }
 
     &__title-box {
       flex-direction: column;
@@ -316,6 +337,11 @@
     &__title {
       margin: 15px;
       text-align: center;
+    }
+
+    &__item-text {
+      height: auto;
+      min-height: 90px;
     }
 
     &__category-box {
@@ -342,6 +368,10 @@
 
     &__all-products {
       margin-top: 15px;
+    }
+
+    &__item-wrapper {
+      margin-bottom: 90px;
     }
   }
 }

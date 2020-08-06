@@ -36,7 +36,7 @@
     display: flex;
     justify-content: space-between;
     padding: 115px 0 53px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
 
   &__title {
@@ -45,6 +45,13 @@
     color: $white;
     margin-bottom: 25px;
     letter-spacing: 0.04em;
+  }
+
+  &__info,
+  &__company,
+  &__support,
+  &__newsteller {
+    margin-bottom: 10px;
   }
 
   &__info {
@@ -194,6 +201,9 @@
 @media (max-width: 1366px) {
   .footer {
 
+    &__info {
+    }
+
     &__inner {
       flex-wrap: wrap;
       justify-content: center;
@@ -246,16 +256,31 @@
     &__newsteller {
       margin-left: 0;
     }
+
+    &__submit {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &__socials {
+      justify-content: center;
+    }
   }
 }
 
 @media (max-width: 640px) {
   .footer {
+    &__inner {
+      justify-content: center;
+    }
+
+    &__company,
+    &__support {
+      padding-left: 0;
+    }
 
     &__title {
-      &--newsletter {
-        text-align: center;
-      }
+      text-align: center;      
     }
     &__bottom {
       padding-right: 20px;
