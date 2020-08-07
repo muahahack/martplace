@@ -5,6 +5,14 @@
   &__inner {
     width: 100%;
     padding: 101px 0 130px;
+
+    @include r(640) {
+      padding: 110px 25px;
+    }
+
+    @include r(480) {
+      padding: 50px 25px;
+    }
   }
 
   &__title,
@@ -39,23 +47,6 @@
 
     &:active {
       @include active-black;
-    }
-  }
-
-}
-
-@media (max-width: 640px) {
-  .join {
-    &__inner {
-      padding: 110px 25px;
-    }
-  }
-}
-
-@media (max-width: 480px) {
-  .join {
-    &__inner {
-      padding: 50px 25px;
     }
   }
 }

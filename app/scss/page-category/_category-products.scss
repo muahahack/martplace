@@ -6,6 +6,10 @@
 
   &__range-form {
     padding-left: 8px;
+
+    @include r(768) {
+      padding: 0 15px;
+    }
   }
 
   &__range-btn {
@@ -17,7 +21,20 @@
     font-size: 15px;
     font-weight: 500;
     background-color: $blue-li;
+    transition: all 1s;
     cursor: pointer;
+
+    @include r(1024) {
+      padding: 13px 15px;
+    }
+
+    &:hover {
+      background-color: $vio;
+    }
+
+    @include r(768) {
+      margin-bottom: 25px;
+    }
   }
 
 
@@ -63,6 +80,25 @@
       text-decoration: none;
       background-color: #F1ECF9;
     }
+
+    .to,
+    .from {        
+      transition: all 1s;
+      cursor: pointer;
+
+      &:hover {
+        border-color: $orange;
+      }
+  
+      &:focus {
+        @include focus-vio;
+      }
+  
+      &:active {
+        @include active-black;
+      }
+    }
+
     .irs-from {
       left: 0 !important;
       right: auto !important;
@@ -81,11 +117,150 @@
   &__inner {
     display: flex;
     padding-bottom: 120px;
+
+    @include r(768) {
+      flex-direction: column;
+    }
+  }
+
+  &__filters-btn {
+    display: none;
+    text-align: center;
+    padding: 20px 0;
+    color: $white;  
+    background-color: $blue-li; 
+    transition: color 1s; 
+
+    @include r(768) {
+      display: block;
+    }
+
+    .fa-filter {
+      padding-right: 5px;
+    }
+
+    &:hover {
+      color: $orange;
+    }
   }
 
   &__aside {
     min-width: 260px;
     margin-right: 30px;
+
+    @include r(1024) {
+      min-width: 230px;
+    }
+    
+    @include r(768) {
+      display: none;
+      max-width: none;
+      width: 100%;
+    }
+  }
+
+  &__categories-title,
+  &__filter-title,
+  &__range-title {
+
+    @include r(768) {
+      margin-bottom: 0;
+      padding: 15px 0;
+      border-bottom: 1px solid $blue-li;
+      background-color: #D4E3FF;
+      cursor: pointer;
+
+      .lnr-chevron-down {
+        top: 22px;
+        right: 32px;
+      }
+
+    }
+  }
+
+  &__categories-item,
+  &__filter-item {
+
+    @include r(768) {
+      padding-left: 0;      
+      border-bottom: 1px solid $blue-li;
+
+      & + & {
+        margin-top: 0;
+      }
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  &__categories-number {
+
+    @include r(768) {
+      right: 30px;
+      top: 15px;
+    }
+  }
+
+  &__categories-list,
+  &__filter-list,
+  &__range-form {
+    @include r(768) {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 2s ease;
+    }
+  }
+
+  &__categories-link,
+  &__filter-link {
+
+    @include r(768) {
+      display: block;
+      padding: 15px 0;
+      padding-left: 0;
+    }
+  }
+
+  &__label {
+    transition: all 1s;
+    cursor: pointer;
+
+    @include r(768) {
+      padding: 15px 0;
+    }
+
+    &:hover {
+      color: $orange;
+      text-shadow: 0px 0px 6px rgba(150, 150, 150, 1);
+    }
+
+    &:focus {
+      @include focus-vio;
+    }
+
+    &:active {
+      @include active-black;
+    }
+  }
+
+  &__categories-box,
+  &__filter-box,
+  &__range {
+    @include r(768) {
+      padding: 0;
+      margin-bottom: 0;
+      text-align: center;
+
+      &:hover {
+        .category-products__categories-list,
+        .category-products__filter-list,
+        .category-products__range-form {
+          max-height: 1000px;
+        }
+      }
+    }
   }
 
   &__content {
@@ -94,6 +269,16 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     margin-right: -30px;
+
+    @include r(768) {
+      padding-left: 30px;
+      margin-top: 30px;
+    }
+
+    @include r(540) {
+      padding-left: 15px;
+      margin-top: 15px;
+    }
   }
 
   &__item {
@@ -103,6 +288,16 @@
     margin-bottom: 30px;
     height: fit-content;
     transition: all 0.5s ease;
+
+    @include r(1024) {
+      width: calc(100% / 2 - 30px);
+    }
+
+    @include r(540) {
+      width: calc(100% - 15px);
+      margin-right: 15px;
+      margin-bottom: 15px;
+    }
 
     &--list {
       max-height: 210px;
@@ -131,6 +326,25 @@
             display: block;
           }
         }
+        
+        &__link {
+          &--info,
+          &--demo {
+            max-width: 131px;
+            right: 0;
+            left: 0;
+            margin: 0 auto;
+            text-align: center;
+          }
+
+          &--info {
+            top: 50px;
+          }
+
+          &--demo {            
+            top: 120px;
+          }
+        }
 
         &__item-title ,
         &__item-details,
@@ -150,6 +364,11 @@
           max-width: 246px;
           margin-left: 4px;
         }
+
+        &__info-wrapper {
+          margin-left: 30px;
+        }
+
         &__author-box {
           max-width: 150px;
           margin-top: 43px;
@@ -161,6 +380,13 @@
           margin-left: 18px;
           text-align: center;
           border-left: 1px solid #ECECEC;
+
+          
+          @include r(1366) {
+            padding: 0;
+            margin-right: 0;
+            margin-left: 10px;
+          }
         }
         
         &__item-img {
@@ -176,6 +402,10 @@
           font-size: 18px;
           line-height: 24px;
           margin-bottom: 13px;
+
+          @include r(1366) {
+            padding-right: 0;
+          }
         }
 
         &__item-cat {
@@ -183,10 +413,13 @@
         }
 
         &__info-text {
+          max-height: 60px;
           padding-left: 5px;
           font-size: 16px;
           line-height: 30px;
           margin-bottom: 10px;
+          overflow: hidden;
+
         }
 
         &__item-author {
@@ -236,11 +469,12 @@
         &__specs-price {
           margin-top: 43px;
           margin-bottom: 27px;
-        }
+          overflow: hidden;
 
-        &__specs-sales {
+          @include r(1366) {
+            max-width: 100px;
+          }
         }
-
       }
     }
   }
@@ -253,6 +487,21 @@
 
     &::before {
       height: 100%;
+    }
+  }
+
+  &__link {
+    &--info,
+    &--demo {
+      max-width: 131px;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    &--info {
+      top: 30px;
     }
   }
 
@@ -274,6 +523,10 @@
     margin-bottom: 12px;
     line-height: 24px;
     overflow: auto;
+
+    @include r(1024) {
+      height: auto;
+    }
   }
   
   &__item-details {
@@ -348,15 +601,29 @@
     font-size: 16px;
     font-weight: 500;
     background-color: $white;
+    transition: all 1s;
+    cursor: pointer;
 
     & + & {
       margin-left: 5px;
     }
 
-
     .lnr-arrow-left,
     .lnr-arrow-right {
       font-size: 16px;
+    }
+
+    &:hover {
+      color: #000000;
+      background-color: $orange;
+    }
+
+    &:focus {
+      @include focus-vio;
+    }
+
+    &:active {
+      @include active-black;
     }
   }
 

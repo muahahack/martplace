@@ -95,6 +95,10 @@ $(function(){
   $(".header__user-btn").on("click", function(){
     $(".header__info").toggleClass('active');
     $(".header__middle").toggleClass('active');
+  });  
+  
+  $(".category-products__filters-btn").on("click", function(){
+    $(".category-products__aside").slideToggle();
   });
 
   $(".js-range-slider").ionRangeSlider({

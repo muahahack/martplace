@@ -5,6 +5,10 @@
   background-color: $white;
   text-align: center;
 
+  @include r(480) {
+    padding: 50px 0;
+  }
+
   &__title {
     &--blue {
       color: $blue-li;
@@ -33,17 +37,40 @@
     border-radius: 0 4px 4px 0;
     box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
     flex-shrink: 0;
+
+    @include r(480) {
+      padding: 30px;
+    }
   }
 
   &__item-text {
     max-height: 120px;
     overflow: hidden;
+
+    @include r(1366) {
+      min-height: auto;
+      max-height: 210px;
+    }
+
+    @include r(1200) {
+      min-height: auto;
+      max-height: 210px;
+    }
+
+    @include r(480) {
+      max-height: 330px;
+    }
   }
 
   &__profile-avatar {
     min-width: 80px;
     height: 80px;
     margin-right: 20px;
+
+    @include r(480) {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
   }
 
   .lnr-bubble {
@@ -52,6 +79,12 @@
     top: 50px;
     right: 40px;
     color: #e8e8e8;
+
+    @include r(640) {
+      font-size: 45px;
+      top: 10px;
+      right: 10px;
+    }
   }
 
   &__profile-link {
@@ -67,6 +100,17 @@
     &:active {
       @include active-black;
       border-radius: 40px;
+    }
+
+    @include r(640) {
+      margin-right: 20px;
+    }
+
+    @include r(480) {
+      margin-right: 0;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
     }
   }
 
@@ -86,6 +130,10 @@
     max-width: 200px;
     max-height: 24px;
     overflow: hidden;
+
+    @include r(1200) {
+      max-height: 45px;
+    }
   }
 
   &__link {
@@ -126,6 +174,11 @@
     cursor: pointer;
     transition: all 1s ease;
 
+
+    @include r(480) {
+      top: 230px;
+    }
+
     &:hover {
       background-color: $blue-li;
       color: $white;
@@ -147,97 +200,5 @@
 
   &__arrow-next {
     right: -22px;
-  }
-}
-
-@media (max-width: 1366px) {
-  .feedback {
-    &__item-text {
-      min-height: auto;
-      max-height: 210px;
-    }
-  }
-}
-
-@media (max-width: 1200px) {
-  .feedback {
-    &__item-text {
-      min-height: auto;
-      max-height: 210px;
-    }
-  }
-}
-
-@media (max-width: 1200px) {
-  .feedback {
-
-    &__profile-name,
-    &__profile-specs {
-      max-height: 45px;
-    }
-
-    &__profile-link {
-      margin-right: 80px;
-    }
-  }
-}
-
-@media (max-width: 940px) {
-  .feedback {
-
-    &__profile-name,
-    &__profile-specs {
-      max-height: 45px;
-    }
-
-    &__profile-link {
-      margin-right: 80px;
-    }
-  }
-}
-
-@media (max-width: 640px) {
-  .feedback {
-
-    &__profile-link {
-      margin-right: 20px;
-    }
-
-    .lnr-bubble {
-      font-size: 45px;
-      top: 10px;
-      right: 10px;
-    }
-  }
-}
-
-@media (max-width: 480px) {
-  .feedback {
-    padding: 50px 0;
-
-    &__item {
-      padding: 30px;
-    }
-
-    &__profile-link {
-      margin-right: 0;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-    }
-
-    &__profile-avatar {
-      margin-right: 0;
-      margin-bottom: 15px;
-    }
-
-    &__item-text {
-      max-height: 330px;
-    }
-
-    &__arrow-prev,
-    &__arrow-next {
-      top: 230px;
-    }
   }
 }

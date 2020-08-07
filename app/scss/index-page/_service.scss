@@ -2,13 +2,30 @@
   background-color: #FFFFFF;
   padding: 63px 0 62px;
 
+  @include r(840) {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+
   &__inner {
     display: flex;
+
+    @include r(840) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 
   &__item {
     width: 100%;
     text-align: center;
+
+    @include r(840) {
+      width: 50%;
+      min-width: 300px;
+      padding: 0;
+      margin: 0 0 25px;
+    }
 
     &--guarantee {
       padding-right: 45px;
@@ -36,6 +53,11 @@
     font-size: 24px;
     color: #000000;
 
+    @include r(840) {
+      max-width: 250px;
+      margin: 0 auto;
+    }
+
     &--guarantee {
       color: $blue-li;
     }
@@ -44,30 +66,4 @@
       color: $vio;
     }
   }
-}
-
-
-@media (max-width: 840px) {
-  .service {
-    padding-top: 30px;
-    padding-bottom: 20px;
-
-    &__inner {
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    &__item {
-      width: 50%;
-      min-width: 300px;
-      padding: 0;
-      margin: 0 0 25px;
-    }
-
-    &__item-title {
-      max-width: 250px;
-      margin: 0 auto;
-    }
-  }
-
 }

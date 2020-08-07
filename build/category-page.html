@@ -740,8 +740,9 @@
 </section>
 
         <section class="category-products">
-  <div class="container">
+  <div class="container container--category-products">
     <div class="category-products__inner">
+      <div class="category-products__filters-btn"><i class="fas fa-filter"></i>Filters</div>
       <aside class="category-products__aside aside">
         <div class="category-products__categories-box aside__box">
           <div class="category-products__categories-title aside__title">
@@ -808,31 +809,31 @@
           <ul class="category-products__filter-list aside__list">
             <li class="category-products__filter-item aside__item aside__item--circle">
               <input class="custom-checkbox" type="checkbox" id="trending-products" name="trending-products">
-              <label for="trending-products">Trending Products</label>
+              <label class="category-products__label" for="trending-products">Trending Products</label>
             </li>
             <li class="category-products__filter-item aside__item aside__item--circle">
               <input class="custom-checkbox" type="checkbox" id="popular-products" name="popular-products">
-              <label for="popular-products">Popular Products</label>
+              <label class="category-products__label" for="popular-products">Popular Products</label>
             </li>
             <li class="category-products__filter-item aside__item aside__item--circle">
               <input class="custom-checkbox" type="checkbox" id="new-products" name="new-products">
-              <label for="new-products">New Products</label>
+              <label class="category-products__label" for="new-products">New Products</label>
             </li>
             <li class="category-products__filter-item aside__item aside__item--circle">
               <input class="custom-checkbox" type="checkbox" id="best-seller" name="best-seller">
-              <label for="best-seller">Best Seller</label>
+              <label class="category-products__label" for="best-seller">Best Seller</label>
             </li>
             <li class="category-products__filter-item aside__item aside__item--circle">
               <input class="custom-checkbox" type="checkbox" id="best-rating" name="best-rating">
-              <label for="best-rating">Best Rating</label>
+              <label class="category-products__label" for="best-rating">Best Rating</label>
             </li>
             <li class="category-products__filter-item aside__item aside__item--circle">
               <input class="custom-checkbox" type="checkbox" id="low-price" name="low-price">
-              <label for="low-price">Low Price</label>
+              <label class="category-products__label" for="low-price">Low Price</label>
             </li>
             <li class="category-products__filter-item aside__item aside__item--circle">
               <input class="custom-checkbox" type="checkbox" id="high-price" name="high-price">
-              <label for="high-price">High Price</label>
+              <label class="category-products__label" for="high-price">High Price</label>
             </li>
           </ul>
         </div>
@@ -842,8 +843,7 @@
             Pricing Range<span class="lnr lnr-chevron-down"></span>
           </div>
           <form class="category-products__range-form">
-            <input type="text" class="category-products__range-input js-range-slider" name="my_range"
-              value="" />
+            <input type="text" class="category-products__range-input js-range-slider" name="my_range" value="" />
             <button class="category-products__range-btn button-style" type="submit">Search Update</button>
           </form>
         </div>
@@ -854,8 +854,8 @@
           data-order="1">
 
           <div class="category-products__img-wrapper info-mask">
-            <img class="category-products__item-img product-card__img "
-              src="images/n-products/newest-product-1.jpg" alt="newest-product-1">
+            <img class="category-products__item-img product-card__img " src="images/n-products/newest-product-1.jpg"
+              alt="newest-product-1">
             <a class="category-products__link category-products__link--info link-info button-style" href="#">
               More Info
             </a>
@@ -924,34 +924,36 @@
             </a>
           </div>
 
-          <div class="category-products__author-box">
-            <a class="category-products__item-author product-card__author" href="#">
-              <span class="category-products__author-ava product-card__author-ava"
-                style="background-image: url(images/wp-ava-1.jpg);"></span>
-              <span class="category-products__author-name product-card__author-name">Themepert</span>
-            </a>
-            <button class="category-products__author-loves specs-sales">
-              <span class="category-products__basket-icon lnr lnr-heart"></span>
-              <span class="category-products__number-loves">90 loves</span>
-            </button>
-            <button class="category-products__author-comments specs-sales">
-              <span class="category-products__basket-icon lnr lnr-bubble"></span>
-              <span class="category-products__number-comments">90 Comments</span>
-            </button>
-            <div class="category-products__rating-wraper">
-              <div class="category-products__rating-list"></div>
-              <span class="category-products__rating-number">(34)</span>
+          <div class="category-products__info-wrapper">
+            <div class="category-products__author-box">
+              <a class="category-products__item-author product-card__author" href="#">
+                <span class="category-products__author-ava product-card__author-ava"
+                  style="background-image: url(images/wp-ava-1.jpg);"></span>
+                <span class="category-products__author-name product-card__author-name">Themepert</span>
+              </a>
+              <button class="category-products__author-loves specs-sales">
+                <span class="category-products__basket-icon lnr lnr-heart"></span>
+                <span class="category-products__number-loves">90 loves</span>
+              </button>
+              <button class="category-products__author-comments specs-sales">
+                <span class="category-products__basket-icon lnr lnr-bubble"></span>
+                <span class="category-products__number-comments">90 Comments</span>
+              </button>
+              <div class="category-products__rating-wraper">
+                <div class="category-products__rating-list"></div>
+                <span class="category-products__rating-number">(34)</span>
+              </div>
             </div>
-          </div>
 
-          <div class="category-products__specs-box">
-            <div class="category-products__specs-price product-card__price button-style">
-              $10 - $50
+            <div class="category-products__specs-box">
+              <div class="category-products__specs-price product-card__price button-style">
+                $10 - $50
+              </div>
+              <button class="category-products__specs-sales specs-sales">
+                <span class="category-products__basket-icon lnr lnr-cart"></span>
+                <span class="category-products__number-sales">892</span>
+              </button>
             </div>
-            <button class="category-products__specs-sales specs-sales">
-              <span class="category-products__basket-icon lnr lnr-cart"></span>
-              <span class="category-products__number-sales">892</span>
-            </button>
           </div>
         </article>
 
@@ -1165,8 +1167,8 @@
         <article class="category-products__item box-styles product-card mix category-plugins category-wordpress"
           data-order="1">
           <div class="category-products__img-wrapper info-mask">
-            <img class="category-products__item-img product-card__img "
-              src="images/n-products/newest-product-1.jpg" alt="newest-product-1">
+            <img class="category-products__item-img product-card__img " src="images/n-products/newest-product-1.jpg"
+              alt="newest-product-1">
             <a class="category-products__link category-products__link--info link-info button-style" href="#">
               More Info
             </a>
@@ -1474,8 +1476,8 @@
         <article class="category-products__item box-styles product-card mix category-plugins category-wordpress"
           data-order="1">
           <div class="category-products__img-wrapper info-mask">
-            <img class="category-products__item-img product-card__img "
-              src="images/n-products/newest-product-1.jpg" alt="newest-product-1">
+            <img class="category-products__item-img product-card__img " src="images/n-products/newest-product-1.jpg"
+              alt="newest-product-1">
             <a class="category-products__link category-products__link--info link-info button-style" href="#">
               More Info
             </a>
@@ -1671,8 +1673,8 @@
         <article class="category-products__item box-styles product-card mix category-plugins category-wordpress"
           data-order="1">
           <div class="category-products__img-wrapper info-mask">
-            <img class="category-products__item-img product-card__img "
-              src="images/n-products/newest-product-1.jpg" alt="newest-product-1">
+            <img class="category-products__item-img product-card__img " src="images/n-products/newest-product-1.jpg"
+              alt="newest-product-1">
             <a class="category-products__link category-products__link--info link-info button-style" href="#">
               More Info
             </a>
@@ -1812,8 +1814,7 @@
 
           <ul class="category-products__pagination-list">
             <li class="category-products__pagination-item">
-              <button
-                class="category-products__pagination-btn category-products__pagination-btn button-style"><span
+              <button class="category-products__pagination-btn category-products__pagination-btn button-style"><span
                   class="lnr lnr-arrow-left"></span></button>
             </li>
             <li class="category-products__pagination-item">

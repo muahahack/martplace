@@ -2,12 +2,29 @@
   padding: 120px 0;
   background-color: #F6F7FB;
 
+
+  @include r(1024) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
   &__title-box {
     margin-bottom: 30px;
+
+    @include r(640) {
+      flex-direction: column;
+      justify-content: center;
+      padding: 15px 0;
+    }
   }
 
   &__title {
     padding-top: 3px;
+
+    @include r(640) {
+      margin: 15px;
+      text-align: center;
+    }
   }
 
   &__filter {
@@ -99,6 +116,10 @@
     background-color: $white;
     border-radius: 4px;
     box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+
+    @include r(640) {
+      justify-content: center;
+    }
   }
 
   &__category-button {
@@ -127,9 +148,42 @@
     margin-right: -30px;
   }
 
+  &__item-wrapper {
+
+    @include r(1200) {
+      max-height: 300px;
+      overflow: hidden;
+      margin-bottom: 75px;
+    }
+
+    @include r(480) {
+      margin-bottom: 90px;
+    }
+  }
+
   &__item {
     margin-bottom: 30px;
     margin-right: 30px;
+
+    @include r(1200) {
+      position: relative;
+      height: auto;
+    }
+
+    @include r(840) {
+      max-width: calc(100% / 2 - 30px);
+    }
+
+    @include r(640) {
+      max-width: calc(100% - 30px);
+    }
+  }
+
+  &__item-title {
+
+    @include r(840) {
+      height: 50px;
+    }
   }
 
   &__item-img {
@@ -143,10 +197,19 @@
 
     &--info {
       left: 45px;
+
+      @include r(420) {
+        left: 20px;
+      }
     }
 
     &--demo {
       right: 42px;
+
+      @include r(420) {
+        right: 17px;
+        left: auto;
+      }
     }
   }
 
@@ -155,6 +218,11 @@
     max-height: 40px;
     padding: 7px 0;
     overflow: hidden;
+
+    @include r(1024) {
+      max-height: 80px;
+      margin-bottom: 10px;
+    }
   }
 
   &__item-author,
@@ -167,6 +235,10 @@
 
     &:active {
       @include active-black;
+    }
+
+    @include r(1024) {
+      margin-bottom: 10px;
     }
   }
 
@@ -211,10 +283,46 @@
 
   &__item-text {
     @include prod-text;
+
+    @include r(1024) {
+      margin-bottom: 15px;
+      max-height: 175px;
+    }
+
+    @include r(840) {
+      height: 145px;
+      min-height: 145px;
+    }
+
+    @include r(640) {
+      height: auto;
+      min-height: 90px;
+    }
+
+    @include r(480) {
+      height: 120px;
+      max-height: none;
+    }
   }
 
   &__item-specs {
     @include prod-specs;
+
+    @include r(1200) {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+    }
+
+    @include r(480) {
+      flex-direction: column;
+    }
+  }
+
+  &__specs-info {
+    @include r(480) {
+      margin-bottom: 15px;
+    }
   }
 
   &__specs-price,
@@ -253,142 +361,14 @@
       background-color: $violet;
       color: $white;
     }
+
+    @include r(480) {
+      margin-top: 15px;
+    }
   }
 
   .mixitup-control-active {
     color: $white;
     background-color: $blue-li;
-  }
-}
-
-
-@media (max-width: 1200px) {
-  .newest-products {
-
-    &__item {
-      position: relative;
-      height: auto;
-    }
-
-    &__item-specs {
-      position: absolute;
-      width: 100%;
-      bottom: 0;
-    }
-    
-    &__item-wrapper {
-      max-height: 300px;
-      overflow: hidden;
-      margin-bottom: 75px;
-    }
-  }
-}
-
-@media (max-width: 1024px) {
-  .newest-products {
-    padding-top: 50px;
-    padding-bottom: 50px;
-
-    &__item-text {
-      margin-bottom: 15px;
-      max-height: 175px;
-    }
-    &__item-details {
-      max-height: 80px;
-      margin-bottom: 10px;
-    }
-    &__item-author,
-    &__item-cat {
-      margin-bottom: 10px;
-    }
-  }
-}
-
-@media (max-width: 840px) {
-  .newest-products {   
-  
-    &__item {
-      max-width: calc(100% / 2 - 30px);
-    }
-  
-    &__item-title {
-      height: 50px;
-    }
-    &__item-text {
-      height: 145px;
-      min-height: 145px;
-    }
-  }
-}
-
-@media (max-width: 640px) {
-  .newest-products {
-
-    &__item {
-      max-width: calc(100% - 30px);
-    }
-
-    &__title-box {
-      flex-direction: column;
-      justify-content: center;
-      padding: 15px 0;
-    }
-
-    &__title {
-      margin: 15px;
-      text-align: center;
-    }
-
-    &__item-text {
-      height: auto;
-      min-height: 90px;
-    }
-
-    &__category-box {
-      justify-content: center;
-    }
-  }
-}
-
-@media (max-width: 480px) {
-  .newest-products {
-
-    &__item-specs {
-      flex-direction: column;
-    }
-
-    &__specs-info {
-      margin-bottom: 15px;
-    }
-
-    &__item-text {
-      height: 120px;
-      max-height: none;
-    }
-
-    &__all-products {
-      margin-top: 15px;
-    }
-
-    &__item-wrapper {
-      margin-bottom: 90px;
-    }
-  }
-}
-
-@media (max-width: 420px) {
-  .newest-products {
-
-    &__link {
-
-      &--info {
-        left: 20px;
-      }
-
-      &--demo {
-        right: 17px;
-        left: auto;
-      }
-    }
   }
 }

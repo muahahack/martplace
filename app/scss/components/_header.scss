@@ -1,14 +1,64 @@
 .header {
   position: relative;
-  
+
+  &__menu {
+
+    @include r(840) {
+      display: block;
+    }
+  }
+
   &__menu-list {
     padding: 0;
     margin: 0;
+
+    @include r(840) {
+      display: none;
+      position: absolute;
+      top: 80px;
+      left: -15px;
+      right: -15px;
+      z-index: 1;
+      background-color: $blue-li;
+    }
+
+    @include rmin(840) {
+      display: block !important;
+    }
   }
 
   &__top {
     min-height: 100px;
     background-color: #EEF1F3;
+  }
+
+  &__top-inner {
+
+    @include r(640) {
+      padding-top: 20px;
+    }
+  }
+
+  &__info {
+    @include r(640) {
+      transition: all 1s;
+      transform: translateX(200%);
+      position: absolute;
+
+      &.active {
+        transform: translateX(-4%);
+        background-color: #eef1f3;
+        z-index: 2;
+      }
+    }
+
+    @include r(480) {
+      transform: translateX(180%);
+
+      &.active {
+        transform: translateX(-60%);
+      }
+    }
   }
 
   &__top-inner,
@@ -54,6 +104,10 @@
     &:active {
       @include active-black;
     }
+
+    @include r(840) {
+      display: none;
+    }
   }
 
   &__status,
@@ -78,6 +132,10 @@
     &:active {
       @include active-black;
     }
+
+    @include r(480) {
+      min-width: 180px;
+    }
   }
 
   &__status {
@@ -93,8 +151,8 @@
     }
 
     &:hover .lnr {
-       color: $blue-li;
-       @include text-shadow;
+      color: $blue-li;
+      @include text-shadow;
     }
 
     .lnr-cart {
@@ -154,6 +212,18 @@
     &:hover {
       color: $blue-li;
     }
+
+    @include r(840) {
+      display: block;
+      color: $white;
+      text-align: center;
+      padding: 15px 0;
+      border-bottom: 1px solid $white;
+
+      &:hover {
+        color: $orange;
+      }
+    }
   }
 
   &__menu-item {
@@ -171,10 +241,28 @@
     &:last-child {
       margin-right: 0;
     }
+
+    @include r(840) {
+      display: block;
+      height: auto;
+      margin: 0;
+      padding: 0;
+    }
   }
 
   &__search {
     margin-bottom: 16px;
+
+    @include r(840) {
+      position: absolute;
+      margin-bottom: 0;
+      right: 0;
+      top: 17px;
+    }
+
+    @include r(480) {
+      min-width: 235px;
+    }
   }
 
   .lnr-envelope {
@@ -199,90 +287,39 @@
       padding-right: 15px;
       font-size: 15px;
     }
+
+    @include r(480) {
+      top: 78px;
+      right: auto;
+      left: -40px;
+    }
   }
 
   &__menu-btn {
     display: none;
-  }
 
-  &__user-btn {
-    display: none;
-  }
-
-  &__middle {
-    height: 0;
-    transition: height 1s;
-  }
-}
-
-@media (max-width: 840px) {
-  .header {
-    &__seller-link {
-      display: none;
-    }
-
-    &__menu-list {
-      display: none;
-      position: absolute;
-      top: 80px;
-      left: -15px;
-      right: -15px;
-      z-index: 1;
-      background-color: $blue-li;
-    }
-
-    &__menu-item {
-      display: block;
-      height: auto;
-      margin: 0;
-      padding: 0;
-    }
-
-    &__menu {
-      display: block;
-    }
-
-    &__menu-link {
-      display: block;
-      color: $white;
-      text-align: center;
-      padding: 15px 0;
-      border-bottom: 1px solid $white;
-
-      &:hover {
-        color: $orange;
-      }
-    }
-
-    &__menu-btn {
+    @include r(840) {
       display: block;
       width: 45px;
       margin-bottom: 15px;
     }
-    &__btn-line {
+  }
+
+  &__btn-line {
+    @include r(840) {
       height: 6px;
       background-color: $blue-li;
-      & + & {
+
+      &+& {
         margin-top: 10px;
       }
     }
-
-    &__bottom-inner {
-      position: relative;
-    }
-
-    &__search {
-      position: absolute;
-      margin-bottom: 0;
-      right: 0;
-      top: 17px;
-    }
   }
-}
 
-@media (max-width: 640px) {
-  .header {
-    &__user-btn {
+  &__user-btn {
+    display: none;
+
+    @include r(640) {
       position: absolute;
       right: 0;
       top: 0;
@@ -291,6 +328,7 @@
       height: 100px;
       background-color: $blue-li;
       z-index: 2;
+
       &::before {
         position: absolute;
         top: 50%;
@@ -300,61 +338,24 @@
         color: $white;
       }
     }
-
-    &__top-inner {
-      padding-top: 20px;
-    }
-
-    &__info {
-      transition: all 1s;
-      transform: translateX(200%);
-      position: absolute;
-      &.active {
-        transform: translateX(-4%);
-        background-color: #eef1f3;
-        z-index: 2;
-      }
-    }
   }
-}
 
-@media (max-width: 480px) {
-  .header {
+  &__middle {
+    height: 0;
+    transition: height 1s;
 
-    &__info {
-      transform: translateX(180%);
-      &.active {
-        transform: translateX(-60%);
-      }
-    }
-
-    &__search {
-      min-width: 235px;
-    }
-    
-    &__profile-list {
-      top: 78px;
-      right: auto;
-      left: -40px;
-    }
-    &__profile-link {
-      min-width: 180px;
-    }
-
-    &__middle {
+    @include r(480) {
       &.active {
         border: 1px solid $blue-li;
         border-width: 1px 0 1px 0;
         height: 63px;
-      }      
+      }
     }
   }
-}
 
-@media (min-width: 840px) {
-  .header {
-    &__menu-list {
-      display: block !important;
+  &__bottom-inner {
+    @include r(840) {
+      position: relative;
     }
   }
 }

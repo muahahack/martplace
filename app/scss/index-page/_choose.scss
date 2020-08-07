@@ -3,10 +3,18 @@
   text-align: center;
   background-color: #FFFFFF;
 
+  @include r(840) {
+    padding: 50px 0;
+  }
+
   &__title {
     margin-bottom: 26px;
     font-size: 36px;
     line-height: 28px;
+
+    @include r(840) {
+      line-height: 50px;
+    }
   }
 
   &__title-name {
@@ -27,6 +35,11 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     margin-right: -30px;
+
+    @include r(640) {
+      display: block;
+      margin-right: 0;
+    }
   }
 
   &__item {
@@ -44,6 +57,20 @@
     &:hover {
       box-shadow: 0px 2px 50px 0px $blue-li;
     }
+
+    @include r(1200) {
+      min-height: auto;
+    }
+
+    @include r(840) {
+      width: calc(100% / 2 - 30px);
+      padding: 35px 15px 25px;
+    }
+
+    @include r(640) {
+      margin: 0 auto 30px;
+      width: 100%;
+    }
   }
 
   &__item-number {
@@ -58,6 +85,10 @@
 
   &__item-img {
     margin-bottom: 42px;
+
+    @include r(640) {
+      margin-bottom: 20px;
+    }
   }
 
   &__item-img .lnr {
@@ -67,11 +98,25 @@
   &__item-title {
     font-size: 24px;
     margin-bottom: 20px;
+
+    @include r(840) {
+      line-height: 35px;
+    }
   }
 
   &__item-text {
     height: 120px;
     overflow: hidden;
+
+    @include r(1200) {
+      height: auto;
+      max-height: 180px;
+    }
+
+    @include r(840) {
+      height: auto;
+      max-height: 180px;
+    }
   }
 
   .lnr-license {
@@ -96,61 +141,5 @@
 
   .lnr-phone {
     color: #FF6A6D;
-  }
-}
-
-@media (max-width: 1200px) {
-  .choose {
-    &__item {
-      min-height: auto;
-    }
-
-    &__item-text {
-      height: auto;
-      max-height: 180px;
-    }
-  }
-}
-
-@media (max-width: 840px) {
-  .choose {
-    padding: 50px 0;
-
-    &__title {
-      line-height: 50px;
-    }
-
-    &__item {
-      width: calc(100% / 2 - 30px);
-      padding: 35px 15px 25px;
-    }
-
-    &__item-title {
-      line-height: 35px;
-    }
-
-    &__item-text {
-      height: auto;
-      max-height: 180px;
-    }
-  }
-}
-
-@media (max-width: 640px) {
-  .choose {
-
-    &__items-box {
-      display: block;
-      margin-right: 0;
-    }
-
-    &__item {
-      margin: 0 auto 30px;
-      width: 100%;
-    }
-
-    &__item-img {
-      margin-bottom: 20px;
-    }
   }
 }

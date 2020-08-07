@@ -2,9 +2,27 @@
   padding: 93px 0 88px;
   background-color: #212225;
 
+  @include r(1200) {
+    padding: 50px 20px;
+  }
+
+  @include r(640) {
+    padding-bottom: 20px;
+  }
+
+  @include r(480) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
   &__inner {
     display: flex;
     justify-content: space-between;
+
+    @include r(640) {
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
   }
 
   &__item {
@@ -18,6 +36,15 @@
     &--total-sales {
       margin-left: 20px;
       margin-right: 10px;
+    }
+
+    @include r(640) {
+      width: 37%;
+      margin-bottom: 30px;
+    }
+
+    @include r(480) {
+      width: 51%;
     }
   }
 
@@ -74,49 +101,5 @@
   .lnr-smile,
   .lnr-users {
     font-size: 48px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .statistic {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .statistic {
-    padding: 50px 20px;
-  }
-}
-
-@media (max-width: 640px) {
-  .statistic {
-    padding-bottom: 20px;
-
-    &__inner {
-      justify-content: space-around;
-      flex-wrap: wrap;
-    }
-
-    &__item {
-      width: 37%;
-      margin-bottom: 30px;
-    }
-
-  }
-}
-
-@media (max-width: 480px) {
-  .statistic {
-    padding-right: 0;
-    padding-left: 0;
-
-    &__inner {}
-
-    &__item {
-      width: 51%;
-    }
-
   }
 }
