@@ -54,7 +54,7 @@ a {
   flex-grow: 0;
   border: 1px solid #747B86;
   border-radius: 50%;
-  margin-right: 10px;
+  margin-right: 13px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 50% 50%;
@@ -89,7 +89,7 @@ a {
       padding: 0 50px;
     }
   }
-  
+
   @include r(768) {
     &--category-products {
       padding: 0;
@@ -1274,7 +1274,7 @@ a {
 
     &:active {
       @include active-black;
-    } 
+    }
   }
 
   &__number {

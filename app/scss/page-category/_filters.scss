@@ -42,8 +42,9 @@
 
     &:active {
       @include active-black;
-    } 
+    }
   }
+
   &__sorts-wrap {
     display: inline-block;
     position: relative;
@@ -53,18 +54,18 @@
       margin-bottom: 15px;
       margin-right: 0;
     }
-    
+
     &::before {
       content: "\e874";
-      font-size: 10px;      
+      font-size: 10px;
       font-family: 'Linearicons-Free';
       color: $dark5;
-      position: absolute; 
+      position: absolute;
       right: 20px;
       top: 20px;
     }
   }
-  
+
   &__sorts-view {
     display: inline-block;
   }
@@ -73,7 +74,7 @@
   &__view-btn,
   &__sorts-price,
   &__sorts-items,
-  &__btn-path {    
+  &__btn-path {
     transition: all 1s ease;
     cursor: pointer;
   }
@@ -113,7 +114,7 @@
 
     &:active {
       @include active-black;
-    } 
+    }
   }
 
   &__view-btn {
@@ -121,12 +122,12 @@
     border: none;
     padding: 0;
 
-    & + & {
+    &+& {
       margin-left: 11px;
     }
-    
-    &:hover .filters__btn-path {   
-      fill: $orange;    
+
+    &:hover .filters__btn-path {
+      fill: $orange;
     }
 
     &:focus {
@@ -135,13 +136,15 @@
 
     &:active {
       @include active-black;
-    }   
+    }
   }
+
   &__btn-svg {
     margin-bottom: -3px;
     width: 20px;
     height: 20px;
   }
+
   &__btn-path {
     fill: #747B86;
 
@@ -150,4 +153,3 @@
     }
   }
 }
-

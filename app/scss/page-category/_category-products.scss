@@ -43,16 +43,18 @@
   .irs-single {
     display: none;
   }
+
   .irs--flat {
 
     .irs-line,
-    .irs-bar {      
+    .irs-bar {
       height: 6px;
     }
 
     .irs-line {
       background-color: #EFEDF3;
     }
+
     .irs-bar {
       background-color: #7347C1;
     }
@@ -65,9 +67,11 @@
       border-radius: 50%;
       background-color: $white;
     }
+
     .irs-handle>i:first-child {
       display: none;
     }
+
     .irs-from,
     .irs-to {
       visibility: visible !important;
@@ -82,18 +86,18 @@
     }
 
     .to,
-    .from {        
-      transition: all 1s;
+    .from {
+      transition: border-color 1s;
       cursor: pointer;
 
       &:hover {
         border-color: $orange;
       }
-  
+
       &:focus {
         @include focus-vio;
       }
-  
+
       &:active {
         @include active-black;
       }
@@ -103,6 +107,7 @@
       left: 0 !important;
       right: auto !important;
     }
+
     .irs-to {
       right: 0 !important;
       left: auto !important;
@@ -127,9 +132,9 @@
     display: none;
     text-align: center;
     padding: 20px 0;
-    color: $white;  
-    background-color: $blue-li; 
-    transition: color 1s; 
+    color: $white;
+    background-color: $blue-li;
+    transition: color 1s;
 
     @include r(768) {
       display: block;
@@ -151,7 +156,7 @@
     @include r(1024) {
       min-width: 230px;
     }
-    
+
     @include r(768) {
       display: none;
       max-width: none;
@@ -178,14 +183,20 @@
     }
   }
 
+  &__filter-item {
+    & + & {
+      margin-top: 18px;
+    }
+  }
+
   &__categories-item,
   &__filter-item {
 
     @include r(768) {
-      padding-left: 0;      
+      padding-left: 0;
       border-bottom: 1px solid $blue-li;
 
-      & + & {
+      &+& {
         margin-top: 0;
       }
 
@@ -254,6 +265,7 @@
       text-align: center;
 
       &:hover {
+
         .category-products__categories-list,
         .category-products__filter-list,
         .category-products__range-form {
@@ -278,6 +290,7 @@
     @include r(540) {
       padding-left: 15px;
       margin-top: 15px;
+      margin-right: 0;
     }
   }
 
@@ -305,6 +318,18 @@
       width: 100%;
       display: flex;
       justify-content: space-between;
+      overflow: hidden;
+
+      @include r(1024) {
+        width: calc(100% / 2 - 30px);
+        max-height: none;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      @include r(540) {
+        width: calc(100% - 15px);
+      }
 
       &:nth-child(6) {
         margin-bottom: 51px;
@@ -313,7 +338,7 @@
       &:nth-child(n + 7) {
         display: none;
       }
-      
+
       .category-products {
         &__img-wrapper {
           display: none;
@@ -326,8 +351,9 @@
             display: block;
           }
         }
-        
+
         &__link {
+
           &--info,
           &--demo {
             max-width: 131px;
@@ -341,12 +367,12 @@
             top: 50px;
           }
 
-          &--demo {            
+          &--demo {
             top: 120px;
           }
         }
 
-        &__item-title ,
+        &__item-title,
         &__item-details,
         &__specs-top,
         &__specs-bottom {
@@ -358,20 +384,45 @@
         &__specs-box {
           display: inline-block;
           margin: 25px 0;
+
+          @include r(1024) {
+            min-width: 100%;
+            padding: 20px;
+          }
         }
-        
+
         &__info-box {
           max-width: 246px;
           margin-left: 4px;
-        }
 
-        &__info-wrapper {
-          margin-left: 30px;
+          @include r(1366) {
+            margin-top: 15px;
+            margin-bottom: 15px;
+          }
+
+          @include r(1024) {
+            margin: 0 0 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #EFEDF3;
+          }
         }
 
         &__author-box {
           max-width: 150px;
           margin-top: 43px;
+
+          @include r(1366) {
+            margin-left: 15px;
+          }
+
+          @include r(1024) {
+            min-width: 100%;
+            margin: 0;
+            margin-bottom: 15px;
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #EFEDF3;
+          }
         }
 
         &__specs-box {
@@ -381,27 +432,45 @@
           text-align: center;
           border-left: 1px solid #ECECEC;
 
-          
+
           @include r(1366) {
+            min-width: 130px;
             padding: 0;
             margin-right: 0;
-            margin-left: 10px;
+            margin-left: 20px;
+          }
+
+          @include r(1024) {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin: 0;
+            margin-bottom: 15px;
+            border-left: none;
           }
         }
-        
+
         &__item-img {
           &--list {
             width: 230px;
             height: 210px;
             max-height: none;
-          }          
+
+            @include r(1024) {
+              display: block;
+              width: 100%;
+            }
+          }
         }
 
         &__info-title {
+          max-height: 48px;
           padding-right: 20px;
           font-size: 18px;
           line-height: 24px;
           margin-bottom: 13px;
+          overflow: auto;
+          @include scroll-style;
 
           @include r(1366) {
             padding-right: 0;
@@ -418,8 +487,12 @@
           font-size: 16px;
           line-height: 30px;
           margin-bottom: 10px;
-          overflow: hidden;
+          overflow: auto;
+          @include scroll-style;
 
+          @include r(1366) {
+            max-height: 85px;
+          }
         }
 
         &__item-author {
@@ -431,6 +504,11 @@
           margin-bottom: 10px;
           font-size: 15px;
           color: #7F4EC2;
+
+          @include r(1024) {
+            display: block;
+            margin: 0 auto 10px;
+          }
         }
 
         &__author-comments {
@@ -450,14 +528,30 @@
         &__rating-wraper {
           position: relative;
           margin-left: 3px;
+
+          @include r(1024) {
+            margin: 0;
+          }
         }
-        
+
+        &__rating-list {
+          @include r(1024) {
+            margin: 0 auto;
+          }
+        }
+
         &__rating-number {
           position: absolute;
           font-size: 15px;
           color: #6F7D8D;
           top: -2px;
           left: 107px;
+
+          @include r(1024) {
+            left: 0;
+            right: 0;
+            margin-left: 140px;
+          }
         }
 
         &__specs-price,
@@ -474,6 +568,11 @@
           @include r(1366) {
             max-width: 100px;
           }
+
+          @include r(1024) {
+            margin-top: 0;
+            margin-bottom: 0;
+          }
         }
       }
     }
@@ -481,8 +580,13 @@
 
   &__img-wrapper {
     margin-bottom: 11px;
+
     &--list {
       display: none;
+
+      @include r(1024) {
+        width: 100%;
+      }
     }
 
     &::before {
@@ -491,6 +595,7 @@
   }
 
   &__link {
+
     &--info,
     &--demo {
       max-width: 131px;
@@ -523,12 +628,13 @@
     margin-bottom: 12px;
     line-height: 24px;
     overflow: auto;
+    @include scroll-style;
 
     @include r(1024) {
       height: auto;
     }
   }
-  
+
   &__item-details {
     margin-bottom: 20px;
   }
@@ -572,6 +678,7 @@
   &__cat-icon {
     top: 7px;
   }
+
   &__cat-name {
     margin-left: 21px;
   }
@@ -582,16 +689,47 @@
     &:first-child {
       margin-right: 13px;
     }
+
     &:last-child {
       margin-left: 15px;
     }
   }
 
   &__pagination {
-    width: calc(100% - 30px);  
+    width: calc(100% - 30px);
     display: flex;
-    justify-content:flex-end;
+    justify-content: flex-end;
     margin-top: 28px;
+
+    @include r(540) {
+      justify-content: center;
+    }
+  }
+
+  &__pagination-list {
+    position: relative;
+  }
+
+  &__pagination-item {
+
+    &--arrow-prev,
+    &--arrow-next {
+      @include r(540) {
+        position: absolute;
+        top: 50px;
+        left: 54px;
+        // left: 0;
+        // right: 0;
+        // margin: 0 auto;
+      }
+    }
+
+    &--arrow-next {
+      @include r(540) {
+        left: 96px;
+      }
+    }
+
   }
 
   &__pagination-link,
@@ -604,7 +742,7 @@
     transition: all 1s;
     cursor: pointer;
 
-    & + & {
+    &+& {
       margin-left: 5px;
     }
 
@@ -630,6 +768,7 @@
   &__pagination-link {
     display: block;
     padding: 10px 22px;
+
     &--active {
       color: $white;
       background-color: $blue-li;
@@ -643,4 +782,3 @@
     }
   }
 }
-
