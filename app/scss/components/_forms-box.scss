@@ -1,0 +1,274 @@
+.forms-box {
+  padding: 70px 0 119px;
+  background-color: #EFF1F5;
+
+  &--contact {
+    padding-top: 112px;
+    padding-bottom: 0;
+  }
+
+  &__inner {
+    width: 555px;
+    padding: 55px 0 60px;
+    margin: 0 auto;
+    background-color: $white;
+
+    @include r(640) {
+      width: auto;      
+    }
+    
+    &--contact {
+      width: 100%;
+      margin-bottom: 120px;
+    }
+  }
+
+  &__form,
+  &__title-box {
+    padding: 0 50px;
+  }
+
+  &__form {
+    &--contact {
+      padding: 0 195px;
+      
+      @include r(840) {
+        padding: 0 100px;
+      }
+
+      @include r(480) {
+        padding: 0 35px;
+      }
+    }
+  }
+  
+  &__title-box {
+  }
+
+  &__title-box {
+    display: block;
+    text-align: center;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #E8EBF0;
+    margin-bottom: 25px;
+    
+    &--register {
+      padding: 0 55px;
+    }
+
+    &--recover {
+      padding-right: 45px;
+      margin-bottom: 39px;
+    }    
+
+    &--contact {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__title {
+    font-size: 26px;
+    margin-bottom: 14px;
+
+    &--contact {
+      font-size: 24px;
+    }
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 28px;
+    color: $dark5;
+
+    &--recover {
+      text-align: left;
+    }
+  }
+
+  &__form-label,
+  &__form-input,  
+  &__form-btn {
+    display: block;
+  }
+
+  &__form-label {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 25px;
+  }
+  &__form-input {
+    width: 100%;
+    padding: 16px 20px;
+    margin-top: 14px;
+    border: none;
+    background-color: #F4F5F8;
+
+    &--contact {
+      width: calc(100% / 2 - 30px);
+      margin-right: 30px;
+      margin-bottom: 30px;
+      margin-top: 0;
+      border: 1px solid #E7E7E7;
+      background-color: transparent;
+
+      @include r(840) {        
+        width: calc(100% - 30px);
+      }
+
+      &::placeholder {
+        color: #9E9E9E;
+      }
+    }
+    
+    &::placeholder {
+      color: #898F96;
+      font-size: 16px;
+    }
+
+    &:focus {
+      @include focus-vio;
+    }
+
+    &:active {
+      @include active-black;
+    }
+  }
+
+  &__remember {
+    
+    &:focus {
+      @include focus-vio;
+      border-radius: 50px;
+    }
+
+    &:active {
+      @include active-black;
+    }
+  }
+
+  &__form-check {
+    margin-top: 6px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: $dark5;
+    transition: color 1s;
+    cursor: pointer;
+
+    &:hover {
+      color: $orange;
+    }
+  }
+
+  &__form-btn {
+    padding: 16px 58px;
+    margin-bottom: 40px;
+    font-size: 15px;
+    font-weight: 500;
+    color: $white;
+    background-color: $blue-li;
+    transition: all 1s;
+    cursor: pointer;
+
+    @include r(360) {
+      padding: 16px 35px;
+    }
+
+    &--register {
+      margin-top: 32px;
+      padding: 17px 48px;
+      margin-bottom: 40px;
+      
+      @include r(360) {
+        padding: 16px 35px;
+      }
+    }
+
+    &--recover {
+      margin-top: 34px;
+      margin-bottom: 2px;
+    }
+
+    &--contact {
+      margin: 0 auto;
+      padding: 16px 37px;
+
+      @include r(360) {
+        padding: 16px 35px;
+      }
+    }
+    
+    &:hover {
+      background-color: $vio;
+    }
+
+    &:focus {
+      @include focus-vio;
+      border-radius: 50px;
+    }
+
+    &:active {
+      @include active-black;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: -20px;
+    color: #898F96;
+    line-height: 30px;
+  }
+
+  &__info {
+    margin-right: 20px;
+  }
+
+  &__link {
+    color: $blue-li;
+    transition: all 1s;
+
+    &:hover {
+      color: $orange;
+    }
+
+    &:focus {
+      @include focus-vio;
+    }
+
+    &:active {
+      @include active-black;
+    }
+  }
+
+  &__group {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+  }
+
+  &__form-textarea {
+    width: 100%;
+    min-height: 133px;
+    padding: 16px 20px;
+    margin-bottom: 30px;
+    border: 1px solid #E7E7E7;
+    background-color: transparent;
+
+    &::placeholder {
+      color: #9E9E9E;
+    }
+    transition: all 1s;
+
+    &:hover {
+      color: $orange;
+    }
+
+    &:focus {
+      @include focus-vio;
+    }
+
+    &:active {
+      @include active-black;
+    }
+  }
+}

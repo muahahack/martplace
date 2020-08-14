@@ -101,6 +101,51 @@ $(function(){
     $(".category-products__aside").slideToggle();
   });
 
+  // кнопки фильтров aside
+
+  $(".category-products__categories-title").on("click", function(){
+    $(".category-products__categories-list").slideToggle();
+  });
+
+  $(".category-products__filter-title").on("click", function(){
+    $(".category-products__filter-list").slideToggle();
+  });
+
+  $(".category-products__range-title").on("click", function(){
+    $(".category-products__range-form").slideToggle();
+  });
+
+  // кнопки меню header menu
+
+  $(".header__drop-btn--home").on("click", function(){
+    $(".drop-menu__list--home").slideToggle();
+  });
+
+  $(".header__drop-btn--all-products").on("click", function(){
+    $(".drop-menu__list--all-products").slideToggle();
+  });
+
+  $(".header__drop-btn--wordpress").on("click", function(){
+    $(".drop-menu__list--wordpress").slideToggle();
+  });
+
+  $(".header__drop-btn--pages").on("click", function(){
+    $(".drop-menu__list--pages").slideToggle();
+  });
+
+   // кнопки меню header submenu
+
+  $(".header__submenu-btn--martplace").on("click", function(){
+    $(".drop-menu__submenu-list--martplace").slideToggle();
+  });
+
+  $(".header__submenu-btn--dashboard").on("click", function(){
+    $(".drop-menu__submenu-list--dashboard").slideToggle();
+  });
+  $(".header__submenu-btn--others").on("click", function(){
+    $(".drop-menu__submenu-list--others").slideToggle();
+  });
+
   $(".js-range-slider").ionRangeSlider({
     type: "double",
     min: 0,

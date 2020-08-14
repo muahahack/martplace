@@ -1,0 +1,94 @@
+.pagination {
+
+  width: calc(100% - 30px);
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 28px;
+
+  @include r(540) {
+    justify-content: center;
+  }
+
+  &__item {
+    display: inline-block;
+
+    &:first-child {
+      margin-right: 13px;
+    }
+
+    &:last-child {
+      margin-left: 15px;
+    }
+    
+    &--arrow-prev,
+    &--arrow-next {
+      @include r(540) {
+        position: absolute;
+        top: 50px;
+        left: 54px;
+      }
+    }
+
+    &--arrow-next {
+      @include r(540) {
+        left: 96px;
+      }
+    }
+  }
+
+  &__list {
+    @include list-reset;
+    position: relative;
+  }
+
+
+  &__link,
+  &__btn {
+    width: 51px;
+    height: 38px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: $white;
+    transition: all 1s;
+    cursor: pointer;
+
+    &+& {
+      margin-left: 5px;
+    }
+
+    .lnr-arrow-left,
+    .lnr-arrow-right {
+      font-size: 16px;
+    }
+
+    &:hover {
+      color: #000000;
+      background-color: $orange;
+    }
+
+    &:focus {
+      @include focus-vio;
+    }
+
+    &:active {
+      @include active-black;
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: 10px 22px;
+
+    &--active {
+      color: $white;
+      background-color: $blue-li;
+    }
+  }
+
+  &__btn {
+    &--active {
+      color: $white;
+      background-color: $vio;
+    }
+  }
+}

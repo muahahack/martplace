@@ -265,6 +265,10 @@
   &__search {
     margin-bottom: 16px;
 
+    @include r(1024) {
+      min-width: 260px;
+    }
+
     @include r(840) {
       position: absolute;
       margin-bottom: 0;
@@ -377,6 +381,44 @@
   &__bottom-inner {
     @include r(840) {
       position: relative;
+    }
+  }
+
+  &__drop-btn {
+    display: none;
+    position: absolute;
+    width: 70px;
+    height: 47px;
+    right: 0;
+    left: 250px;
+    margin: 0 auto;
+    top: 0;
+    font-size: 40px;
+    line-height: 31px;
+    color: $white;
+    text-align: center;
+    z-index: 16;
+
+    @include r(840) {
+      display: block;
+    }
+  }
+    
+  &__submenu-btn {
+    display: none;
+    position: absolute;
+    width: 70px;
+    height: 42px;
+    top: 0;
+    right: 0;
+    left: 245px;
+    margin: 0 auto;
+    font-size: 25px;
+    line-height: 33px;
+    z-index: 16;
+
+    @include r(840) {
+      display: unset;
     }
   }
 }

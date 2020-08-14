@@ -4,14 +4,6 @@
     margin-bottom: 12px;
   }
 
-  &__range-form {
-    padding-left: 8px;
-
-    @include r(768) {
-      padding: 0 15px;
-    }
-  }
-
   &__range-btn {
     display: block;
     margin: 0 auto;
@@ -32,7 +24,7 @@
       background-color: $vio;
     }
 
-    @include r(768) {
+    @include r(1024) {
       margin-bottom: 25px;
     }
   }
@@ -123,7 +115,7 @@
     display: flex;
     padding-bottom: 120px;
 
-    @include r(768) {
+    @include r(1024) {
       flex-direction: column;
     }
   }
@@ -136,7 +128,7 @@
     background-color: $blue-li;
     transition: color 1s;
 
-    @include r(768) {
+    @include r(1024) {
       display: block;
     }
 
@@ -157,7 +149,7 @@
       min-width: 230px;
     }
 
-    @include r(768) {
+    @include r(1024) {
       display: none;
       max-width: none;
       width: 100%;
@@ -167,8 +159,9 @@
   &__categories-title,
   &__filter-title,
   &__range-title {
+    padding: 28px 26px 32px;
 
-    @include r(768) {
+    @include r(1024) {
       margin-bottom: 0;
       padding: 15px 0;
       border-bottom: 1px solid $blue-li;
@@ -184,6 +177,11 @@
   }
 
   &__filter-item {
+
+    @include r(1024) {
+      padding: 15px 0;
+    }
+    
     & + & {
       margin-top: 18px;
     }
@@ -192,7 +190,7 @@
   &__categories-item,
   &__filter-item {
 
-    @include r(768) {
+    @include r(1024) {
       padding-left: 0;
       border-bottom: 1px solid $blue-li;
 
@@ -208,26 +206,45 @@
 
   &__categories-number {
 
-    @include r(768) {
+    @include r(1024) {
       right: 30px;
       top: 15px;
     }
   }
 
   &__categories-list,
+  &__filter-list {
+    padding-top: 28px;
+    border-top: 1px solid #E7EBEE;
+  }
+  
+
+  &__categories-list,
   &__filter-list,
   &__range-form {
-    @include r(768) {
+    padding: 28px 26px 32px;
+
+    @include r(1024) {
+      display: none;
+      padding: 0;
       max-height: 0;
       overflow: hidden;
-      transition: max-height 2s ease;
+      transition: max-height 2s ease;      
+    }
+  }
+  
+  &__range-form {
+    padding-left: 8px;
+
+    @include r(1024) {
+      padding: 0 15px;
     }
   }
 
   &__categories-link,
   &__filter-link {
 
-    @include r(768) {
+    @include r(1024) {
       display: block;
       padding: 15px 0;
       padding-left: 0;
@@ -238,7 +255,7 @@
     transition: all 1s;
     cursor: pointer;
 
-    @include r(768) {
+    @include r(1024) {
       padding: 15px 0;
     }
 
@@ -259,7 +276,9 @@
   &__categories-box,
   &__filter-box,
   &__range {
-    @include r(768) {
+    padding: 0;
+
+    @include r(1024) {
       padding: 0;
       margin-bottom: 0;
       text-align: center;
@@ -282,7 +301,7 @@
     flex-wrap: wrap;
     margin-right: -30px;
 
-    @include r(768) {
+    @include r(1024) {
       padding-left: 30px;
       margin-top: 30px;
     }
@@ -320,7 +339,7 @@
       justify-content: space-between;
       overflow: hidden;
 
-      @include r(1024) {
+      @include r(640) {
         width: calc(100% / 2 - 30px);
         max-height: none;
         flex-direction: column;
@@ -385,7 +404,7 @@
           display: inline-block;
           margin: 25px 0;
 
-          @include r(1024) {
+          @include r(640) {
             min-width: 100%;
             padding: 20px;
           }
@@ -400,7 +419,7 @@
             margin-bottom: 15px;
           }
 
-          @include r(1024) {
+          @include r(640) {
             margin: 0 0 15px;
             padding-bottom: 15px;
             border-bottom: 1px solid #EFEDF3;
@@ -415,7 +434,7 @@
             margin-left: 15px;
           }
 
-          @include r(1024) {
+          @include r(640) {
             min-width: 100%;
             margin: 0;
             margin-bottom: 15px;
@@ -440,7 +459,7 @@
             margin-left: 20px;
           }
 
-          @include r(1024) {
+          @include r(640) {
             display: flex;
             justify-content: space-between;
             width: 100%;
@@ -505,7 +524,7 @@
           font-size: 15px;
           color: #7F4EC2;
 
-          @include r(1024) {
+          @include r(640) {
             display: block;
             margin: 0 auto 10px;
           }
@@ -535,7 +554,8 @@
         }
 
         &__rating-list {
-          @include r(1024) {
+
+          @include r(640) {
             margin: 0 auto;
           }
         }
@@ -547,7 +567,7 @@
           top: -2px;
           left: 107px;
 
-          @include r(1024) {
+          @include r(640) {
             left: 0;
             right: 0;
             margin-left: 140px;
@@ -569,7 +589,7 @@
             max-width: 100px;
           }
 
-          @include r(1024) {
+          @include r(640) {
             margin-top: 0;
             margin-bottom: 0;
           }
@@ -584,7 +604,7 @@
     &--list {
       display: none;
 
-      @include r(1024) {
+      @include r(640) {
         width: 100%;
       }
     }
@@ -669,6 +689,7 @@
   &__rating-list {
     padding: 0;
     margin: 0;
+    z-index: 0;
   }
 
   &__specs-price {
@@ -681,104 +702,5 @@
 
   &__cat-name {
     margin-left: 21px;
-  }
-
-  &__pagination-item {
-    display: inline-block;
-
-    &:first-child {
-      margin-right: 13px;
-    }
-
-    &:last-child {
-      margin-left: 15px;
-    }
-  }
-
-  &__pagination {
-    width: calc(100% - 30px);
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 28px;
-
-    @include r(540) {
-      justify-content: center;
-    }
-  }
-
-  &__pagination-list {
-    position: relative;
-  }
-
-  &__pagination-item {
-
-    &--arrow-prev,
-    &--arrow-next {
-      @include r(540) {
-        position: absolute;
-        top: 50px;
-        left: 54px;
-        // left: 0;
-        // right: 0;
-        // margin: 0 auto;
-      }
-    }
-
-    &--arrow-next {
-      @include r(540) {
-        left: 96px;
-      }
-    }
-
-  }
-
-  &__pagination-link,
-  &__pagination-btn {
-    width: 51px;
-    height: 38px;
-    font-size: 16px;
-    font-weight: 500;
-    background-color: $white;
-    transition: all 1s;
-    cursor: pointer;
-
-    &+& {
-      margin-left: 5px;
-    }
-
-    .lnr-arrow-left,
-    .lnr-arrow-right {
-      font-size: 16px;
-    }
-
-    &:hover {
-      color: #000000;
-      background-color: $orange;
-    }
-
-    &:focus {
-      @include focus-vio;
-    }
-
-    &:active {
-      @include active-black;
-    }
-  }
-
-  &__pagination-link {
-    display: block;
-    padding: 10px 22px;
-
-    &--active {
-      color: $white;
-      background-color: $blue-li;
-    }
-  }
-
-  &__pagination-btn {
-    &--active {
-      color: $white;
-      background-color: $vio;
-    }
-  }
+  }  
 }

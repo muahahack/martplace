@@ -1,0 +1,58 @@
+.profile {
+
+  &__link {
+    display: flex;
+    align-items: center;
+    transition: all 1s ease;
+  }
+
+  &__avatar {
+    min-width: 50px;
+    height: 50px;
+    display: block;
+    margin-right: 23px;
+    border-radius: 50%;
+    background-size: contain;
+    background-position: center;
+
+    &--drop-menu {
+      min-width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+  }
+
+  &__name {
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    color: $dark;
+    transition: color 0.5s ease;
+
+    &:hover {
+      color: $red;
+    }
+
+    &--drop {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__specs {
+    transition: color 0.5s ease;
+
+    &--notify {
+      font-size: 15px;
+      color: #747a86;
+    }
+
+    &:hover {
+      color: $red;
+    }
+  }
+
+  &__info &__name .lnr {
+    display: inline;
+  }
+}

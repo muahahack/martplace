@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MartPlace</title>
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="content">
+      @@include('./parts/_header.html')
+
+      <main class="main">
+
+        @@include('./parts/_nav-head.html')
+
+        <section class="forms-box">
+          <div class="container">
+            <div class="forms-box__inner box-styles">
+              <div class="forms-box__title-box forms-box__title-box--recover">
+                <div class="forms-box__text forms-box__text--recover">
+                  Please enter the email address for your account. A verification
+                  code will be sent to you. Once you have received the
+                  verification code, you will be able to choose a new password
+                  for your account.
+                </div>
+              </div>
+              <form class="forms-box__form" action="register.php">
+                <label class="forms-box__form-label">
+                  Email Address
+                  <input class="forms-box__form-input" type="text" name="password" placeholder="Enter your email address...">
+                </label>
+
+                <button class="forms-box__form-btn forms-box__form-btn--recover button-style" type="submit">
+                  Submit Now
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+    </div>
+    @@include('./parts/_footer.html')
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

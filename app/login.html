@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MartPlace</title>
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="content">
+      @@include('./parts/_header.html')
+
+      <main class="main">
+
+        @@include('./parts/_nav-head.html')
+
+        <section class="forms-box">
+          <div class="container">
+            <div class="forms-box__inner box-styles">
+              <div class="forms-box__title-box">
+                <div class="forms-box__title">
+                  Welcome Back
+                </div>
+                <div class="forms-box__text">
+                  You can sign in with your username
+                </div>
+              </div>
+              <form class="forms-box__form" action="login.php">
+                <label class="forms-box__form-label">
+                  Username
+                  <input class="forms-box__form-input" type="text" name="password" placeholder="Enter your username...">
+                </label>
+
+                <label class="forms-box__form-label">
+                  Password
+                  <input class="forms-box__form-input" type="password" name="password"
+                    placeholder="Enter your password...">
+                </label>
+
+                <div class="login-box__remember">
+                  <input class="forms-box__form-check custom-checkbox" type="checkbox" id="remember" checked>
+                  <label class="forms-box__form-check forms-box__form-check--login" for="remember">Remember me</label>
+                </div>
+
+                <button class="forms-box__form-btn button-style" type="submit">
+                  Login Now
+                </button>
+                <div class="forms-box__bottom">
+                  <div class="forms-box__info">
+                    Lost your <a href="recover.html" class="forms-box__link">username</a> or <a href="recover.html"
+                      class="forms-box__link">password?</a>
+                  </div>
+                  <div class="forms-box__info">
+                    Don't have an <a href="register.html" class="forms-box__link">account?</a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+    </div>
+    @@include('./parts/_footer.html')
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

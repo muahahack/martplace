@@ -1,0 +1,11 @@
+.nav-head {
+  @include gradient-head;
+  padding: 41px 0 56px;
+
+  &__page-name {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 500;
+    color: $white;
+  }
+}

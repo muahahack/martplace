@@ -8,6 +8,22 @@ $red: #FF0000;
 $orange: #FFA600;
 $droplink: #54667A;
 
+@mixin list-reset {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@mixin drop-status {  
+  width: 100vw;
+  min-width: auto;
+  top: 67px;
+}
+
+@mixin gradient-head {  
+  background-image: -webkit-linear-gradient(180deg, rgb(13, 62, 242) 0%, rgb(45, 47, 199) 46%, rgb(76, 31, 156) 100%);
+}
+
 @mixin focus-vio {
   box-shadow: 0 0 0 3px $vio;
   border-radius: 4px;

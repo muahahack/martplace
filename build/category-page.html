@@ -317,7 +317,7 @@
                 <div class="header__profile-funds profile__specs">$20.45</div>
               </div>
 
-              <ul class="header__profile-list drop-menu__list drop-menu__list--triangle">
+              <ul class="header__profile-list drop-menu__list drop-menu__list--profile drop-menu__list--triangle">
                 <li class="drop-menu__item">
                   <a href="#" class="drop-menu__link"><span class="lnr lnr-user"></span>Profile Page</a>
                 </li>
@@ -376,9 +376,9 @@
           </div>
           <ul class="header__menu-list">
             <li class="header__menu-item drop-menu">
-              <a class="header__menu-link" href="#">home</a>
-
-              <ul class="drop-menu__list drop-menu__list--nav">
+              <a class="header__menu-link" href="/">home</a>
+              <div class="header__drop-btn header__drop-btn--home fas fa-sort-down"></div>
+              <ul class="drop-menu__list drop-menu__list--nav drop-menu__list--home">
                 <li class="drop-menu__item">
                   <a href="#" class="drop-menu__link">Home One Multi User</a>
                 </li>
@@ -393,8 +393,8 @@
             </li>
             <li class="header__menu-item drop-menu">
               <a class="header__menu-link" href="category-page.html">all products</a>
-
-              <ul class="drop-menu__list drop-menu__list--nav">
+              <div class="header__drop-btn header__drop-btn--all-products fas fa-sort-down"></div>
+              <ul class="drop-menu__list drop-menu__list--nav drop-menu__list--all-products">
                 <li class="drop-menu__item">
                   <a href="#" class="drop-menu__link">Recent Items</a>
                 </li>
@@ -418,8 +418,8 @@
             </li>
             <li class="header__menu-item drop-menu">
               <a class="header__menu-link" href="#">wordpress</a>
-
-              <ul class="drop-menu__list drop-menu__list--nav">
+              <div class="header__drop-btn header__drop-btn--wordpress fas fa-sort-down"></div>
+              <ul class="drop-menu__list drop-menu__list--nav drop-menu__list--wordpress">
                 <li class="drop-menu__item">
                   <a href="#" class="drop-menu__link">Popular Items</a>
                 </li>
@@ -455,13 +455,16 @@
             </li>
             <li class="header__menu-item drop-menu">
               <a class="header__menu-link" href="#">pages</a>
+              <div class="header__drop-btn header__drop-btn--pages fas fa-sort-down"></div>
               <div class="sub-wrap">
 
                 <ul class="drop-menu__list drop-menu__list--nav drop-menu__list--pages">
                   <li class="drop-menu__submenu-item">
                     <div class="drop-menu__submenu">
-                      <div class="drop-menu__submenu-title">MartPlace Pages</div>
-                      <ul class="drop-menu__submenu-list">
+                      <div class="drop-menu__submenu-title">MartPlace Pages
+                        <div class="header__submenu-btn header__submenu-btn--martplace fas fa-sort-down"></div>
+                      </div>
+                      <ul class="drop-menu__submenu-list drop-menu__submenu-list--martplace">
                         <li class="drop-menu__submenu-item">
                           <a href="#" class="drop-menu__link">Home Page One</a>
                         </li>
@@ -532,8 +535,10 @@
                     </div>
 
                     <div class="drop-menu__submenu">
-                      <div class="drop-menu__submenu-title">Dashboard</div>
-                      <ul class="drop-menu__submenu-list">
+                      <div class="drop-menu__submenu-title">Dashboard
+                        <div class="header__submenu-btn header__submenu-btn--dashboard fas fa-sort-down"></div>
+                      </div>
+                      <ul class="drop-menu__submenu-list drop-menu__submenu-list--dashboard">
                         <li class="drop-menu__submenu-item">
                           <a href="#" class="drop-menu__link">Dashboard</a>
                         </li>
@@ -571,8 +576,10 @@
                     </div>
 
                     <div class="drop-menu__submenu">
-                      <div class="drop-menu__submenu-title">Others Pages</div>
-                      <ul class="drop-menu__submenu-list">
+                      <div class="drop-menu__submenu-title">Others Pages
+                        <div class="header__submenu-btn header__submenu-btn--others fas fa-sort-down"></div>
+                      </div>
+                      <ul class="drop-menu__submenu-list drop-menu__submenu-list--others">
                         <li class="drop-menu__submenu-item">
                           <a href="#" class="drop-menu__link">Notifications</a>
                         </li>
@@ -806,36 +813,40 @@
           <div class="category-products__filter-title aside__title">
             Filter Products<span class="lnr lnr-chevron-down"></span>
           </div>
-          <ul class="category-products__filter-list aside__list">
-            <li class="category-products__filter-item aside__item aside__item--circle">
-              <input class="custom-checkbox" type="checkbox" id="trending-products" name="trending-products">
-              <label class="category-products__label" for="trending-products">Trending Products</label>
-            </li>
-            <li class="category-products__filter-item aside__item aside__item--circle">
-              <input class="custom-checkbox" type="checkbox" id="popular-products" name="popular-products">
-              <label class="category-products__label" for="popular-products">Popular Products</label>
-            </li>
-            <li class="category-products__filter-item aside__item aside__item--circle">
-              <input class="custom-checkbox" type="checkbox" id="new-products" name="new-products">
-              <label class="category-products__label" for="new-products">New Products</label>
-            </li>
-            <li class="category-products__filter-item aside__item aside__item--circle">
-              <input class="custom-checkbox" type="checkbox" id="best-seller" name="best-seller">
-              <label class="category-products__label" for="best-seller">Best Seller</label>
-            </li>
-            <li class="category-products__filter-item aside__item aside__item--circle">
-              <input class="custom-checkbox" type="checkbox" id="best-rating" name="best-rating">
-              <label class="category-products__label" for="best-rating">Best Rating</label>
-            </li>
-            <li class="category-products__filter-item aside__item aside__item--circle">
-              <input class="custom-checkbox" type="checkbox" id="low-price" name="low-price">
-              <label class="category-products__label" for="low-price">Low Price</label>
-            </li>
-            <li class="category-products__filter-item aside__item aside__item--circle">
-              <input class="custom-checkbox" type="checkbox" id="high-price" name="high-price">
-              <label class="category-products__label" for="high-price">High Price</label>
-            </li>
-          </ul>
+          <form class="category-products__filter-form" action="aaa.php">
+            <ul class="category-products__filter-list aside__list">
+              <li class="category-products__filter-item aside__item aside__item--circle">
+                <input class="custom-checkbox1" type="radio" id="trending-products" name="product"
+                  value="trending-products">
+                <label class="category-products__label" for="trending-products">Trending Products</label>
+              </li>
+              <li class="category-products__filter-item aside__item aside__item--circle">
+                <input class="custom-checkbox1" type="radio" id="popular-products" name="product"
+                  value="popular-products">
+                <label class="category-products__label" for="popular-products">Popular Products</label>
+              </li>
+              <li class="category-products__filter-item aside__item aside__item--circle">
+                <input class="custom-checkbox1" type="radio" id="new-products" name="product" value="new-products">
+                <label class="category-products__label" for="new-products">New Products</label>
+              </li>
+              <li class="category-products__filter-item aside__item aside__item--circle">
+                <input class="custom-checkbox1" type="radio" id="best-seller" name="product" value="best-seller">
+                <label class="category-products__label" for="best-seller">Best Seller</label>
+              </li>
+              <li class="category-products__filter-item aside__item aside__item--circle">
+                <input class="custom-checkbox1" type="radio" id="best-rating" name="product" value="best-rating">
+                <label class="category-products__label" for="best-rating">Best Rating</label>
+              </li>
+              <li class="category-products__filter-item aside__item aside__item--circle">
+                <input class="custom-checkbox1" type="radio" id="low-price" name="product" value="low-price">
+                <label class="category-products__label" for="low-price">Low Price</label>
+              </li>
+              <li class="category-products__filter-item aside__item aside__item--circle">
+                <input class="custom-checkbox1" type="radio" id="high-price" name="product" value="high-price">
+                <label class="category-products__label" for="high-price">High Price</label>
+              </li>
+            </ul>
+          </form>
         </div>
 
         <div class="category-products__range aside__box">
@@ -1809,32 +1820,30 @@
             </a>
           </div>
         </article>
-        <div class="category-products__pagination">
-          <ul class="category-products__pagination-list">
-            <li class="category-products__pagination-item category-products__pagination-item--arrow-prev">
-              <button class="category-products__pagination-btn category-products__pagination-btn button-style"><span
-                  class="lnr lnr-arrow-left"></span></button>
-            </li>
-            <li class="category-products__pagination-item">
-              <a href=""
-                class="category-products__pagination-link category-products__pagination-link--active button-style">1</a>
-            </li>
-            <li class="category-products__pagination-item">
-              <a href="" class="category-products__pagination-link button-style">2</a>
-            </li>
-            <li class="category-products__pagination-item">
-              <a href="" class="category-products__pagination-link button-style">...</a>
-            </li>
-            <li class="category-products__pagination-item">
-              <a href="" class="category-products__pagination-link button-style">8</a>
-            </li>
-            <li class="category-products__pagination-item category-products__pagination-item--arrow-next">
-              <button
-                class="category-products__pagination-btn category-products__pagination-btn--active button-style"><span
-                  class="lnr lnr-arrow-right"></span></button>
-            </li>
-          </ul>
-        </div>
+        <div class="pagination">
+  <ul class="pagination__list">
+    <li class="pagination__item pagination__item--arrow-prev">
+      <button class="pagination__btn pagination__btn button-style"><span
+          class="lnr lnr-arrow-left"></span></button>
+    </li>
+    <li class="pagination__item">
+      <a class="pagination__link pagination__link--active button-style">1</a>
+    </li>
+    <li class="pagination__item">
+      <a href="#" class="pagination__link button-style">2</a>
+    </li>
+    <li class="pagination__item">
+      <a class="pagination__link button-style">...</a>
+    </li>
+    <li class="pagination__item">
+      <a href="#" class="pagination__link button-style">8</a>
+    </li>
+    <li class="pagination__item pagination__item--arrow-next">
+      <button class="pagination__btn pagination__btn--active button-style"><span
+          class="lnr lnr-arrow-right"></span></button>
+    </li>
+  </ul>
+</div>
       </div>
     </div>
   </div>

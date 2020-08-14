@@ -1,0 +1,80 @@
+.aside {
+  max-width: 264px;
+
+  &__box {
+    padding: 28px 26px 32px;
+    margin-bottom: 30px;
+    background-color: $white;
+  }
+
+  &__title {
+    position: relative;
+    padding-bottom: 25px;
+    font-size: 20px;
+    color: #010101;
+
+    .lnr-chevron-down {
+      position: absolute;
+      top: 36px;
+      right: 29px;
+      font-size: 12px;
+      color: $dark5;
+    }
+  }
+
+  &__item {
+    position: relative;
+    padding-left: 22px;
+    font-size: 15px;
+
+    &+& {
+      margin-top: 19px;
+    }
+
+    &::before {
+      content: "\e876";
+      position: absolute;
+      left: 0;
+      top: 4px;
+      font-family: 'Linearicons-Free';
+      font-size: 10px;
+      color: #747B86;
+    }
+
+    &--circle {
+      padding-left: 0;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  &__link {
+    color: $dark5;
+    transition: all 1s;
+
+    &--active {
+      color: $blue-li;
+    }
+
+    &:hover {
+      color: $orange;
+      text-shadow: 0px 0px 6px rgba(150, 150, 150, 1);
+    }
+
+    &:focus {
+      @include focus-vio;
+    }
+
+    &:active {
+      @include active-black;
+    }
+  }
+
+  &__number {
+    position: absolute;
+    right: 0;
+    color: #747B86;
+  }
+}

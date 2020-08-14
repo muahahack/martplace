@@ -2,12 +2,25 @@
 @import 'vars';
 @import 'global';
 
+@import 'components/drop-menu';
 @import 'components/header';
 @import 'components/weekly-products';
 @import 'components/newest-products';
 @import 'components/feed-products';
 @import 'components/join';
 @import 'components/footer';
+@import 'components/aside';
+@import 'components/nav-head';
+@import 'components/breadcrumbs';
+@import 'components/custom-checkbox';
+@import 'components/profile';
+@import 'components/_product-card';
+@import 'components/_forms-box';
+@import 'components/_pagination';
 
 @import 'index';
 @import 'page-category';
+@import 'page-category';
+@import 'login';
+@import 'register';
+@import 'contact';

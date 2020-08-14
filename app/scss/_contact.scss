@@ -1,0 +1,100 @@
+.contact {
+
+  &__nav-head {
+    padding: 100px 0 105px;
+  }
+
+  &__head-title,
+  &__head-text {
+    text-align: center;
+    color: #F3F3F8;
+  }
+
+  &__head-title {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  &__head-text {
+    font-size: 20px;
+  }
+
+  &__boxes {
+    display: flex;
+    margin-bottom: 50px;
+
+    @include r(840) {
+      flex-direction: column;
+    }
+  }
+
+  &__box {
+    width: 100%;
+    padding: 50px 40px 40px;
+    text-align: center;
+    background-color: $white;
+
+    &+& {
+      margin-left: 30px;
+
+      @include r(840) {
+        margin-left: 0;
+        margin-top: 20px;
+      }
+    }
+  }
+
+  &__box-img {
+    margin-bottom: 40px;
+    font-size: 48px;
+    color: $blue-li;
+  }
+
+  &__box-title {
+    margin-bottom: 26px;
+  }
+
+  &__box-text,
+  &__link {
+    display: block;
+    font-size: 16px;
+    line-height: 30px;
+    color: #555555;
+  }
+
+  &__link {
+    transition: all 1s;
+
+    &:hover {
+      color: $orange;
+    }
+
+    &:focus {
+      @include focus-vio;
+    }
+
+    &:active {
+      @include active-black;
+    }
+  }
+
+  &__map {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: #E3E6EC;
+  }
+
+  &__map-marker {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    top: 180px;
+    right: 280px;
+    background-size: cover;
+    background-position: center;
+  }
+}

@@ -317,7 +317,7 @@
                 <div class="header__profile-funds profile__specs">$20.45</div>
               </div>
 
-              <ul class="header__profile-list drop-menu__list drop-menu__list--triangle">
+              <ul class="header__profile-list drop-menu__list drop-menu__list--profile drop-menu__list--triangle">
                 <li class="drop-menu__item">
                   <a href="#" class="drop-menu__link"><span class="lnr lnr-user"></span>Profile Page</a>
                 </li>
@@ -376,9 +376,9 @@
           </div>
           <ul class="header__menu-list">
             <li class="header__menu-item drop-menu">
-              <a class="header__menu-link" href="#">home</a>
-
-              <ul class="drop-menu__list drop-menu__list--nav">
+              <a class="header__menu-link" href="/">home</a>
+              <div class="header__drop-btn header__drop-btn--home fas fa-sort-down"></div>
+              <ul class="drop-menu__list drop-menu__list--nav drop-menu__list--home">
                 <li class="drop-menu__item">
                   <a href="#" class="drop-menu__link">Home One Multi User</a>
                 </li>
@@ -393,8 +393,8 @@
             </li>
             <li class="header__menu-item drop-menu">
               <a class="header__menu-link" href="category-page.html">all products</a>
-
-              <ul class="drop-menu__list drop-menu__list--nav">
+              <div class="header__drop-btn header__drop-btn--all-products fas fa-sort-down"></div>
+              <ul class="drop-menu__list drop-menu__list--nav drop-menu__list--all-products">
                 <li class="drop-menu__item">
                   <a href="#" class="drop-menu__link">Recent Items</a>
                 </li>
@@ -418,8 +418,8 @@
             </li>
             <li class="header__menu-item drop-menu">
               <a class="header__menu-link" href="#">wordpress</a>
-
-              <ul class="drop-menu__list drop-menu__list--nav">
+              <div class="header__drop-btn header__drop-btn--wordpress fas fa-sort-down"></div>
+              <ul class="drop-menu__list drop-menu__list--nav drop-menu__list--wordpress">
                 <li class="drop-menu__item">
                   <a href="#" class="drop-menu__link">Popular Items</a>
                 </li>
@@ -455,13 +455,16 @@
             </li>
             <li class="header__menu-item drop-menu">
               <a class="header__menu-link" href="#">pages</a>
+              <div class="header__drop-btn header__drop-btn--pages fas fa-sort-down"></div>
               <div class="sub-wrap">
 
                 <ul class="drop-menu__list drop-menu__list--nav drop-menu__list--pages">
                   <li class="drop-menu__submenu-item">
                     <div class="drop-menu__submenu">
-                      <div class="drop-menu__submenu-title">MartPlace Pages</div>
-                      <ul class="drop-menu__submenu-list">
+                      <div class="drop-menu__submenu-title">MartPlace Pages
+                        <div class="header__submenu-btn header__submenu-btn--martplace fas fa-sort-down"></div>
+                      </div>
+                      <ul class="drop-menu__submenu-list drop-menu__submenu-list--martplace">
                         <li class="drop-menu__submenu-item">
                           <a href="#" class="drop-menu__link">Home Page One</a>
                         </li>
@@ -532,8 +535,10 @@
                     </div>
 
                     <div class="drop-menu__submenu">
-                      <div class="drop-menu__submenu-title">Dashboard</div>
-                      <ul class="drop-menu__submenu-list">
+                      <div class="drop-menu__submenu-title">Dashboard
+                        <div class="header__submenu-btn header__submenu-btn--dashboard fas fa-sort-down"></div>
+                      </div>
+                      <ul class="drop-menu__submenu-list drop-menu__submenu-list--dashboard">
                         <li class="drop-menu__submenu-item">
                           <a href="#" class="drop-menu__link">Dashboard</a>
                         </li>
@@ -571,8 +576,10 @@
                     </div>
 
                     <div class="drop-menu__submenu">
-                      <div class="drop-menu__submenu-title">Others Pages</div>
-                      <ul class="drop-menu__submenu-list">
+                      <div class="drop-menu__submenu-title">Others Pages
+                        <div class="header__submenu-btn header__submenu-btn--others fas fa-sort-down"></div>
+                      </div>
+                      <ul class="drop-menu__submenu-list drop-menu__submenu-list--others">
                         <li class="drop-menu__submenu-item">
                           <a href="#" class="drop-menu__link">Notifications</a>
                         </li>
