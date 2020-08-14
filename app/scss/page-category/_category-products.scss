@@ -181,8 +181,8 @@
     @include r(1024) {
       padding: 15px 0;
     }
-    
-    & + & {
+
+    &+& {
       margin-top: 18px;
     }
   }
@@ -217,7 +217,7 @@
     padding-top: 28px;
     border-top: 1px solid #E7EBEE;
   }
-  
+
 
   &__categories-list,
   &__filter-list,
@@ -229,10 +229,10 @@
       padding: 0;
       max-height: 0;
       overflow: hidden;
-      transition: max-height 2s ease;      
+      transition: max-height 2s ease;
     }
   }
-  
+
   &__range-form {
     padding-left: 8px;
 
@@ -702,5 +702,5 @@
 
   &__cat-name {
     margin-left: 21px;
-  }  
+  }
 }

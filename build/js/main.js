@@ -115,7 +115,7 @@ $(function(){
     $(".category-products__range-form").slideToggle();
   });
 
-  // кнопки меню header menu
+// кнопки меню header menu
 
   $(".header__drop-btn--home").on("click", function(){
     $(".drop-menu__list--home").slideToggle();
@@ -133,7 +133,7 @@ $(function(){
     $(".drop-menu__list--pages").slideToggle();
   });
 
-   // кнопки меню header submenu
+// кнопки меню header submenu
 
   $(".header__submenu-btn--martplace").on("click", function(){
     $(".drop-menu__submenu-list--martplace").slideToggle();
@@ -142,8 +142,27 @@ $(function(){
   $(".header__submenu-btn--dashboard").on("click", function(){
     $(".drop-menu__submenu-list--dashboard").slideToggle();
   });
+
   $(".header__submenu-btn--others").on("click", function(){
     $(".drop-menu__submenu-list--others").slideToggle();
+  });
+
+// кнопки header status 480
+
+  $(".header__profile-btn").on("click", function(){
+    $(".drop-menu__list--profile").slideToggle();
+  });
+
+  $(".header__middle-status--notify").on("click", function(){
+    $(".drop-menu__list--notify").slideToggle();
+  });
+
+  $(".header__middle-status--message").on("click", function(){
+    $(".drop-menu__list--message").slideToggle();
+  });
+
+  $(".header__middle-status--cart").on("click", function(){
+    $(".drop-menu__list--cart").slideToggle();
   });
 
   $(".js-range-slider").ionRangeSlider({

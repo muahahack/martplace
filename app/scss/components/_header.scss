@@ -156,6 +156,11 @@
     height: 20px;
     font-size: 0;
 
+    @include r(480) {
+      opacity: 0;
+      pointer-events: none;
+    }
+
     & .lnr {
       font-size: 20px;
       color: #7E8FA1;
@@ -199,6 +204,23 @@
       top: -30px;
       left: 12px;
       background-color: $blue-li;
+    }
+
+    &--notify,
+    &--message,
+    &--cart {
+      @include r(480) {
+        left: 52px;
+        top: 5px;
+      }
+    }
+  }
+
+
+  & .profile__avatar {
+
+    @include r(360) {
+      margin-right: 10px;
     }
   }
 
@@ -293,6 +315,10 @@
   &__profile-menu {
     height: 73px;
     margin-top: 24px;
+
+    @include r(480) {
+      margin-right: 55px;
+    }
   }
 
   &__profile-list {
@@ -302,6 +328,10 @@
     .lnr {
       padding-right: 15px;
       font-size: 15px;
+    }
+
+    @include r(640) {
+      text-align: center;
     }
 
     @include r(480) {
@@ -356,12 +386,34 @@
     }
   }
 
+  &__profile-btn {
+    display: none;
+    position: absolute;
+    padding: 10px 25px;
+    top: -10px;
+    right: -80px;
+    font-size: 40px;
+    color: $dark5;
+
+    @include r(480) {
+      display: block;
+    }
+
+    @include r(359.99) {
+      right: -50px;
+    }
+  }
+
   &__middle {
     height: 0;
     background-color: $white;
     transition: height 1s;
+    overflow: hidden;
 
     @include r(640) {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
       position: fixed;
       top: 100px;
       width: 100%;
@@ -376,6 +428,12 @@
         height: 63px;
       }
     }
+  }
+
+  &__middle-status {
+    position: relative;
+    padding: 20px 40px;
+    font-size: 22px;
   }
 
   &__bottom-inner {
@@ -403,7 +461,7 @@
       display: block;
     }
   }
-    
+
   &__submenu-btn {
     display: none;
     position: absolute;
