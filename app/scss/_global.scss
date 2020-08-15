@@ -24,12 +24,6 @@ a {
   text-decoration: none;
 }
 
-.aside__list,
-.drop-menu__list,
-.drop-menu__submenu-list,
-.category-products__pagination-list {
-  @include list-reset;
-}
 
 .wrapper {
   display: flex;

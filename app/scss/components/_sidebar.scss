@@ -1,4 +1,4 @@
-.aside {
+.sidebar {
   max-width: 264px;
 
   &__box {
@@ -48,6 +48,10 @@
         display: none;
       }
     }
+  }
+
+  &__list {
+    @include list-reset;
   }
 
   &__link {
