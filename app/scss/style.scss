@@ -14,9 +14,10 @@
 @import 'components/breadcrumbs';
 @import 'components/custom-checkbox';
 @import 'components/profile';
-@import 'components/_product-card';
-@import 'components/_forms-box';
-@import 'components/_pagination';
+@import 'components/product-card';
+@import 'components/forms-box';
+@import 'components/pagination';
+@import 'components/socials';
 
 @import 'index';
 @import 'page-category';
@@ -24,3 +25,4 @@
 @import 'login';
 @import 'register';
 @import 'contact';
+@import 'single-product';

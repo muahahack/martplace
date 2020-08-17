@@ -88,6 +88,13 @@ $(function(){
     ratedFill: "#FFC000",
   });
 
+  $(".single-product__raiting").rateYo({
+    starWidth: "15px",
+    rating: 4.5,
+    spacing: "6px",
+    ratedFill: "#FFC000",
+  });
+
   $(".header__menu-btn").on("click", function(){
     $(".header__menu-list").slideToggle();
   });

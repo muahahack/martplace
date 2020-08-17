@@ -7,8 +7,7 @@
   &__link,
   &__logo-link,
   &__info-link,
-  &__bottom-link,
-  &__socials-link {
+  &__bottom-link {
     color: #ABABAB;
     transition: color 0.5s ease;
 
@@ -138,70 +137,68 @@
     color: $white;
   }
 
-  &__socials {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-  }
+  // &__socials {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   list-style: none;
+  //   padding: 0;
+  // }
 
-  &__socials-link {
-    display: block;
-    width: 42px;
-    height: 42px;
-    padding-top: 8px;
-    margin-right: 13px;
-    border-radius: 50%;
-    text-align: center;
-    color: $white;
-    background-size: cover;
-    background-position: center;
+  // &__socials-link {
+  //   display: block;
+  //   width: 42px;
+  //   height: 42px;
+  //   padding-top: 8px;
+  //   margin-right: 13px;
+  //   border-radius: 50%;
+  //   text-align: center;
+  //   color: $white;
+  //   background-size: cover;
+  //   background-position: center;
 
-    &:focus,
-    &:active {
-      border-radius: 50%;
-    }
+  //   &:focus,
+  //   &:active {
+  //     border-radius: 50%;
+  //   }
 
-    &--facebook {
-      background-color: #395799;
-    }
+  //   &--facebook {
+  //     background-color: #395799;
+  //   }
 
-    &--twitter {
-      background-color: #19B2F5;
-    }
+  //   &--twitter {
+  //     background-color: #19B2F5;
+  //   }
 
-    &--google {
-      background-color: #F05B44;
-    }
+  //   &--google {
+  //     background-color: #F05B44;
+  //   }
 
-    &--pinterest {
-      background-color: #9C0C1C;
-    }
+  //   &--pinterest {
+  //     background-color: #9C0C1C;
+  //   }
 
-    &--linkedin {
-      background-color: #0DA6Be;
-    }
+  //   &--linkedin {
+  //     background-color: #0DA6Be;
+  //   }
 
-    &--dribbble {
-      background-color: #eA4C89;
-    }
-  }
+  //   &--dribbble {
+  //     background-color: #eA4C89;
+  //   }
+  // }
 
-  &__bottom {
-    padding: 30px 0;
-    background-color: #192027;
-    text-align: center;
-  }
+  // &__bottom {
+  //   padding: 30px 0;
+  //   background-color: #192027;
+  //   text-align: center;
+  // }
 
-  &__bottom-link {
-    color: $white;
-  }
+  // &__bottom-link {
+  //   color: $white;
+  // }
 }
 
 @media (max-width: 1366px) {
   .footer {
-
-    &__info {}
 
     &__inner {
       flex-wrap: wrap;
@@ -246,15 +243,6 @@
       margin-bottom: 0;
     }
 
-    &__socials {
-      width: 320px;
-      margin: 0 auto;
-    }
-
-    &__socials-link {
-      margin: 0 20px 30px 30px;
-    }
-
     &__newsteller {
       margin-left: 0;
     }
@@ -262,10 +250,6 @@
     &__submit {
       margin-left: auto;
       margin-right: auto;
-    }
-
-    &__socials {
-      justify-content: center;
     }
   }
 }

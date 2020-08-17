@@ -58,7 +58,7 @@ a {
 }
 
 .main {
-  &--category-page {
+  &--page-gray {
     background-color: #EFF1F5;
   }
 }
@@ -378,4 +378,10 @@ a {
   &--view {
     padding: 12px 20px;
   }
+}
+
+.gray-style {
+  font-size: 16px;
+  line-height: 30px;
+  color: $dark5;
 }
