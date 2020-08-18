@@ -88,10 +88,17 @@ $(function(){
     ratedFill: "#FFC000",
   });
 
-  $(".single-product__raiting").rateYo({
+  $(".single-product__rating").rateYo({
     starWidth: "15px",
     rating: 4.5,
     spacing: "6px",
+    ratedFill: "#FFC000",
+  });
+
+  $(".more-items__card-rating").rateYo({
+    starWidth: "13px",
+    rating: 4.5,
+    spacing: "3px",
     ratedFill: "#FFC000",
   });
 
@@ -170,6 +177,20 @@ $(function(){
 
   $(".header__middle-status--cart").on("click", function(){
     $(".drop-menu__list--cart").slideToggle();
+  });
+
+  // кнопки single product
+
+  $(".single-product__sidebar-title--rating").on("click", function(){
+    $(".single-product__wrapper-info--rating").slideToggle();
+  });
+
+  $(".single-product__sidebar-title--info").on("click", function(){
+    $(".single-product__wrapper-info--info").slideToggle();
+  });
+
+  $(".single-product__sidebar-title--author").on("click", function(){
+    $(".single-product__wrapper-info--author").slideToggle();
   });
 
   $(".js-range-slider").ionRangeSlider({
