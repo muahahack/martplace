@@ -1,42 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
+@@include('./parts/_doctype-body.html')
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MartPlace</title>
+<div class="wrapper">
+  <div class="content">
+    @@include('./parts/_header.html')
 
-  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <main class="main main--page-gray">
 
-  <link rel="stylesheet" href="css/libs.min.css">
-  <link rel="stylesheet" href="css/style.min.css">
-</head>
+      @@include('./page-category/_search.html')
 
-<body>
-  <div class="wrapper">
-    <div class="content">
-      @@include('./parts/_header.html')
+      @@include('./page-category/_filters.html')
 
-      <main class="main main--page-gray">
+      @@include('./page-category/_category-products.html')
 
-        @@include('./page-category/_search.html')
+      @@include('./parts/_join.html')
 
-        @@include('./page-category/_filters.html')
+    </main>
 
-        @@include('./page-category/_category-products.html')
-
-        @@include('./parts/_join.html')
-
-      </main>
-
-    </div>
-    @@include('./parts/_footer.html')
   </div>
+  @@include('./parts/_footer.html')
+</div>
 
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="js/libs.min.js"></script>
-  <script src="js/main.js"></script>
-</body>
+@@include('./parts/_script-body.html')
 
 </html>

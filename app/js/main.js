@@ -131,16 +131,8 @@ $(function(){
 
 // кнопки меню header menu
 
-  $(".header__drop-btn--home").on("click", function(){
-    $(".drop-menu__list--home").slideToggle();
-  });
-
-  $(".header__drop-btn--all-products").on("click", function(){
-    $(".drop-menu__list--all-products").slideToggle();
-  });
-
-  $(".header__drop-btn--wordpress").on("click", function(){
-    $(".drop-menu__list--wordpress").slideToggle();
+  $(".header__drop-btn").on("click", function() {
+    $(this).next(".drop-menu__list").slideToggle();
   });
 
   $(".header__drop-btn--pages").on("click", function(){
@@ -150,15 +142,30 @@ $(function(){
 // кнопки меню header submenu
 
   $(".header__submenu-btn--martplace").on("click", function(){
-    $(".drop-menu__submenu-list--martplace").slideToggle();
+    $(".drop-menu__submenu-list--martplace").slideToggle(),
+    $(".drop-menu__submenu-list--martplace").toggleClass("js-visible"),
+    $(".drop-menu__submenu-list--dashboard.js-visible").slideToggle(),
+    $(".drop-menu__submenu-list--dashboard.js-visible").removeClass("js-visible"),
+    $(".drop-menu__submenu-list--others.js-visible").slideToggle(),
+    $(".drop-menu__submenu-list--others.js-visible").removeClass("js-visible");
   });
 
   $(".header__submenu-btn--dashboard").on("click", function(){
-    $(".drop-menu__submenu-list--dashboard").slideToggle();
+    $(".drop-menu__submenu-list--dashboard").slideToggle(),
+    $(".drop-menu__submenu-list--dashboard").toggleClass("js-visible"),
+    $(".drop-menu__submenu-list--martplace.js-visible").slideToggle(),
+    $(".drop-menu__submenu-list--martplace.js-visible").removeClass("js-visible"),
+    $(".drop-menu__submenu-list--others.js-visible").slideToggle(),
+    $(".drop-menu__submenu-list--others.js-visible").removeClass("js-visible");
   });
 
   $(".header__submenu-btn--others").on("click", function(){
-    $(".drop-menu__submenu-list--others").slideToggle();
+    $(".drop-menu__submenu-list--others").slideToggle(),
+    $(".drop-menu__submenu-list--others").toggleClass("js-visible"),
+    $(".drop-menu__submenu-list--dashboard.js-visible").slideToggle(),
+    $(".drop-menu__submenu-list--dashboard.js-visible").removeClass("js-visible"),
+    $(".drop-menu__submenu-list--martplace.js-visible").slideToggle(),
+    $(".drop-menu__submenu-list--martplace.js-visible").removeClass("js-visible");
   });
 
 // кнопки header status 480
@@ -168,15 +175,30 @@ $(function(){
   });
 
   $(".header__middle-status--notify").on("click", function(){
-    $(".drop-menu__list--notify").slideToggle();
+    $(".drop-menu__list--notify").slideToggle(),
+    $(".drop-menu__list--notify").toggleClass("js-visible"),
+    $(".drop-menu__list--message.js-visible").slideToggle(),
+    $(".drop-menu__list--message.js-visible").removeClass("js-visible"),
+    $(".drop-menu__list--cart.js-visible").slideToggle(),
+    $(".drop-menu__list--cart.js-visible").removeClass("js-visible");
   });
 
   $(".header__middle-status--message").on("click", function(){
-    $(".drop-menu__list--message").slideToggle();
+    $(".drop-menu__list--message").slideToggle(),
+    $(".drop-menu__list--message").toggleClass("js-visible"),
+    $(".drop-menu__list--notify.js-visible").slideToggle(),
+    $(".drop-menu__list--notify.js-visible").removeClass("js-visible"),
+    $(".drop-menu__list--cart.js-visible").slideToggle(),
+    $(".drop-menu__list--cart.js-visible").removeClass("js-visible");
   });
 
   $(".header__middle-status--cart").on("click", function(){
-    $(".drop-menu__list--cart").slideToggle();
+    $(".drop-menu__list--cart").slideToggle(),
+    $(".drop-menu__list--cart").toggleClass("js-visible"),
+    $(".drop-menu__list--message.js-visible").slideToggle(),
+    $(".drop-menu__list--message.js-visible").removeClass("js-visible"),
+    $(".drop-menu__list--notify.js-visible").slideToggle(),
+    $(".drop-menu__list--notify.js-visible").removeClass("js-visible");
   });
 
   // кнопки single product
@@ -214,6 +236,8 @@ $(function(){
     $('.filters__btn-path--list').removeClass('filters__btn-path--active')
   });
 
-  var mixer = mixitup('.newest-products__items-wrapper');
+  if($('.newest-products__items-wrapper').length) {
+    var mixer = mixitup('.newest-products__items-wrapper');
+  }
 
 });

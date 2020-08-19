@@ -6,16 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MartPlace</title>
 
-  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-  <div class="wrapper">
-    <div class="content">
-      <header class="header">
+
+<div class="wrapper">
+  <div class="content">
+    <header class="header">
   <div class="header__top">
     <div class="container">
       <div class="header__top-inner">
@@ -306,7 +307,7 @@
             </div>
           </a>
           <div class="header__profile-menu drop-menu">
-            <div class="header__profile-btn fa fa-sort-down"></div>
+            <span class="header__profile-btn fa fa-sort-down"></span>
             <a class="header__profile-link profile__link" href="#">
               <div class="header__profile-avatar profile__avatar" style="background-image: url(images/avatar.jpg);">
               </div>
@@ -388,7 +389,7 @@
           <ul class="header__menu-list">
             <li class="header__menu-item drop-menu">
               <a class="header__menu-link" href="/">home</a>
-              <div class="header__drop-btn header__drop-btn--home fas fa-sort-down"></div>
+              <span class="header__drop-btn header__drop-btn--home fas fa-sort-down"></span>
               <ul class="drop-menu__list drop-menu__list--nav drop-menu__list--home">
                 <li class="drop-menu__item">
                   <a href="#" class="drop-menu__link">Home One Multi User</a>
@@ -404,7 +405,7 @@
             </li>
             <li class="header__menu-item drop-menu">
               <a class="header__menu-link" href="category-page.html">all products</a>
-              <div class="header__drop-btn header__drop-btn--all-products fas fa-sort-down"></div>
+              <span class="header__drop-btn header__drop-btn--all-products fas fa-sort-down"></span>
               <ul class="drop-menu__list drop-menu__list--nav drop-menu__list--all-products">
                 <li class="drop-menu__item">
                   <a href="#" class="drop-menu__link">Recent Items</a>
@@ -429,7 +430,7 @@
             </li>
             <li class="header__menu-item drop-menu">
               <a class="header__menu-link" href="#">wordpress</a>
-              <div class="header__drop-btn header__drop-btn--wordpress fas fa-sort-down"></div>
+              <span class="header__drop-btn header__drop-btn--wordpress fas fa-sort-down"></span>
               <ul class="drop-menu__list drop-menu__list--nav drop-menu__list--wordpress">
                 <li class="drop-menu__item">
                   <a href="#" class="drop-menu__link">Popular Items</a>
@@ -466,14 +467,14 @@
             </li>
             <li class="header__menu-item drop-menu">
               <a class="header__menu-link" href="#">pages</a>
-              <div class="header__drop-btn header__drop-btn--pages fas fa-sort-down"></div>
+              <span class="header__drop-btn header__drop-btn--pages fas fa-sort-down"></span>
               <div class="sub-wrap">
 
                 <ul class="drop-menu__list drop-menu__list--nav drop-menu__list--pages">
                   <li class="drop-menu__submenu-item">
                     <div class="drop-menu__submenu">
                       <div class="drop-menu__submenu-title">MartPlace Pages
-                        <div class="header__submenu-btn header__submenu-btn--martplace fas fa-sort-down"></div>
+                        <span class="header__submenu-btn header__submenu-btn--martplace fas fa-sort-down"></span>
                       </div>
                       <ul class="drop-menu__submenu-list drop-menu__submenu-list--martplace">
                         <li class="drop-menu__submenu-item">
@@ -547,7 +548,7 @@
 
                     <div class="drop-menu__submenu">
                       <div class="drop-menu__submenu-title">Dashboard
-                        <div class="header__submenu-btn header__submenu-btn--dashboard fas fa-sort-down"></div>
+                        <span class="header__submenu-btn header__submenu-btn--dashboard fas fa-sort-down"></span>
                       </div>
                       <ul class="drop-menu__submenu-list drop-menu__submenu-list--dashboard">
                         <li class="drop-menu__submenu-item">
@@ -588,8 +589,8 @@
 
                     <div class="drop-menu__submenu">
                       <div class="drop-menu__submenu-title">Others Pages
-                        <div class="header__submenu-btn header__submenu-btn--others fas fa-sort-down"></div>
-                      </div>
+                        <span class="header__submenu-btn header__submenu-btn--others fas fa-sort-down"></div>
+                      </span>
                       <ul class="drop-menu__submenu-list drop-menu__submenu-list--others">
                         <li class="drop-menu__submenu-item">
                           <a href="#" class="drop-menu__link">Notifications</a>
@@ -681,105 +682,114 @@
   </div>
 </header>
 
-      <section class="contact__nav-head nav-head">
+    <section class="contact__nav-head nav-head">
+      <div class="container">
+        <div class="contact__head-title">Contact Us</div>
+        <div class="contact__head-text">You came to the right place</div>
+      </div>
+    </section>
+
+    <main class="main">
+
+      <section class="forms-box forms-box--contact">
         <div class="container">
-          <div class="contact__head-title">Contact Us</div>
-          <div class="contact__head-text">You came to the right place</div>      
+
+          <div class="title-center">
+            How can We <span class="word-accent">Help?</span>
+          </div>
+          <div class="text-center">
+            Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats. Lid est
+            laborum dolo rumes fugats untras.
+          </div>
+
+          <address class="contact__boxes">
+            <div class="contact__box box-styles">
+              <div class="contact__box-img">
+                <span class="lnr lnr-map-marker"></span>
+              </div>
+              <div class="contact__box-title">
+                Office Address
+              </div>
+              <div class="contact__box-text">
+                202 New Hampshire Avenue
+                Northwest #100, New York-2573
+              </div>
+
+            </div>
+
+            <div class="contact__box box-styles">
+              <div class="contact__box-img">
+                <span class="lnr lnr-phone"></span>
+              </div>
+              <div class="contact__box-title">
+                Phone Number
+              </div>
+              <div class="contact__box-text">
+                <a class="contact__link" href="tel:18006434500">1-800-643-4500</a>
+                <a class="contact__link" href="tel:18006434500">1-800-643-4500</a>
+              </div>
+            </div>
+
+            <div class="contact__box box-styles">
+              <div class="contact__box-img">
+                <span class="lnr lnr-inbox"></span>
+              </div>
+              <div class="contact__box-title">
+                Email Address
+              </div>
+              <div class="contact__box-text">
+                <a class="contact__link" href="mailto:support@aazztech.com">support@aazztech.com</a>
+                <a class="contact__link" href="mailto:support@aazztech.com">support@aazztech.com</a>
+              </div>
+            </div>
+          </address>
+
+          <div class="forms-box__inner forms-box__inner--contact box-styles">
+            <div class="forms-box__title-box forms-box__title-box--contact">
+              <div class="forms-box__title forms-box__title--contact">
+                Leave Your Messages
+              </div>
+            </div>
+            <form class="forms-box__form forms-box__form--contact" action="request.php">
+              <div class="forms-box__group">
+                <label class="forms-box__label-contact" for="name"><span class="forms-box__label-hidden">name</span>
+                  <input class="forms-box__input-contact id="name" type="text" name="name"
+                    placeholder="Name">
+                </label>
+                <label class="forms-box__label-contact" for="email"><span class="forms-box__label-hidden">email</span>
+                  <input class="forms-box__input-contact" id="email" type="email" inputmode="email"
+                    name="email" placeholder="Email">
+                </label>
+                <label class="forms-box__label-contact" for="subject"><span class="forms-box__label-hidden">subject</span>
+                  <input class="forms-box__input-contact"id="subject" type="text" name="subject"
+                    placeholder="Subject">
+                </label>
+                <label class="forms-box__label-contact" for="phone"><span class="forms-box__label-hidden">phone</span>
+                  <input class="forms-box__input-contact" id="phone" type="tel" inputmode="tel"
+                    name="phone" placeholder="Phone">
+                </label>
+              </div>
+              <label class="forms-box__label-textarea" for="textarea"><span class="forms-box__label-hidden">textarea</span></label>
+              <textarea class="forms-box__form-textarea" id="textarea" name="textarea" placeholder="Your text here..."></textarea>
+</label>
+              <button class="forms-box__form-btn forms-box__form-btn--contact button-style" type="submit">
+                Send Request
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="contact__map" style="background-image: url(images/contact-map.jpg);">
+          <div class="contact__map-marker" style="background-image: url(images/icons/map-marker.svg);"></div>
+
         </div>
       </section>
 
-      <main class="main">
 
-        <section class="forms-box forms-box--contact">
-          <div class="container">
 
-            <div class="title-center">
-              How can We <span class="word-accent">Help?</span>
-            </div>
-            <div class="text-center">
-              Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats. Lid est
-              laborum dolo rumes fugats untras.
-            </div>
+    </main>
 
-            <div class="contact__boxes">
-              <div class="contact__box box-styles">
-                <div class="contact__box-img">
-                  <span class="lnr lnr-map-marker"></span>
-                </div>
-                <div class="contact__box-title product-card__title">
-                  Office Address
-                </div>
-                <div class="contact__box-text">
-                  202 New Hampshire Avenue
-                  Northwest #100, New York-2573
-                </div>
-
-              </div>
-
-              <div class="contact__box box-styles">
-                <div class="contact__box-img">
-                  <span class="lnr lnr-phone"></span>
-                </div>
-                <div class="contact__box-title product-card__title">
-                  Phone Number
-                </div>
-                <div class="contact__box-text">
-                    <a class="contact__link" href="tel:18006434500">1-800-643-4500</a>
-                    <a class="contact__link" href="tel:18006434500">1-800-643-4500</a>
-                </div>
-              </div>
-
-              <div class="contact__box box-styles">
-                <div class="contact__box-img">
-                  <span class="lnr lnr-inbox"></span>
-                </div>
-                <div class="contact__box-title product-card__title">
-                  Email Address
-                </div>
-                <div class="contact__box-text">
-                  <a class="contact__link" href="mailto:support@aazztech.com">support@aazztech.com</a>
-                  <a class="contact__link" href="mailto:support@aazztech.com">support@aazztech.com</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="forms-box__inner forms-box__inner--contact box-styles">
-              <div class="forms-box__title-box forms-box__title-box--contact">
-                <div class="forms-box__title forms-box__title--contact">
-                  Leave Your Messages
-                </div>
-              </div>
-              <form class="forms-box__form forms-box__form--contact" action="request.php">
-                <div class="forms-box__group">
-                  <input class="forms-box__form-input forms-box__form-input--contact" type="text" name="name"
-                    placeholder="Name">
-                  <input class="forms-box__form-input forms-box__form-input--contact" type="text" name="email"
-                    placeholder="Email">
-                  <input class="forms-box__form-input forms-box__form-input--contact" type="text" name="subject"
-                    placeholder="Subject">
-                  <input class="forms-box__form-input forms-box__form-input--contact" type="text" name="phone"
-                    placeholder="Phone">
-                </div>
-                <textarea class="forms-box__form-textarea" name="textarea" placeholder="Your text here..."></textarea>
-
-                <button class="forms-box__form-btn forms-box__form-btn--contact button-style" type="submit">
-                  Send Request
-                </button>
-              </form>
-            </div>
-          </div>
-          <div class="contact__map" style="background-image: url(images/contact-map.jpg);">
-            <div class="contact__map-marker" style="background-image: url(images/icons/map-marker.svg);"></div>
-
-          </div>
-        </section>
-
-        
-
-      </main>
-
-    </div>
-    <footer class="footer">
+  </div>
+  <footer class="footer">
   <div class="container">
     <div class="footer__inner">
       <div class="footer__info">
@@ -885,8 +895,7 @@
       class="footer__bottom-link" href="#">AazzTech</a>
   </div>
 </footer>
-  </div>
-
+</div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>

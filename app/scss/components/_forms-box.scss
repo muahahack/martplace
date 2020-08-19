@@ -101,23 +101,6 @@
     margin-top: 14px;
     border: none;
     background-color: #F4F5F8;
-
-    &--contact {
-      width: calc(100% / 2 - 30px);
-      margin-right: 30px;
-      margin-bottom: 30px;
-      margin-top: 0;
-      border: 1px solid #E7E7E7;
-      background-color: transparent;
-
-      @include r(840) {        
-        width: calc(100% - 30px);
-      }
-
-      &::placeholder {
-        color: #9E9E9E;
-      }
-    }
     
     &::placeholder {
       color: #898F96;
@@ -270,5 +253,41 @@
     &:active {
       @include active-black;
     }
+  }
+
+  
+  &__label-contact {
+    padding: 16px 20px;
+    width: calc(100% / 2 - 30px);
+    margin-right: 30px;
+    margin-bottom: 30px;
+    margin-top: 0;
+    border: 1px solid #E7E7E7;
+    background-color: transparent;
+    
+    @include r(840) {        
+      width: calc(100% - 30px);
+    }
+
+    &::placeholder {
+      color: #9E9E9E;
+    }
+  }
+
+  &__label-hidden {
+    font-size: 0;
+  }
+
+  &__input-contact {
+    border: none;
+    
+    &:focus {
+      @include focus-vio;
+    }
+  }
+
+  &__label-textarea {
+    height: 0;
+    opacity: 0;
   }
 }

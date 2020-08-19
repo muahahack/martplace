@@ -1,127 +1,119 @@
-<!DOCTYPE html>
-<html lang="en">
+@@include('./parts/_doctype-body.html')
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MartPlace</title>
+<div class="wrapper">
+  <div class="content">
+    @@include('./parts/_header.html')
 
-  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <section class="contact__nav-head nav-head">
+      <div class="container">
+        <div class="contact__head-title">Contact Us</div>
+        <div class="contact__head-text">You came to the right place</div>
+      </div>
+    </section>
 
-  <link rel="stylesheet" href="css/libs.min.css">
-  <link rel="stylesheet" href="css/style.min.css">
-</head>
+    <main class="main">
 
-<body>
-  <div class="wrapper">
-    <div class="content">
-      @@include('./parts/_header.html')
-
-      <section class="contact__nav-head nav-head">
+      <section class="forms-box forms-box--contact">
         <div class="container">
-          <div class="contact__head-title">Contact Us</div>
-          <div class="contact__head-text">You came to the right place</div>      
+
+          <div class="title-center">
+            How can We <span class="word-accent">Help?</span>
+          </div>
+          <div class="text-center">
+            Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats. Lid est
+            laborum dolo rumes fugats untras.
+          </div>
+
+          <address class="contact__boxes">
+            <div class="contact__box box-styles">
+              <div class="contact__box-img">
+                <span class="lnr lnr-map-marker"></span>
+              </div>
+              <div class="contact__box-title">
+                Office Address
+              </div>
+              <div class="contact__box-text">
+                202 New Hampshire Avenue
+                Northwest #100, New York-2573
+              </div>
+
+            </div>
+
+            <div class="contact__box box-styles">
+              <div class="contact__box-img">
+                <span class="lnr lnr-phone"></span>
+              </div>
+              <div class="contact__box-title">
+                Phone Number
+              </div>
+              <div class="contact__box-text">
+                <a class="contact__link" href="tel:18006434500">1-800-643-4500</a>
+                <a class="contact__link" href="tel:18006434500">1-800-643-4500</a>
+              </div>
+            </div>
+
+            <div class="contact__box box-styles">
+              <div class="contact__box-img">
+                <span class="lnr lnr-inbox"></span>
+              </div>
+              <div class="contact__box-title">
+                Email Address
+              </div>
+              <div class="contact__box-text">
+                <a class="contact__link" href="mailto:support@aazztech.com">support@aazztech.com</a>
+                <a class="contact__link" href="mailto:support@aazztech.com">support@aazztech.com</a>
+              </div>
+            </div>
+          </address>
+
+          <div class="forms-box__inner forms-box__inner--contact box-styles">
+            <div class="forms-box__title-box forms-box__title-box--contact">
+              <div class="forms-box__title forms-box__title--contact">
+                Leave Your Messages
+              </div>
+            </div>
+            <form class="forms-box__form forms-box__form--contact" action="request.php">
+              <div class="forms-box__group">
+                <label class="forms-box__label-contact" for="name"><span class="forms-box__label-hidden">name</span>
+                  <input class="forms-box__input-contact id="name" type="text" name="name"
+                    placeholder="Name">
+                </label>
+                <label class="forms-box__label-contact" for="email"><span class="forms-box__label-hidden">email</span>
+                  <input class="forms-box__input-contact" id="email" type="email" inputmode="email"
+                    name="email" placeholder="Email">
+                </label>
+                <label class="forms-box__label-contact" for="subject"><span class="forms-box__label-hidden">subject</span>
+                  <input class="forms-box__input-contact"id="subject" type="text" name="subject"
+                    placeholder="Subject">
+                </label>
+                <label class="forms-box__label-contact" for="phone"><span class="forms-box__label-hidden">phone</span>
+                  <input class="forms-box__input-contact" id="phone" type="tel" inputmode="tel"
+                    name="phone" placeholder="Phone">
+                </label>
+              </div>
+              <label class="forms-box__label-textarea" for="textarea"><span class="forms-box__label-hidden">textarea</span></label>
+              <textarea class="forms-box__form-textarea" id="textarea" name="textarea" placeholder="Your text here..."></textarea>
+</label>
+              <button class="forms-box__form-btn forms-box__form-btn--contact button-style" type="submit">
+                Send Request
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="contact__map" style="background-image: url(images/contact-map.jpg);">
+          <div class="contact__map-marker" style="background-image: url(images/icons/map-marker.svg);"></div>
+
         </div>
       </section>
 
-      <main class="main">
 
-        <section class="forms-box forms-box--contact">
-          <div class="container">
 
-            <div class="title-center">
-              How can We <span class="word-accent">Help?</span>
-            </div>
-            <div class="text-center">
-              Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats. Lid est
-              laborum dolo rumes fugats untras.
-            </div>
+    </main>
 
-            <div class="contact__boxes">
-              <div class="contact__box box-styles">
-                <div class="contact__box-img">
-                  <span class="lnr lnr-map-marker"></span>
-                </div>
-                <div class="contact__box-title product-card__title">
-                  Office Address
-                </div>
-                <div class="contact__box-text">
-                  202 New Hampshire Avenue
-                  Northwest #100, New York-2573
-                </div>
-
-              </div>
-
-              <div class="contact__box box-styles">
-                <div class="contact__box-img">
-                  <span class="lnr lnr-phone"></span>
-                </div>
-                <div class="contact__box-title product-card__title">
-                  Phone Number
-                </div>
-                <div class="contact__box-text">
-                    <a class="contact__link" href="tel:18006434500">1-800-643-4500</a>
-                    <a class="contact__link" href="tel:18006434500">1-800-643-4500</a>
-                </div>
-              </div>
-
-              <div class="contact__box box-styles">
-                <div class="contact__box-img">
-                  <span class="lnr lnr-inbox"></span>
-                </div>
-                <div class="contact__box-title product-card__title">
-                  Email Address
-                </div>
-                <div class="contact__box-text">
-                  <a class="contact__link" href="mailto:support@aazztech.com">support@aazztech.com</a>
-                  <a class="contact__link" href="mailto:support@aazztech.com">support@aazztech.com</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="forms-box__inner forms-box__inner--contact box-styles">
-              <div class="forms-box__title-box forms-box__title-box--contact">
-                <div class="forms-box__title forms-box__title--contact">
-                  Leave Your Messages
-                </div>
-              </div>
-              <form class="forms-box__form forms-box__form--contact" action="request.php">
-                <div class="forms-box__group">
-                  <input class="forms-box__form-input forms-box__form-input--contact" type="text" name="name"
-                    placeholder="Name">
-                  <input class="forms-box__form-input forms-box__form-input--contact" type="text" name="email"
-                    placeholder="Email">
-                  <input class="forms-box__form-input forms-box__form-input--contact" type="text" name="subject"
-                    placeholder="Subject">
-                  <input class="forms-box__form-input forms-box__form-input--contact" type="text" name="phone"
-                    placeholder="Phone">
-                </div>
-                <textarea class="forms-box__form-textarea" name="textarea" placeholder="Your text here..."></textarea>
-
-                <button class="forms-box__form-btn forms-box__form-btn--contact button-style" type="submit">
-                  Send Request
-                </button>
-              </form>
-            </div>
-          </div>
-          <div class="contact__map" style="background-image: url(images/contact-map.jpg);">
-            <div class="contact__map-marker" style="background-image: url(images/icons/map-marker.svg);"></div>
-
-          </div>
-        </section>
-
-        
-
-      </main>
-
-    </div>
-    @@include('./parts/_footer.html')
   </div>
+  @@include('./parts/_footer.html')
+</div>
 
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="js/libs.min.js"></script>
-  <script src="js/main.js"></script>
-</body>
+@@include('./parts/_script-body.html')
 
 </html>

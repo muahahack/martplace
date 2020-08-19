@@ -37,11 +37,6 @@
         @include triangle-drop;
         top: -10px;
         right: 28px;
-
-        // @include r(480) {
-        //   right: auto;
-        //   left: 55px;
-        // }
       }
     }
 
@@ -88,7 +83,8 @@
         min-width: 100vw;
         top: 37px;
         pointer-events: all;
-        max-height: 1000px;
+        max-height: calc(100vh - 163px);
+        overflow: auto;
         opacity: 1;
         box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
       }
@@ -258,6 +254,8 @@
       @include r(480) {
         display: none;
         left: -9px;
+        max-height: calc(100vh - 100px);
+        overflow: auto;
       }
     }
   }

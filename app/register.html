@@ -1,86 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
+@@include('./parts/_doctype-body.html')
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MartPlace</title>
+<div class="wrapper">
+  <div class="content">
+    @@include('./parts/_header.html')
 
-  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <main class="main">
 
-  <link rel="stylesheet" href="css/libs.min.css">
-  <link rel="stylesheet" href="css/style.min.css">
-</head>
+      @@include('./parts/_nav-head.html')
 
-<body>
-  <div class="wrapper">
-    <div class="content">
-      @@include('./parts/_header.html')
+      <section class="forms-box">
+        <div class="container">
+          <div class="forms-box__inner box-styles">
+            <div class="forms-box__title-box forms-box__title-box--register">
+              <div class="forms-box__title">
+                Create Your Account
+              </div>
+              <div class="forms-box__text">
+                Please fill the following fields with appropriate information
+                to register a new MartPlace account.
+              </div>
+            </div>
+            <form class="forms-box__form" action="register.php">
+              <label class="forms-box__form-label">
+                Your Name
+                <input class="forms-box__form-input" type="text" name="name" placeholder="Enter your name...">
+              </label>
+              <label class="forms-box__form-label">
+                Email Address
+                <input class="forms-box__form-input" type="email" name="email" placeholder="Enter your email address">
+              </label>
+              <label class="forms-box__form-label">
+                Username
+                <input class="forms-box__form-input" type="text" name="username" placeholder="Enter your username...">
+              </label>
+              <label class="forms-box__form-label">
+                Password
+                <input class="forms-box__form-input" type="password" name="password" placeholder="Enter your password...">
+              </label>
+              <label class="forms-box__form-label">
+                Confirm Password
+                <input class="forms-box__form-input" type="password" name="confirm-password"
+                  placeholder="Enter your password...">
+              </label>
 
-      <main class="main">
+              <button class="forms-box__form-btn forms-box__form-btn--register button-style" type="submit">
+                Register Now
+              </button>
 
-        @@include('./parts/_nav-head.html')
-
-        <section class="forms-box">
-          <div class="container">
-            <div class="forms-box__inner box-styles">
-              <div class="forms-box__title-box forms-box__title-box--register">
-                <div class="forms-box__title">
-                  Create Your Account
-                </div>
-                <div class="forms-box__text">
-                  Please fill the following fields with appropriate information
-                  to register a new MartPlace account.
+              <div class="forms-box__bottom">
+                <div class="forms-box__recover">
+                  Already have an account? <a href="login.html" class="forms-box__link">Login</a>
                 </div>
               </div>
-              <form class="forms-box__form" action="register.php">
-                <label class="forms-box__form-label">
-                  Your Name
-                  <input class="forms-box__form-input" type="text" name="password" placeholder="Enter your name...">
-                </label>
-                <label class="forms-box__form-label">
-                  Email Address
-                  <input class="forms-box__form-input" type="text" name="password"
-                    placeholder="Enter your email address">
-                </label>
-                <label class="forms-box__form-label">
-                  Username
-                  <input class="forms-box__form-input" type="text" name="password" placeholder="Enter your username...">
-                </label>
-                <label class="forms-box__form-label">
-                  Password
-                  <input class="forms-box__form-input" type="text" name="username" placeholder="Enter your password...">
-                </label>
-                <label class="forms-box__form-label">
-                  Confirm Password
-                  <input class="forms-box__form-input" type="text" name="confirm-password"
-                    placeholder="Enter your password...">
-                </label>
-
-                <button class="forms-box__form-btn forms-box__form-btn--register button-style" type="submit">
-                  Register Now
-                </button>
-
-                <div class="forms-box__bottom">
-                  <div class="forms-box__recover">
-                    Already have an account? <a href="login.html" class="forms-box__link">Login</a>
-                  </div>
-                </div>
-              </form>
-            </div>
+            </form>
           </div>
-        </section>
+        </div>
+      </section>
 
-      </main>
+    </main>
 
-    </div>
-    @@include('./parts/_footer.html')
   </div>
+  @@include('./parts/_footer.html')
+</div>
 
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="js/libs.min.js"></script>
-  <script src="js/main.js"></script>
-</body>
+@@include('./parts/_script-body.html')
 
 </html>

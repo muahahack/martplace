@@ -1,59 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
+@@include('./parts/_doctype-body.html')
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MartPlace</title>
+<div class="wrapper">
+  <div class="content">
+    @@include('./parts/_header.html')
 
-  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <main class="main">
 
-  <link rel="stylesheet" href="css/libs.min.css">
-  <link rel="stylesheet" href="css/style.min.css">
-</head>
+      @@include('./page-index/_info.html')
 
-<body>
-  <div class="wrapper">
-    <div class="content">
-      @@include('./parts/_header.html')
+      @@include('./page-index/_advantages.html')
 
-      <main class="main">
+      @@include('./parts/_weekly-products.html')
 
-        @@include('./page-index/_info.html')
+      @@include('./parts/_newest-products.html')
 
-        @@include('./page-index/_advantages.html')
+      @@include('./parts/_feed-products.html')
 
-        @@include('./parts/_weekly-products.html')
+      @@include('./page-index/_statistic.html')
 
-        @@include('./parts/_newest-products.html')
+      @@include('./page-index/_choose.html')
 
-        @@include('./parts/_feed-products.html')
+      @@include('./page-index/_actions.html')
 
-        @@include('./page-index/_statistic.html')
+      @@include('./page-index/_feedback.html')
 
-        @@include('./page-index/_choose.html')
+      @@include('./page-index/_latest-news.html')
 
-        @@include('./page-index/_actions.html')
+      @@include('./page-index/_service.html')
 
-        @@include('./page-index/_feedback.html')
+      @@include('./parts/_join.html')
 
-        @@include('./page-index/_latest-news.html')
-
-        @@include('./page-index/_service.html')
-
-        @@include('./parts/_join.html')
-
-      </main>
-    </div>
-
-    @@include('./parts/_footer.html')
-
-
+    </main>
   </div>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="js/libs.min.js"></script>
-  <script src="js/main.js"></script>
-</body>
+  @@include('./parts/_footer.html')
+
+
+</div>
+
+@@include('./parts/_script-body.html')
 
 </html>

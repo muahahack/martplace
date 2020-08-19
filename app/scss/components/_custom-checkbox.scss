@@ -2,6 +2,8 @@
   position: absolute;
   z-index: -1;
   opacity: 0;
+  top: 0;
+  pointer-events: none;
 
   &+.category-products__label,
   &+.forms-box__form-check,
