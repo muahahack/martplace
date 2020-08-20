@@ -68,6 +68,7 @@
 
     &:focus {
       @include focus-vio;
+      border-radius: 25px;
     }
 
     &:active {

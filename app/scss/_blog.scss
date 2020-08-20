@@ -1,0 +1,17 @@
+@import 'page-blog/blog-content';
+@import 'page-blog/blog-sidebar';
+
+.blog {
+  padding: 70px 0 120px;
+
+  &__inner{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    @include r(860) {
+      flex-direction: column;
+      margin: 0 -15px;
+    }
+  }
+}

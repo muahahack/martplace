@@ -136,6 +136,12 @@
     font-size: 15px;
     color: $white;
   }
+
+  &__bottom {
+    padding: 20px;
+    text-align: center;
+    background-color: #192027;
+  }
 }
 
 @media (max-width: 1366px) {

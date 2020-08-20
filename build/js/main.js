@@ -174,46 +174,80 @@ $(function(){
     $(".drop-menu__list--profile").slideToggle();
   });
 
+
+
   $(".header__middle-status--notify").on("click", function(){
+    if($(".drop-menu__list--notify.js-overlay-visible").length) {
+      $(".overlay").removeClass("js-overlay");
+    } else {
+      $(".overlay").addClass("js-overlay");
+      }
+
+
     $(".drop-menu__list--notify").slideToggle(),
-    $(".drop-menu__list--notify").toggleClass("js-visible"),
-    $(".drop-menu__list--message.js-visible").slideToggle(),
-    $(".drop-menu__list--message.js-visible").removeClass("js-visible"),
-    $(".drop-menu__list--cart.js-visible").slideToggle(),
-    $(".drop-menu__list--cart.js-visible").removeClass("js-visible");
+    $(".drop-menu__list--notify").toggleClass("js-overlay-visible"),
+    $(".drop-menu__list--message.js-overlay-visible").slideToggle(),
+    $(".drop-menu__list--message.js-overlay-visible").removeClass("js-overlay-visible"),
+    $(".drop-menu__list--cart.js-overlay-visible").slideToggle(),
+    $(".drop-menu__list--cart.js-overlay-visible").removeClass("js-overlay-visible");
   });
+
+
 
   $(".header__middle-status--message").on("click", function(){
+    if($(".drop-menu__list--message.js-overlay-visible").length) {
+      $(".overlay").removeClass("js-overlay");
+    } else {
+      $(".overlay").addClass("js-overlay");
+      }
+
+
     $(".drop-menu__list--message").slideToggle(),
-    $(".drop-menu__list--message").toggleClass("js-visible"),
-    $(".drop-menu__list--notify.js-visible").slideToggle(),
-    $(".drop-menu__list--notify.js-visible").removeClass("js-visible"),
-    $(".drop-menu__list--cart.js-visible").slideToggle(),
-    $(".drop-menu__list--cart.js-visible").removeClass("js-visible");
+    $(".drop-menu__list--message").toggleClass("js-overlay-visible"),
+    $(".drop-menu__list--notify.js-overlay-visible").slideToggle(),
+    $(".drop-menu__list--notify.js-overlay-visible").removeClass("js-overlay-visible"),
+    $(".drop-menu__list--cart.js-overlay-visible").slideToggle(),
+    $(".drop-menu__list--cart.js-overlay-visible").removeClass("js-overlay-visible");
   });
 
+
+
   $(".header__middle-status--cart").on("click", function(){
+    if($(".drop-menu__list--cart.js-overlay-visible").length) {
+      $(".overlay").removeClass("js-overlay");
+    } else {
+      $(".overlay").addClass("js-overlay");
+      }
+
+
     $(".drop-menu__list--cart").slideToggle(),
-    $(".drop-menu__list--cart").toggleClass("js-visible"),
-    $(".drop-menu__list--message.js-visible").slideToggle(),
-    $(".drop-menu__list--message.js-visible").removeClass("js-visible"),
-    $(".drop-menu__list--notify.js-visible").slideToggle(),
-    $(".drop-menu__list--notify.js-visible").removeClass("js-visible");
+    $(".drop-menu__list--cart").toggleClass("js-overlay-visible"),
+    $(".drop-menu__list--message.js-overlay-visible").slideToggle(),
+    $(".drop-menu__list--message.js-overlay-visible").removeClass("js-overlay-visible"),
+    $(".drop-menu__list--notify.js-overlay-visible").slideToggle(),
+    $(".drop-menu__list--notify.js-overlay-visible").removeClass("js-overlay-visible");
   });
 
   // кнопки single product
 
-  $(".single-product__sidebar-title--rating").on("click", function(){
-    $(".single-product__wrapper-info--rating").slideToggle();
+  $(".single-sidebar__sidebar-title--rating").on("click", function(){
+    $(".single-sidebar__wrapper-info--rating").slideToggle();
   });
 
-  $(".single-product__sidebar-title--info").on("click", function(){
-    $(".single-product__wrapper-info--info").slideToggle();
+  $(".single-sidebar__sidebar-title--info").on("click", function(){
+    $(".single-sidebar__wrapper-info--info").slideToggle();
   });
 
-  $(".single-product__sidebar-title--author").on("click", function(){
-    $(".single-product__wrapper-info--author").slideToggle();
+  $(".single-sidebar__sidebar-title--author").on("click", function(){
+    $(".single-sidebar__wrapper-info--author").slideToggle();
   });
+
+   // кнопки blog
+
+  $(".blog-sidebar__title").on("click", function() {
+    $(this).next(".blog-sidebar__content").slideToggle();
+  });
+
 
   $(".js-range-slider").ionRangeSlider({
     type: "double",
@@ -236,6 +270,29 @@ $(function(){
     $('.filters__btn-path--list').removeClass('filters__btn-path--active')
   });
 
+// single tabs
+
+  $('.single-product__info-box .tab').on('click', function(event) {
+    var id = $(this).attr('data-id');
+    $('.single-product__info-box').find('.tab-item').removeClass('active-tab').hide();
+    $('.single-product__info-box .tabs').find('.tab').removeClass('active');
+    $(this).addClass('active');
+    $('#'+id).addClass('active-tab').fadeIn();
+    return false;
+  });
+
+  //blog tabs
+
+  $('.blog-sidebar__sidebar-box--posts .tab').on('click', function(event) {
+    var id = $(this).attr('data-id');
+    $('.blog-sidebar__sidebar-box--posts').find('.tab-item').removeClass('active-tab').hide();
+    $('.blog-sidebar__sidebar-box--posts .tabs').find('.tab').removeClass('active');
+    $(this).addClass('active');
+    $('#'+id).addClass('active-tab').fadeIn();
+    return false;
+  });
+  
+  
   if($('.newest-products__items-wrapper').length) {
     var mixer = mixitup('.newest-products__items-wrapper');
   }
