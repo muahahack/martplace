@@ -1,0 +1,83 @@
+.filter-by {
+
+  &__filter {
+    position: relative;
+    padding: 5px 0;
+    padding-right: 29px;
+
+    &:focus {
+      @include focus-vio;
+    }
+
+    &:active {
+      @include active-black;
+    }
+
+    &:hover .filter-by__filter-list {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  &__filter-list {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    margin: 0;
+    padding: 20px 0;
+    top: 47px;
+    right: -23px;
+    background-color: $white;
+    box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
+    transition: all 1s ease;
+    z-index: 2;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 10px 15px 10px;
+      border-color: transparent transparent #FFFFFF transparent;
+      top: -12px;
+      right: 15px;
+    }
+  }
+
+
+  &__filter-item {
+    list-style: none;
+  }
+
+  &__filter-link {
+    font-size: 15px;
+    line-height: 28px;
+    display: block;
+    width: 183px;
+    padding: 0 30px;
+    color: #747B86;
+    transition: all 1s ease;
+
+    &:hover {
+      color: $blue-li;
+    }
+
+    &:focus {
+      @include focus-vio;
+    }
+
+    &:active {
+      @include active-black;
+    }
+  }
+
+  &__more-icon {
+    position: absolute;
+    top: 4px;
+    right: 0px;
+    width: 5px;
+    height: 20px;
+    background-image: url(../images/icons/more.png);
+  }
+}

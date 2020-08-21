@@ -1,0 +1,39 @@
+@@include('./parts/_doctype-body.html')
+
+<div class="wrapper">
+  <div class="content">
+    @@include('./parts/_header.html')
+
+    <main class="main main--page-gray">
+
+      <section class="nav-head">
+        <div class="container">
+          <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="#">Home</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <span class="breadcrumbs__link">Favorites</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="nav-head__page-name">
+            Your Favourites
+          </div>
+        </div>
+      </section>
+
+      @@include('./page-favorites/_favorites-filters.html')
+      @@include('./page-favorites/_favorites-products.html')
+
+
+      @@include('./parts/_join.html')
+    </main>
+
+  </div>
+  @@include('./parts/_footer.html')
+</div>
+
+@@include('./parts/_script-body.html')

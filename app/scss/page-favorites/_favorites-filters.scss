@@ -1,0 +1,45 @@
+.favorites-filters {
+  background-color: $white;
+
+  &__inner {
+    align-items: center;
+  }
+
+  &__found {
+    font-size: 24px;
+    line-height: 100px;
+  }
+
+  &__sorts {
+    padding: 25px 0;
+  }
+
+  &__found-number {
+    font-weight: 500;
+  }
+
+  &__filter-wrapper {
+    height: 100%;
+    padding: 0 30px;
+    border-width: 0 1px 0 1px;
+    border-style: solid;
+    border-color: #ECEFF2;
+  }
+
+  &__filter {
+    padding: 0 29px 0 0;
+    position: relative;
+    line-height: 100px;
+  }
+
+  &__filter-list {
+    top: 112px;
+  }
+
+  .lnr-chevron-down {
+    position: absolute;
+    font-size: 16px;
+    right: 0;
+    top: 44px;
+  }
+}
