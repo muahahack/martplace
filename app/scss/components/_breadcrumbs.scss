@@ -1,10 +1,18 @@
 .breadcrumbs {
 
+  &--how-works {
+    text-align: center;
+  }
+
   &__list {
     padding: 0;
     color: $white;
     font-size: 15px;
     list-style: none;
+
+    &--how-works {
+      margin-top: 65px;
+    }
   }
 
   &__item {
