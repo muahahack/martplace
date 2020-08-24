@@ -313,4 +313,24 @@ $('.js-category__btn-grid').on('click', function(){
     var mixer = mixitup('.newest-products__items-wrapper');
   }
 
+
 });
+
+if($('.contact__google-map').length) {
+  function initMap() {
+    const myLatLng = {
+      lat: 50.444758,
+      lng: 30.4955313
+    };
+    const map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 13,
+      center: myLatLng
+    });
+    new google.maps.Marker({
+      position: myLatLng,
+      map,
+      title: "Hello World!"
+    });
+  }
+}
+else console.log('Not found map on this page');

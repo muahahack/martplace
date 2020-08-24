@@ -100,9 +100,8 @@
             </form>
           </div>
         </div>
-        <div class="contact__map" style="background-image: url(images/contact-map.jpg);">
-          <div class="contact__map-marker" style="background-image: url(images/icons/map-marker.svg);"></div>
-
+        <div class="contact__map">
+          <div class="contact__google-map" id="map"></div>
         </div>
       </section>
 
@@ -113,5 +112,7 @@
   </div>
   @@include('./parts/_footer.html')
 </div>
-
+<script defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCN8Ko4_3_91dmnaI538-dUz0ajCl0PW4E&callback=initMap">
+</script>
 @@include('./parts/_script-body.html')
