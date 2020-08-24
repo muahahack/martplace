@@ -1,0 +1,50 @@
+@@include('./parts/_doctype-body.html')
+
+<div class="wrapper">
+  <div class="content">
+    @@include('./parts/_header.html')
+
+    <main class="main main--page-gray">
+
+      <section class="nav-head">
+        <div class="container">
+          <div class="breadcrumbs">
+
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="#">Home</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <span class="breadcrumbs__link">404</span>
+              </li>
+            </ul>
+
+            <div class="nav-head__page-name">
+              Error-404
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="page-404">
+        <div class="container">
+          <div class="page-404__inner">
+            <img class="page-404__img" src="images/404.png" alt="404">
+            <div class="page-404__title">
+              Oops! Page Not Found
+            </div>
+            <a class="page-404__link button-style" href="index.html">
+              Back to Home
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+  </div>
+  @@include('./parts/_footer.html')
+</div>
+
+@@include('./parts/_script-body.html')

@@ -60,14 +60,9 @@
     display: inline-block;
     padding: 14px 30px;
     color: $white;
-    background-color: $blue-li;    
+    background-color: $blue-li;
     transition: all 1s ease;
-
-    @include r(768) {
-      display: block;
-      text-align: center;
-    }
-
+    
     &:hover {
       background-color: $violet;
       color: $white;
@@ -80,6 +75,11 @@
 
     &:active {
       @include active-black;
+    }
+
+    @include r(768) {
+      display: block;
+      text-align: center;
     }
 
     &--upload {

@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MartPlace</title>
+
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="overlay"></div>
+
+<div class="wrapper">
+  <div class="content">
+    <header class="header">
+  <div class="header__top">
+    <div class="container">
+      <div class="header__top-inner">
+        <a class="header__logo-link" href="/">logo
+          <img class="header__logo-img" src="images/logo.png" alt="logo">
+        </a>
+
+        <div class="header__info">
+          <a class="header__seller-link button-style" href="#">Become a Seller</a>
+          <a class="header__status header__status--notify" href="#">notify
+            <div class="drop-menu drop-menu--status">
+              <span class="lnr lnr-alarm"></span>
+              <span class="header__number header__number--notify">25</span>
+
+              <ul class="drop-menu__list drop-menu__list--triangle-notify drop-menu__list--notify">
+                <li class="drop-menu__item">
+                  <div class="drop-menu__title-box drop-menu__title-box--notify">
+                    <div class="drop-menu__title">My Notifications</div>
+                    <a class="drop-menu__title-link" href="#">View All</a>
+                  </div>
+                </li>
+
+                <li class="drop-menu__item">
+                  <div class="drop-menu__item-box">
+                    <a class="drop-menu__section drop-menu__section--notify profile__link" href="#">
+                      <div class="profile__avatar profile__avatar--drop-menu"
+                        style="background-image: url(images/avatar-feedback.jpg);"></div>
+                      <div class="profile__info">
+                        <div class="drop-menu__author profile__name">
+                          Anderson <span class="drop-menu__author-action">added to Favourite</span>
+                        </div>
+                        <div class="profile__specs--notify">
+                          <span class="drop-menu__place">Marketify Coffee Shop<span>
+                        </div>
+                      </div>
+                      <div class="drop-menu__notify-img"><span class="lnr lnr-heart"></span></div>
+                      <span class="drop-menu__date-link drop-menu__date-link--notify">Just now</span>
+                    </a>
+                  </div>
+                </li>
+
+                <li class="drop-menu__item">
+                  <div class="drop-menu__item-box">
+                    <a class="drop-menu__section drop-menu__section--notify profile__link" href="#">
+                      <div class="profile__avatar profile__avatar--drop-menu"
+                        style="background-image: url(images/avatar-feedback.jpg);"></div>
+                      <div class="profile__info">
+                        <div class="drop-menu__author profile__name">
+                          Michael Jorden <span class="drop-menu__author-action">commented</span>
+                        </div>
+                        <div class="profile__specs--notify">
+                          on <span class="drop-menu__place">MartPlace Extension Bundle</span>
+                        </div>
+                      </div>
+                      <div class="drop-menu__notify-img"><span class="lnr lnr-bubble"></span></div>
+                      <span class="drop-menu__date-link drop-menu__date-link--notify">2 hours ago</span>
+                    </a>
+
+                  </div>
+                </li>
+
+                <li class="drop-menu__item">
+                  <div class="drop-menu__item-box">
+                    <a class="drop-menu__section drop-menu__section--notify profile__link" href="#">
+                      <div class="profile__avatar profile__avatar--drop-menu"
+                        style="background-image: url(images/avatar-feedback.jpg);"></div>
+                      <div class="profile__info">
+                        <div class="drop-menu__author profile__name">
+                          Moshed
+                          <span class="drop-menu__author-action">Purchased</span>
+                        </div>
+                        <div class="profile__specs--notify">
+                          <span class="drop-menu__place">Bryson-Responsive Template</span>
+                        </div>
+                      </div>
+                      <div class="drop-menu__notify-img"><span class="lnr lnr-cart"></span></div>
+                      <span class="drop-menu__date-link drop-menu__date-link--notify">6 hours ago</span>
+                    </a>
+                  </div>
+                </li>
+
+                <li class="drop-menu__item">
+                  <div class="drop-menu__item-box">
+                    <a class="drop-menu__section drop-menu__section--notify profile__link" href="#">
+                      <div class="profile__avatar profile__avatar--drop-menu"
+                        style="background-image: url(images/avatar-feedback.jpg);"></div>
+                      <div class="profile__info">
+                        <div class="drop-menu__author profile__name">
+                          Tamim
+                          <span class="drop-menu__author-action">wrote a review on</span>
+                        </div>
+                        <div class="profile__specs--notify">
+                          <span class="drop-menu__place">Rida-Responsive vCard Temp...</span>
+                        </div>
+                      </div>
+                      <div class="drop-menu__notify-img"><span class="lnr lnr-star"></span></div>
+                      <span class="drop-menu__date-link drop-menu__date-link--notify">2 hours ago</span>
+                    </a>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+
+          </a>
+
+          <a class="header__status header__status--message" href="#">message
+            <div class="drop-menu drop-menu--status">
+              <span class="lnr lnr-envelope"></span>
+              <span class="header__number header__number--message">6</span>
+
+              <ul class="drop-menu__list drop-menu__list--triangle-message drop-menu__list--message">
+                <li class="drop-menu__item">
+                  <div class="drop-menu__title-box">
+                    <div class="drop-menu__title">My Messages</div>
+                    <a class="drop-menu__title-link" href="#">View All</a>
+                  </div>
+                </li>
+                <li class="drop-menu__item">
+                  <div class="drop-menu__item-box">
+                    <a class="drop-menu__section profile__link" href="#">
+                      <div class="profile__avatar profile__avatar--drop-menu"
+                        style="background-image: url(images/avatar-feedback.jpg);"></div>
+                      <div class="profile__info">
+                        <div class="drop-menu__author profile__name profile__name--drop">
+                          Washim <span class="lnr lnr-envelope lnr-envelope--active"></span>
+                        </div>
+                        <div class="profile__specs">
+                          Hello John Smith! Nunc placerat id...
+                        </div>
+                      </div>
+                    </a>
+                    <span class="drop-menu__date-link">Just now</span>
+                  </div>
+                </li>
+
+                <li class="drop-menu__item">
+                  <div class="drop-menu__item-box">
+                    <a class="drop-menu__section profile__link" href="#">
+                      <div class="profile__avatar profile__avatar--drop-menu"
+                        style="background-image: url(images/avatar-feedback.jpg);"></div>
+                      <div class="profile__info">
+                        <div class="drop-menu__author profile__name profile__name--drop">
+                          Bulbul Ahmed <span class="lnr lnr-envelope lnr-envelope--active"></span>
+                        </div>
+                        <div class="profile__specs">
+                          Hello John Smith! Nunc placerat id...
+                        </div>
+                      </div>
+                    </a>
+                    <span class="drop-menu__date-link">2 hours ago</span>
+                  </div>
+                </li>
+
+                <li class="drop-menu__item">
+                  <div class="drop-menu__item-box">
+                    <a class="drop-menu__section profile__link" href="#">
+                      <div class="profile__avatar profile__avatar--drop-menu"
+                        style="background-image: url(images/avatar-feedback.jpg);"></div>
+                      <div class="profile__info">
+                        <div class="drop-menu__author profile__name profile__name--drop">
+                          EchoTheme <span class="drop-menu__author-img"
+                            style="background-image: url(images/icons/reply.svg);"></span>
+                        </div>
+                        <div class="profile__specs">
+                          Hello John Smith! Nunc placerat id...
+                        </div>
+                      </div>
+                    </a>
+                    <span class="drop-menu__date-link">Jul 16</span>
+                  </div>
+                </li>
+
+                <li class="drop-menu__item">
+                  <div class="drop-menu__item-box">
+                    <a class="drop-menu__section profile__link" href="#">
+                      <div class="profile__avatar profile__avatar--drop-menu"
+                        style="background-image: url(images/avatar-feedback.jpg);"></div>
+                      <div class="profile__info">
+                        <div class="drop-menu__author profile__name profile__name--drop">
+                          Themeluva
+                        </div>
+                        <div class="profile__specs">
+                          Hello John Smith! Nunc placerat id...
+                        </div>
+                      </div>
+                    </a>
+                    <span class="drop-menu__date-link">May 23</span>
+                  </div>
+                </li>
+
+                <li class="drop-menu__item">
+                  <div class="drop-menu__item-box">
+                    <a class="drop-menu__section profile__link" href="#">
+                      <div class="profile__avatar profile__avatar--drop-menu"
+                        style="background-image: url(images/avatar-feedback.jpg);"></div>
+                      <div class="profile__info">
+                        <div class="drop-menu__author profile__name profile__name--drop">
+                          Adnan
+                        </div>
+                        <div class="profile__specs">
+                          Hello John Smith! Nunc placerat id...
+                        </div>
+                      </div>
+                    </a>
+                    <span class="drop-menu__date-link">Mar 16</span>
+                  </div>
+                </li>
+              </ul>
+
+            </div>
+
+          </a>
+
+
+          <a class="header__status" href="#">cart
+            <div class="drop-menu drop-menu--status">
+              <span class="lnr lnr-cart"></span>
+              <span class="header__number header__number--cart">2</span>
+
+              <ul class="drop-menu__list drop-menu__list--triangle-cart drop-menu__list--cart">
+
+                <li class="drop-menu__item">
+                  <div class="drop-menu__item-box">
+                    <a class="drop-menu__section drop-menu__section--cart profile__link" href="#">
+                      <div class="drop-menu__product-img" style="background-image: url(images/avatar-feedback.jpg);">
+                      </div>
+                      <div class="drop-menu__product-info profile__info">
+                        <div class="drop-menu__author drop-menu__author--cart drop-menu__author--product profile__name">
+                          Finance and Consulting Business Theme
+                        </div>
+                        <div class="product-card__cat" href="#">
+                          <span class="cat-icon cat-icon--cart"
+                            style="background-image: url(images/icons/wordpress.svg);"></span>
+                          <span class="product-card__cat-name">WordPress</span>
+                        </div>
+                      </div>
+                      <div class="drop-menu__details">
+                        <button class="drop-menu__button-remove"><span class="lnr lnr-trash"></span></button>
+                        <div class="drop-menu__details-price product-card__price button-style">$60</div>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li class="drop-menu__item">
+                  <div class="drop-menu__item-box">
+                    <a class="drop-menu__section drop-menu__section--cart profile__link" href="#">
+                      <div class="drop-menu__product-img" style="background-image: url(images/avatar-feedback.jpg);">
+                      </div>
+                      <div class="drop-menu__product-info profile__info">
+                        <div class="drop-menu__author drop-menu__author--cart drop-menu__author--product profile__name">
+                          Flounce - Multipurpose OpenCart Theme
+                        </div>
+                        <div class="product-card__cat" href="#">
+                          <span class="cat-icon cat-icon--cart"
+                            style="background-image: url(images/icons/wordpress.svg);"></span>
+                          <span class="product-card__cat-name">WordPress</span>
+                        </div>
+                      </div>
+                      <div class="drop-menu__details">
+                        <button class="drop-menu__button-remove"><span class="lnr lnr-trash"
+                            type="submit"></span></button>
+                        <div class="drop-menu__details-price product-card__price button-style">$20</div>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li class="drop-menu__item">
+                  <div class="drop-menu__item-box">
+                    <div class="drop-menu__section drop-menu__section--summ">
+                      Total :<span class="drop-menu__cart-summ">$80</span>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="drop-menu__item">
+                  <div class="drop-menu__item-box">
+                    <div class="drop-menu__section drop-menu__section--links">
+                      <a class="drop-menu__cart-link" href="#">Go to Cart</a>
+                      <a class="drop-menu__checkout-link" href="#">Go to Checkout</a>
+                    </div>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+          </a>
+          <div class="header__profile-menu drop-menu">
+            <span class="header__profile-btn fa fa-sort-down"></span>
+            <a class="header__profile-link profile__link" href="#">
+              <div class="header__profile-avatar profile__avatar" style="background-image: url(images/avatar.jpg);">
+              </div>
+              <div class="header__profile-info profile__info">
+                <div class="header__profile-name profile__name">Taofiq Hakim</div>
+                <div class="header__profile-funds profile__specs">$20.45</div>
+              </div>
+
+              <ul class="header__profile-list drop-menu__list drop-menu__list--profile drop-menu__list--triangle">
+                <li class="drop-menu__item">
+                  <a href="#" class="drop-menu__link"><span class="lnr lnr-user"></span>Profile Page</a>
+                </li>
+                <li class="drop-menu__item">
+                  <a href="#" class="drop-menu__link"><span class="lnr lnr-home"></span>Dashboard</a>
+                </li>
+                <li class="drop-menu__item">
+                  <a href="#" class="drop-menu__link"><span class="lnr lnr-cog"></span>Account Settings</a>
+                </li>
+                <li class="drop-menu__item">
+                  <a href="#" class="drop-menu__link"><span class="lnr lnr-cart"></span>Your Purchases</a>
+                </li>
+                <li class="drop-menu__item">
+                  <a href="#" class="drop-menu__link"><span class="lnr lnr-heart"></span>Your Favorites</a>
+                </li>
+                <li class="drop-menu__item">
+                  <a href="#" class="drop-menu__link"><span class="lnr lnr-dice"></span>Add Credits</a>
+                </li>
+                <li class="drop-menu__item">
+                  <a href="#" class="drop-menu__link"><span class="lnr lnr-chart-bars"></span>Sales Statements</a>
+                </li>
+                <li class="drop-menu__item">
+                  <a href="#" class="drop-menu__link"><span class="lnr lnr-upload"></span>Upload Item</a>
+                </li>
+                <li class="drop-menu__item">
+                  <a href="#" class="drop-menu__link"><span class="lnr lnr-book"></span>Edit Item</a>
+                </li>
+                <li class="drop-menu__item">
+                  <a href="#" class="drop-menu__link"><span class="lnr lnr-briefcase"></span>Withdrawals</a>
+                </li>
+                <li class="drop-menu__item">
+                  <a href="#" class="drop-menu__link"><span class="lnr lnr-exit"></span>Logout</a>
+                </li>
+              </ul>
+
+            </a>
+          </div>
+        </div>
+        <div class="header__user-btn fas fa-user-tie"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="header__middle">
+    <div class="header__middle-status header__middle-status--notify">
+      <span class="lnr lnr-alarm"></span>
+      <span class="header__number header__number--notify">25</span>
+    </div>
+
+    <div class="header__middle-status header__middle-status--message">
+      <span class="lnr lnr-envelope"></span>
+      <span class="header__number header__number--message">6</span>
+    </div>
+
+    <div class="header__middle-status header__middle-status--cart">
+      <span class="lnr lnr-cart"></span>
+      <span class="header__number header__number--cart">2</span>
+    </div>
+  </div>
+
+  <div class="header__bottom">
+    <div class="container">
+      <div class="header__bottom-inner">
+        <nav class="header__menu">
+          <div class="header__menu-btn">
+            <div class="header__btn-line"></div>
+            <div class="header__btn-line"></div>
+            <div class="header__btn-line"></div>
+          </div>
+          <ul class="header__menu-list">
+            <li class="header__menu-item drop-menu">
+              <a class="header__menu-link" href="/">home</a>
+              <span class="header__drop-btn header__drop-btn--home fas fa-sort-down"></span>
+              <ul class="drop-menu__list drop-menu__list--nav drop-menu__list--home">
+                <li class="drop-menu__item">
+                  <a href="#" class="drop-menu__link">Home One Multi User</a>
+                </li>
+                <li class="drop-menu__item">
+                  <a href="#" class="drop-menu__link">Home Two Single User</a>
+                </li>
+                <li class="drop-menu__item">
+                  <a href="#" class="drop-menu__link">Home Three Product</a>
+                </li>
+              </ul>
+
+            </li>
+            <li class="header__menu-item drop-menu">
+              <a class="header__menu-link" href="category-page.html">all products</a>
+              <span class="header__drop-btn header__drop-btn--all-products fas fa-sort-down"></span>
+              <ul class="drop-menu__list drop-menu__list--nav drop-menu__list--all-products">
+                <li class="drop-menu__item">
+                  <a href="#" class="drop-menu__link">Recent Items</a>
+                </li>
+                <li class="drop-menu__item">
+                  <a href="#" class="drop-menu__link">Popular Items</a>
+                </li>
+                <li class="drop-menu__item">
+                  <a href="#" class="drop-menu__link">Featured Items</a>
+                </li>
+                <li class="drop-menu__item">
+                  <a href="#" class="drop-menu__link">Free Templates</a>
+                </li>
+                <li class="drop-menu__item">
+                  <a href="#" class="drop-menu__link">Follow Feed</a>
+                </li>
+                <li class="drop-menu__item">
+                  <a href="#" class="drop-menu__link">Top Authors</a>
+                </li>
+              </ul>
+
+            </li>
+            <li class="header__menu-item drop-menu">
+              <a class="header__menu-link" href="#">wordpress</a>
+              <span class="header__drop-btn header__drop-btn--wordpress fas fa-sort-down"></span>
+              <ul class="drop-menu__list drop-menu__list--nav drop-menu__list--wordpress">
+                <li class="drop-menu__item">
+                  <a href="#" class="drop-menu__link">Popular Items</a>
+                </li>
+                <li class="drop-menu__item">
+                  <a href="#" class="drop-menu__link">Admin Templates</a>
+                </li>
+                <li class="drop-menu__item">
+                  <a href="#" class="drop-menu__link">Blog / Magazine / News</a>
+                </li>
+                <li class="drop-menu__item">
+                  <a href="#" class="drop-menu__link">Creative</a>
+                </li>
+                <li class="drop-menu__item">
+                  <a href="#" class="drop-menu__link">Corporate Business</a>
+                </li>
+                <li class="drop-menu__item">
+                  <a href="#" class="drop-menu__link">Resume Portfolio</a>
+                </li>
+                <li class="drop-menu__item">
+                  <a href="#" class="drop-menu__link">eCommerce</a>
+                </li>
+                <li class="drop-menu__item">
+                  <a href="#" class="drop-menu__link">Entertainment</a>
+                </li>
+                <li class="drop-menu__item">
+                  <a href="#" class="drop-menu__link">Landing Pages</a>
+                </li>
+              </ul>
+
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="single-product.html">festures</a>
+            </li>
+            <li class="header__menu-item drop-menu">
+              <a class="header__menu-link" href="#">pages</a>
+              <span class="header__drop-btn header__drop-btn--pages fas fa-sort-down"></span>
+              <div class="sub-wrap">
+
+                <ul class="drop-menu__list drop-menu__list--nav drop-menu__list--pages">
+                  <li class="drop-menu__submenu-item">
+                    <div class="drop-menu__submenu">
+                      <div class="drop-menu__submenu-title">MartPlace Pages
+                        <span class="header__submenu-btn header__submenu-btn--martplace fas fa-sort-down"></span>
+                      </div>
+                      <ul class="drop-menu__submenu-list drop-menu__submenu-list--martplace">
+                        <li class="drop-menu__submenu-item">
+                          <a href="#" class="drop-menu__link">Home Page One</a>
+                        </li>
+                        <li class="drop-menu__submenu-item">
+                          <a href="#" class="drop-menu__link">Home Page Two</a>
+                        </li>
+                        <li class="drop-menu__submenu-item">
+                          <a href="#" class="drop-menu__link">Home Page Three</a>
+                        </li>
+                        <li class="drop-menu__submenu-item">
+                          <a href="#" class="drop-menu__link">Products Grid</a>
+                        </li>
+                        <li class="drop-menu__submenu-item">
+                          <a href="#" class="drop-menu__link">Products List</a>
+                        </li>
+                        <li class="drop-menu__submenu-item">
+                          <a href="#" class="drop-menu__link">Category Grid Sidebar</a>
+                        </li>
+                        <li class="drop-menu__submenu-item">
+                          <a href="#" class="drop-menu__link">Category List Sidebar</a>
+                        </li>
+                        <li class="drop-menu__submenu-item">
+                          <a href="#" class="drop-menu__link">Search Product</a>
+                        </li>
+                        <li class="drop-menu__submenu-item">
+                          <a href="#" class="drop-menu__link">Single Product V-1</a>
+                        </li>
+                        <li class="drop-menu__submenu-item">
+                          <a href="#" class="drop-menu__link">Single Product V-2</a>
+                        </li>
+                        <li class="drop-menu__submenu-item">
+                          <a href="#" class="drop-menu__link">Single Product V-3</a>
+                        </li>
+                        <li class="drop-menu__submenu-item">
+                          <a href="#" class="drop-menu__link">Single Items Comments</a>
+                        </li>
+                        <li class="drop-menu__submenu-item">
+                          <a href="#" class="drop-menu__link">Single Items Reviews</a>
+                        </li>
+                        <li class="drop-menu__submenu-item">
+                          <a href="#" class="drop-menu__link">Single Items Support</a>
+                        </li>
+                        <li class="drop-menu__submenu-item">
+                          <a href="#" class="drop-menu__link">Single Items FAQs</a>
+                        </li>
+                        <li class="drop-menu__submenu-item">
+                          <a href="#" class="drop-menu__link">Favorites Items</a>
+                        </li>
+                        <li class="drop-menu__submenu-item">
+                          <a href="#" class="drop-menu__link">Author Profile</a>
+                        </li>
+                        <li class="drop-menu__submenu-item">
+                          <a href="#" class="drop-menu__link">Author Items</a>
+                        </li>
+                        <li class="drop-menu__submenu-item">
+                          <a href="#" class="drop-menu__link">Customer Reviews</a>
+                        </li>
+                        <li class="drop-menu__submenu-item">
+                          <a href="#" class="drop-menu__link">Followers</a>
+                        </li>
+                        <li class="drop-menu__submenu-item">
+                          <a href="#" class="drop-menu__link">Following</a>
+                        </li>
+                        <li class="drop-menu__submenu-item">
+                          <a href="#" class="drop-menu__link">Product View Variations</a>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="drop-menu__submenu">
+                      <div class="drop-menu__submenu-title">Dashboard
+                        <span class="header__submenu-btn header__submenu-btn--dashboard fas fa-sort-down"></span>
+                      </div>
+                      <ul class="drop-menu__submenu-list drop-menu__submenu-list--dashboard">
+                        <li class="drop-menu__submenu-item">
+                          <a href="#" class="drop-menu__link">Dashboard</a>
+                        </li>
+                        <li class="drop-menu__submenu-item">
+                          <a href="#" class="drop-menu__link">Account Settings</a>
+                        </li>
+                        <li class="drop-menu__submenu-item">
+                          <a href="#" class="drop-menu__link">Author Purchases</a>
+                        </li>
+                        <li class="drop-menu__submenu-item">
+                          <a href="#" class="drop-menu__link">Items Rating</a>
+                        </li>
+                        <li class="drop-menu__submenu-item">
+                          <a href="#" class="drop-menu__link">Add Credits</a>
+                        </li>
+                        <li class="drop-menu__submenu-item">
+                          <a href="#" class="drop-menu__link">Statements</a>
+                        </li>
+                        <li class="drop-menu__submenu-item">
+                          <a href="#" class="drop-menu__link">Invoice</a>
+                        </li>
+                        <li class="drop-menu__submenu-item">
+                          <a href="#" class="drop-menu__link">Upload Item</a>
+                        </li>
+                        <li class="drop-menu__submenu-item">
+                          <a href="#" class="drop-menu__link">Edit Items</a>
+                        </li>
+                        <li class="drop-menu__submenu-item">
+                          <a href="#" class="drop-menu__link">Withdrawals</a>
+                        </li>
+                        <li class="drop-menu__submenu-item">
+                          <a href="#" class="drop-menu__link">Add Payment Method</a>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="drop-menu__submenu">
+                      <div class="drop-menu__submenu-title">Others Pages
+                        <span class="header__submenu-btn header__submenu-btn--others fas fa-sort-down"></div>
+                      </span>
+                      <ul class="drop-menu__submenu-list drop-menu__submenu-list--others">
+                        <li class="drop-menu__submenu-item">
+                          <a href="#" class="drop-menu__link">Notifications</a>
+                        </li>
+                        <li class="drop-menu__submenu-item">
+                          <a href="#" class="drop-menu__link">Message Inbox</a>
+                        </li>
+                        <li class="drop-menu__submenu-item">
+                          <a href="#" class="drop-menu__link">Message Compose</a>
+                        </li>
+                        <li class="drop-menu__submenu-item">
+                          <a href="#" class="drop-menu__link">Shopping Cart</a>
+                        </li>
+                        <li class="drop-menu__submenu-item">
+                          <a href="#" class="drop-menu__link">Checkout</a>
+                        </li>
+                        <li class="drop-menu__submenu-item">
+                          <a href="#" class="drop-menu__link">Login</a>
+                        </li>
+                        <li class="drop-menu__submenu-item">
+                          <a href="#" class="drop-menu__link">Register</a>
+                        </li>
+                        <li class="drop-menu__submenu-item">
+                          <a href="#" class="drop-menu__link">Recovery Password</a>
+                        </li>
+                        <li class="drop-menu__submenu-item">
+                          <a href="#" class="drop-menu__link">Support Forum</a>
+                        </li>
+                        <li class="drop-menu__submenu-item">
+                          <a href="#" class="drop-menu__link">Forum Details</a>
+                        </li>
+                        <li class="drop-menu__submenu-item">
+                          <a href="#" class="drop-menu__link">How It Works</a>
+                        </li>
+                        <li class="drop-menu__submenu-item">
+                          <a href="#" class="drop-menu__link">About Us</a>
+                        </li>
+                        <li class="drop-menu__submenu-item">
+                          <a href="#" class="drop-menu__link">Pricing Plan</a>
+                        </li>
+                        <li class="drop-menu__submenu-item">
+                          <a href="#" class="drop-menu__link">Testimonials</a>
+                        </li>
+                        <li class="drop-menu__submenu-item">
+                          <a href="#" class="drop-menu__link">FAQs</a>
+                        </li>
+                        <li class="drop-menu__submenu-item">
+                          <a href="#" class="drop-menu__link">FAQs Details</a>
+                        </li>
+                        <li class="drop-menu__submenu-item">
+                          <a href="#" class="drop-menu__link">Affiliates</a>
+                        </li>
+                        <li class="drop-menu__submenu-item">
+                          <a href="#" class="drop-menu__link">Terms & Conditions</a>
+                        </li>
+                        <li class="drop-menu__submenu-item">
+                          <a href="#" class="drop-menu__link">Blog V-1</a>
+                        </li>
+                        <li class="drop-menu__submenu-item">
+                          <a href="#" class="drop-menu__link">Blog V-2</a>
+                        </li>
+                        <li class="drop-menu__submenu-item">
+                          <a href="#" class="drop-menu__link">Blog Details</a>
+                        </li>
+                        <li class="drop-menu__submenu-item">
+                          <a href="#" class="drop-menu__link">Contact Us</a>
+                        </li>
+                      </ul>
+                    </div>
+
+                  </li>
+                  <a href="#" class="drop-menu__bottom-link">Menu & Footer Variation</a>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+
+        <form class="header__search input-form" action="action.php">
+          <input class="header__search-form input-style" type="search" placeholder="Search product here..." required>
+          <button class="header__search-btn input-btn" type="submit">
+            <span class="header__search-img lnr lnr-magnifier"></span>
+            search
+          </button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</header>
+
+    <main class="main main--page-gray">
+
+      <section class="nav-head">
+        <div class="container">
+          <div class="breadcrumbs">
+
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="#">Home</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <span class="breadcrumbs__link">Pricing Plan</span>
+              </li>
+            </ul>
+
+            <div class="nav-head__page-name">
+              Pricing Plan
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="pricing-plans">
+        <div class="container">
+          <div class="pricing-plans__title title-center">
+            Fair and Simple <span class="blue-word">Pricing</span>
+          </div>
+          <div class="pricing-plans__text text-center">
+            Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats. Lid est
+            laborum dolo rumes fugats untras.
+          </div>
+          <div class="pricing-plans__box">
+            <div class="pricing-plans__item box-styles">
+              <div class="pricing-plans__item-title">
+                Starter
+              </div>
+              <div class="pricing-plans__item-price">
+                <sup class="pricing-plans__price-currence">$</sup>69.00<span
+                  class="pricing-plans__price-month gray-style">/month</span>
+              </div>
+              <ul class="pricing-plans__item-list gray-style">
+                <li class="pricing-plans__item-text">
+                  
+                  <span class="black-bold">3 Months</span> Membership
+                
+                </li>
+                <li class="pricing-plans__item-text">
+                  <span class="black-bold">All Wordpress Templates</span><span class="lnr lnr-question-circle">
+                    <div class="pricing-plans__text-details gray-style">
+                      Details text, more info. Details text, more info.
+                    </div>
+                  </span>
+                </li>
+                <li class="pricing-plans__item-text">
+                  Forum Support
+                </li>
+                <li class="pricing-plans__item-text">
+                  Unlimited Domain Usage
+                </li>
+                <li class="pricing-plans__item-text">
+                  <span class="black-bold">1 Domain</span> Tech Support<span class="lnr lnr-question-circle">
+                    <div class="pricing-plans__text-details gray-style">
+                      Details text, more info. Details text, more info.
+                    </div>
+                  </span>
+                </li>
+                <li class="pricing-plans__item-text">
+                  Copyright Removal
+                </li>
+                <li class="pricing-plans__item-text">
+                  <span class="black-bold">Demos</span> Included<span class="lnr lnr-question-circle"></span>
+                </li>
+                <li class="pricing-plans__item-text">
+                  Demo Pagebuilder
+                </li>
+              </ul>
+              <a class="pricing-plans__link" href="#">Get Started Plan</a>
+            </div>
+
+            <div class="pricing-plans__item pricing-plans__item--blue box-styles">
+              <div class="pricing-plans__item-title">
+                Business
+              </div>
+              <div class="pricing-plans__item-price">
+                <sup class="pricing-plans__price-currence">$</sup>99.00<span
+                  class="pricing-plans__price-month gray-style">/month</span>
+              </div>
+              <ul class="pricing-plans__item-list gray-style">
+                <li class="pricing-plans__item-text">
+                  <span class="black-bold">3 Months</span> Membership
+                </li>
+                <li class="pricing-plans__item-text">
+                  <span class="black-bold">All Wordpress Templates</span><span class="lnr lnr-question-circle">
+                    <div class="pricing-plans__text-details gray-style">
+                      Details text, more info. Details text, more info.
+                    </div>
+                  </span>
+                </li>
+                <li class="pricing-plans__item-text">
+                  Forum Support
+                </li>
+                <li class="pricing-plans__item-text">
+                  Unlimited Domain Usage
+                </li>
+                <li class="pricing-plans__item-text">
+                  <span class="black-bold">1 Domain</span> Tech Support<span class="lnr lnr-question-circle"></span>
+                </li>
+                <li class="pricing-plans__item-text">
+                  Copyright Removal
+                </li>
+                <li class="pricing-plans__item-text">
+                  <span class="black-bold">Demos</span> Included<span class="lnr lnr-question-circle"></span>
+                </li>
+                <li class="pricing-plans__item-text">
+                  Demo Pagebuilder
+                </li>
+              </ul>
+              <a class="pricing-plans__link pricing-plans__link--blue" href="#">Get Started Plan</a>
+            </div>
+
+            <div class="pricing-plans__item pricing-plans__item--orange box-styles">
+              <div class="pricing-plans__item-title">
+                Agency
+              </div>
+              <div class="pricing-plans__item-price">
+                <sup class="pricing-plans__price-currence">$</sup>299.00<span
+                  class="pricing-plans__price-month gray-style">/month</span>
+              </div>
+              <ul class="pricing-plans__item-list gray-style">
+                <li class="pricing-plans__item-text">
+                  <span class="black-bold">3 Months</span> Membership
+                </li>
+                <li class="pricing-plans__item-text">
+                  <span class="black-bold">All Wordpress Templates</span><span class="lnr lnr-question-circle">
+                    <div class="pricing-plans__text-details gray-style">
+                      Details text, more info. Details text, more info.
+                    </div>
+                  </span>
+                </li>
+                <li class="pricing-plans__item-text">
+                  Forum Support
+                </li>
+                <li class="pricing-plans__item-text">
+                  Unlimited Domain Usage
+                </li>
+                <li class="pricing-plans__item-text">
+                  <span class="black-bold">1 Domain</span> Tech Support<span class="lnr lnr-question-circle"></span>
+                </li>
+                <li class="pricing-plans__item-text">
+                  Copyright Removal
+                </li>
+                <li class="pricing-plans__item-text">
+                  <span class="black-bold">Demos</span> Included<span class="lnr lnr-question-circle"></span>
+                </li>
+                <li class="pricing-plans__item-text">
+                  Demo Pagebuilder
+                </li>
+              </ul>
+              <a class="pricing-plans__link pricing-plans__link--orange" href="#">Get Started Plan</a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+
+  </div>
+  <footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__info">
+        <a class="footer__logo-link" href="#">logo
+          <img class="footer__logo-img" src="images/logo-footer.png" alt="logo">
+        </a>
+        <div class="footer__info-text">
+          Nunc placerat mi id nisi interdum they mollis. Praesent pharetra, justo ut scel erisque the mattis, leo
+          quam.
+        </div>
+        <address class="footer__address-wrapper">
+          <a class="footer__info-link" href="tel:+67898752235">
+            <span class="lnr lnr-phone-handset"></span>
+            <div class="footer__phone">
+              Phone: +6789-875-2235
+            </div>
+          </a>
+          <a class="footer__info-link" href="mailto:support@aazztech.com">
+            <span class="lnr lnr-envelope"></span>
+            <div class="footer__mail">
+              support@aazztech.com
+            </div>
+          </a>
+          <a class="footer__info-link" href="#">
+            <span class="lnr lnr-map-marker"></span>
+            <div class="footer__address">
+              202 New Hampshire Avenue
+              Northwest #100, New York-2573
+            </div>
+          </a>
+        </address>
+      </div>
+      <div class="footer__company">
+        <div class="footer__title">
+          Our Company
+        </div>
+        <ul class="footer__list">
+          <li class="footer__list-item"><a class="footer__link" href="#">About Us</a></li>
+          <li class="footer__list-item"><a class="footer__link" href="#">How It Work</a></li>
+          <li class="footer__list-item"><a class="footer__link" href="#">Affiliates</a></li>
+          <li class="footer__list-item"><a class="footer__link" href="#">Testimonials</a></li>
+          <li class="footer__list-item"><a class="footer__link" href="#">Contact Us</a></li>
+          <li class="footer__list-item"><a class="footer__link" href="#">Copyright Notice</a></li>
+          <li class="footer__list-item"><a class="footer__link" href="#">Blog</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__support">
+        <div class="footer__title">Help Support</div>
+        <ul class="footer__list">
+          <li class="footer__list-item"><a class="footer__link" href="#">Support Forum</a></li>
+          <li class="footer__list-item"><a class="footer__link" href="#">Terms & Conditions</a></li>
+          <li class="footer__list-item"><a class="footer__link" href="#">Support Policy</a></li>
+          <li class="footer__list-item"><a class="footer__link" href="#">Refund Policy</a></li>
+          <li class="footer__list-item"><a class="footer__link" href="#">FAQs</a></li>
+          <li class="footer__list-item"><a class="footer__link" href="#">Buyers Faq</a></li>
+          <li class="footer__list-item"><a class="footer__link" href="#">Sellers Faq</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__newsteller">
+        <div class="footer__title footer__title--newsletter">Newsletter</div>
+        <div class="footer__newsteller-text">Subscribe to get the latest news, update and offer information. Don't
+          worry, we won't send spam!</div>
+
+        <form class="footer__submit input-form input-form--footer" action="action.php">
+          <input class="footer__submit-form input-style" type="text" placeholder="Enter email" required>
+          <button class="footer__submit-btn input-btn" type="submit">
+            Submit
+          </button>
+        </form>
+
+        <ul class="socials">
+
+          <li>
+            <a class="socials__link socials__link--facebook" href="#"><i
+                class="fab fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a class="socials__link socials__link--twitter" href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a class="socials__link socials__link--google" href="#"><i class="fab fa-google"></i></a>
+          </li>
+          <li>
+            <a class="socials__link socials__link--pinterest" href="#"><i
+                class="fab fa-pinterest"></i></a>
+          </li>
+          <li>
+            <a class="socials__link socials__link--linkedin" href="#"><i
+                class="fab fa-linkedin-in"></i></a>
+          </li>
+          <li>
+            <a class="socials__link socials__link--dribbble" href="#"><i class="fab fa-dribbble"></i></a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    ©2017 <a class="footer__bottom-link" href="#">MartPlace</a>. All rights reserved. Created by <a
+      class="footer__bottom-link" href="#">AazzTech</a>
+  </div>
+</footer>
+</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+
+</html>

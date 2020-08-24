@@ -1,0 +1,44 @@
+.page-404 {
+  padding: 82px 0 117px;
+
+  &__inner {
+    padding: 0 30px;
+    text-align: center;
+  }
+
+  &__img {
+    display: block;
+    margin: 0 auto 45px;
+    width: 100%;
+    max-width: 393px;
+    max-height: 447px;
+  }
+
+  &__title {
+    margin-bottom: 58px;
+    font-size: 30px;
+  }
+
+  &__link {
+    padding: 15px 45px;
+    font-size: 15px;
+    font-weight: 500;
+    color: $white;
+    background-color: $blue-li;
+    transition: all 1s ease;
+
+    &:hover {
+      background-color: $violet;
+      color: $white;
+    }
+
+    &:focus {
+      @include focus-orange;
+      border-radius: 30px;
+    }
+
+    &:active {
+      @include active-black;
+    }
+  }
+}
